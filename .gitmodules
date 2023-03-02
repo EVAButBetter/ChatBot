@@ -1,0 +1,3 @@
+[submodule "generation/sc_gpt"]
+	path = generation/sc_gpt
+	url = https://github.com/pengbaolin/SC-GPT
