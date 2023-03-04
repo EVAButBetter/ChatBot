@@ -36,7 +36,7 @@ class TemplateGeneratorSCGPT(TemplateGenerator):
 #                    # no_repeat_ngram_size=2,
 #                    repetition_penalty=1.0,
 #                    top_p=0.92,
-#                    temperature=.99,
+#                    temperature=1,
 #                    do_sample=True,
 #                    top_k=5,
 #                    early_stopping=True
