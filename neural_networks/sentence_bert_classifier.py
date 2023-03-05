@@ -43,7 +43,7 @@ class SentenceBERTClassifier:
                 return proba.argmax()
             elif return_type == 'proba':
                 max(proba).item()
-            return {'label': self.ids[proba.argmax()], 'prob': max(proba).item()}
+            return {'value': self.ids[proba.argmax()], 'prob': max(proba).item()}
 
 # from sentence_transformers import SentenceTransformer
 #
