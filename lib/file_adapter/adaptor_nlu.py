@@ -1,11 +1,11 @@
-from lib.file_adaptor.adaptor import FileAdaptor
+from lib.file_adapter.adapter import FileAdapter
 from lib.parsing.parser_yml import ParserYML
 import re
 
 NLU_RE = re.compile(r'\[(.+?)\]\((.+?)\)')
 
 
-class AdaptorIntentNLU(FileAdaptor):
+class AdapterIntentNLU(FileAdapter):
     def __init__(self, parser=ParserYML()):
         super().__init__(parser)
 
@@ -22,6 +22,6 @@ class AdaptorIntentNLU(FileAdaptor):
                 intents.append(intent)
         return cleaned_sentences, intents
 
-# x,y = AdaptorIntentNLU().convert('/Users/macbook_pro/Documents/GitHub/ChatBot/rasa_pipeline/data/nlu.yml')
+# x,y = AdapterIntentNLU().convert('/Users/macbook_pro/Documents/GitHub/ChatBot/rasa_pipeline/data/nlu.yml')
 # print(x)
 # print(y)
