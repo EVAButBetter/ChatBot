@@ -60,7 +60,7 @@ class SVM(Classifier):
     def predict(self, embedding):
         label = self.model.predict(embedding)
         prob = self.model.predict_proba(embedding)[0][label]
-        return {'label': label.tolist()[0], 'prob': prob.tolist()[0]}
+        return {'value': label.tolist()[0], 'prob': prob.tolist()[0]}
 
     def svm_grid_search(self, input, label, per, Cs_wide_range, gammas_wide_range):
         # split data

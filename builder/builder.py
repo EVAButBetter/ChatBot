@@ -10,8 +10,10 @@ class Builder:
         extracted_sentence_data = self.tools.extractor.extract_sent(preprocessed_text)
         print(extracted_sentence_data)
         sentence_embeddings = self.tools.embedder.encode(preprocessed_text)
-        intents = [self.tools.dialog_act_classifier.predict(emb.get('embedding')) for emb in sentence_embeddings]
-        return(intents)
+        print(sentence_embeddings)
+        # TODO: make list of dicts from sentences and embeddings
+        dialog_acts = [self.tools.dialog_act_classifier.predict(emb.get('embedding')) for emb in sentence_embeddings]
+        return(dialog_acts)
 
 
 # print(Builder(Tools()).build("Hello World. how are yo?"))

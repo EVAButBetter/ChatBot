@@ -1,5 +1,5 @@
 from lib.parsing.parser import Parser
-class FileAdaptor:
+class FileAdapter:
     def __init__(self,parser: Parser):
         self.parser = parser
 
