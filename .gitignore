@@ -80,3 +80,10 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+
+#Intent classification Data
+/intent_classification/datasets/data_full.json
+/intent_classification/datasets/domain.yml
+/intent_classification/datasets/generic.yml
+/intent_classification/datasets/glove.6B.100d.txt
+/intent_classification/datasets/train_set.csv
