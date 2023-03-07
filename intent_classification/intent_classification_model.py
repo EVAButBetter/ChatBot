@@ -7,7 +7,7 @@ from tensorflow import keras
 import pickle
 import pandas as pd
 from lib.file_adapter.adapter_nlu import AdapterIntentNLU
-from intent_classifier import Classifier
+from .intent_classifier import Classifier
 '''
 - 107s 312ms/step - loss: 0.1703 - acc: 0.9529 - val_loss: 0.4475 - val_acc: 0.9085
 train time: 35m
@@ -180,7 +180,7 @@ class IntentClassificationModel(Classifier):
 
     # **** PREDICT ****#
     def load_model(self, model_file):
-        self.model = keras.models.load_model(model_file)
+        self.model = keras.models.load_model(model_file,compile=False)
 
     def load_tokenizer(self, tokenizer_file):
         with open(tokenizer_file, 'rb') as file:
