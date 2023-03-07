@@ -18,6 +18,7 @@ async def get_msg(request: Request):
     data = await request.json()
     content = data["content"]
     content["isReceived"] = True
+    content["message"] = "vv"
     return content
 
 @pipeline_router.get("/test")
