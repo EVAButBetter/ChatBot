@@ -11,7 +11,7 @@ TASK_PREFIX = 'paraphrase | '
 
 
 class T5Model():
-    def __init__(self, model_name="igorktech/ent5-base-paraphraser"):
+    def __init__(self, model_name=MODEL_NAME):
         self.model = T5ForConditionalGeneration.from_pretrained(model_name)
         self.tokenizer = T5TokenizerFast.from_pretrained(model_name)
 
