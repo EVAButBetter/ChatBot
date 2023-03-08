@@ -1,0 +1,61 @@
+version: '3.1'
+
+intents:
+- affirm
+- bot_challenge
+- deny
+- department_info
+- faculty_info
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- professor_info
+- say_hello
+entities:
+- ORG
+- PERSON
+slots:
+  PERSON:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: PERSON
+      intent: professor_info
+  ORG:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: ORG
+      intent: department_info
+forms:
+  professor_form:
+    required_slots:
+    - PERSON
+  department_form:
+    required_slots:
+    - ORG
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a chat bot, I can provide the information about UPF.
+  utter_youarewelcome:
+  - text: You are very welcome.
+  utter_ask_PERSON:
+  - text: Please provide the professor's name
+  utter_ask_ORG:
+  - text: Please provide the department's name
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- action_department_info
+- action_faculty_info
+- action_hello_world
+- action_professor_info
+- action_slot_reset

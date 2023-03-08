@@ -1,0 +1,47 @@
+version: "3.1"
+
+rules:
+
+- rule: rule 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: rule 2
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: rule 3
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+- rule: ask faculty information
+  steps:
+    - intent: faculty_info
+    - action: action_faculty_info
+    - action: action_slot_reset
+    
+# - rule: consult professor info
+#   steps:
+#     - intent: professor_info
+#     - action: action_professor_info
+#     - action: action_slot_reset
+
+# - rule: consult department info
+#   steps:
+#     - intent: department_info
+#     - action: action_department_info
+#     - action: action_slot_reset
+
+
+# - rule: Activate form
+#   steps:
+#   - intent: professor_info
+#   - action: professor_form
+#   - active_loop: professor_form
+#   - intent: professor_info
+#   - action: action_professor_info
+#   - action: action_slot_reset
