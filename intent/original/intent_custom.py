@@ -56,9 +56,9 @@ class IntentCustom(IntentObject):
             inform_str += f"{slot_name} = {value.get('value')} ; "
         return inform_str + " )" + separator
 
-test_obj = IntentCustom({}, {'value': 'course_info'}, {'label': 'qw', 'prob': 0.965216875076294})
-print(test_obj.slots)
-print(test_obj.dialog_act)
-test_obj.update_slots({'data': [{'entity': 'PERSON', 'start': 40, 'end': 63,
-                               'value': 'Bonada Sanjaume Jordi ?', 'extractor': 'SpaCy'}]})
-print(test_obj.slots)
+# test_obj = IntentCustom({}, {'value': 'course_info'}, {'label': 'qw', 'prob': 0.965216875076294})
+# print(test_obj.slots)
+# print(test_obj.dialog_act)
+# test_obj.update_slots({'data': [{'entity': 'PERSON', 'start': 40, 'end': 63,
+#                                'value': 'Bonada Sanjaume Jordi ?', 'extractor': 'SpaCy'}]})
+# print(test_obj.slots)

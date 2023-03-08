@@ -1,0 +1,209 @@
+inform ( professor_name = lobo jorge ; location = 55.110 ; group = artificial intelligence and machine learning ) & sure, the professor lobo jorge works in the group artificial intelligence and machine learning, you can find the professor in building 55, office 110
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = lobo jorge ) & ok, please let me confirm, you want to know the information about professor lobo jorge?
+
+inform ( professor_name = porcaro lorenzo ; location = 55.318 ; group = music technology ) & sure, the professor porcaro lorenzo works in the group music technology, you can find the professor in building 55, office 318.
+request ( professor_name = ? ) & sure, could you tell me which professor you want to ask?
+confirm ( professor_name = porcaro lorenzo ) & ok, please let me confirm, you want to know the information about professor porcaro lorenzo?
+
+inform ( professor_name = figuls fernandez nuria ; location = 55.018 ; group = polytechnic school ) & sure, professor nuria figuls fernandez's office is located at building 55, office 018 in the polytechnic school. is there anything else i can help you with?
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = figuls fernandez nuria ) & ok, please let me confirm, you want to know the information about professor figuls fernandez nuria?
+
+inform ( professor_name = freire veiga ana maria ; location = 55.110 ; group = artificial intelligence and machine learning  ) & sure, professor freire veiga ana maria's office is located at building 55, office 110 in web science and social computing. is there anything else i can help you with?
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = freire veiga ana maria ) & ok, please let me confirm, you want to know the information about professor freire veiga ana maria?
+
+inform ( professor_name = ronda carrasco manuel ; location = 55.223 ; group = research service ) & sure, the professor ronda carrasco manuel works in the group research service, you can find the professor in building 55, office 110
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = ronda carrasco manuel ) & ok, please let me confirm, you want to know the information about professor ronda carrasco manuel?
+
+inform ( professor_name = gasparrini marco jerome ; location = 55.130 ; group = artificial intelligence and machine learning group ) & sure, the professor ronda carrasco manuel works in the group artificial intelligence and machine learning group, you can find the professor in building 55, office 130
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = gasparrini marco jerome ) & ok, please let me confirm, you want to know the information about professor gasparrini marco jerome?
+
+inform ( professor_name = guillen fabregas albert ; location = 55.222 ; group = information theory and coding group ) & sure, the professor guillen fabregas albert works in the group information theory and coding group, you can find the professor in building 55, office 222
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = guillen fabregas albert ) & ok, please let me confirm, you want to know the information about professor guillen fabregas albert?
+
+inform ( professor_name = blat gimeno jose angel ; location = 55.126 ; group = interactive technologies group ) & sure, the professor blat gimeno jose angel works in the group interactive technologies group, you can find the professor in building 55, office 126
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = blat gimeno jose angel ) & ok, please let me confirm, you want to know the information about professor blat gimeno jose angel?
+
+inform ( professor_name = eremenko vsevolod ; location = 55.302 ; group = music technology ) & sure, the professor eremenko vsevolod works in the group music technology, you can find the professor in building 55, office 302
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = eremenko vsevolod ) & ok, please let me confirm, you want to know the information about professor eremenko vsevolod?
+
+inform ( professor_name = zhu tiange ; location = 55.302 ; group = music technology ) & sure, the professor zhu tiange works in the group music technology, you can find the professor in building 55, office 302.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = zhu tiange ) & ok, please let me confirm, you want to know the information about professor zhu tiange?
+
+inform ( professor_name = favory xavier ; location = 55.306 ; group = music technology ) &
+ sure, the professor favory xavier works in the group music technology group, you can find the professor in building 55, office 306.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = favory xavier ) & ok, please let me confirm, you want to know the information about professor favory xavier?
+
+inform ( professor_name = alonso jimenez pablo ; location = 55.308 ; group = music technology ) & sure, the professor alonso jimenez pablo works in the group music technology, you can find the professor in building 55, office 308.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = alonso jimenez pablo ) & ok, please let me confirm, you want to know the information about professor alonso jimenez pablo?
+
+inform ( professor_name = bogdanov dmitry ; location = 55.308 ; group = music technology ) & sure, the professor bogdanov dmitry works in the group music technology, you can find the professor in building 55, office 308.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = bogdanov dmitry ) & ok, please let me confirm, you want to know the information about professor bogdanov dmitry?
+
+inform ( professor_name = martorell dominguez agustin ; location = 55.314 ; group = music technology ) & sure, the professor martorell dominguez agustin works in the group music technology, you can find the professor in building 55, office 314.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = martorell dominguez agustin ) & ok, please let me confirm, you want to know the information about professor martorell dominguez agustin?
+
+inform ( professor_name = baeza yates ricardo alberto ; location = 55.228 ; group = web science and social computing ) & sure, the professor baeza yates ricardo alberto works in the group web science and social computing, you can find the professor in building 55, office 228.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = baeza yates ricardo alberto ) & ok, please let me confirm, you want to know the information about professor baeza yates ricardo alberto?
+
+inform ( professor_name = rauschenberger maria ; location = 55.215 ; group = web science and social computing ) & sure, the professor rauschenberger maria works in the group web science and social computing, you can find the professor in building 55, office 215.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = rauschenberger maria ) & ok, please let me confirm, you want to know the information about professor rauschenberger maria?
+
+inform ( professor_name = ramirez cifuentes diana michelle ; location = 55.215 ; group = web science and social computing ) & sure, the professor ramirez cifuentes diana michelle works in the group web science and social computing, you can find the professor in building 55, office 215.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = ramirez cifuentes diana michelle ) & ok, please let me confirm, you want to know the information about professor ramirez cifuentes diana michelle?
+
+inform ( professor_name = karimihaghigi marzieh ; location = 55.215 ; group = web science and social computing ) & sure, the professor karimihaghigi marzieh works in the group web science and social computing, you can find the professor in building 55, office 215.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = karimihaghigi marzieh ) & ok, please let me confirm, you want to know the information about professor karimihaghigi marzieh?
+
+inform ( professor_name = galella toledo santiago ; location = 55.215 ; group = web science and social computing ) & sure, the professor galella toledo santiago works in the group web science and social computing, you can find the professor in building 55, office 215.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = galella toledo santiago ) & ok, please let me confirm, you want to know the information about professor galella toledo santiago?
+
+inform ( professor_name = freire veiga ana maria ; location = 55.215 ; group = web science and social computing ) & sure, the professor freire veiga ana maria works in the group web science and social computing, you can find the professor in building 55, office 215.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = freire veiga ana maria ) & ok, please let me confirm, you want to know the information about professor freire veiga ana maria?
+
+inform ( professor_name = castillo ocaranza carlos alberto alejandro ; location = 55.201 ; group = web science and social computing ) & sure, the professor castillo ocaranza carlos alberto alejandro works in the group web science and social computing, you can find the professor in building 55, office 201.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = castillo ocaranza carlos alberto alejandro ) & ok, please let me confirm, you want to know the information about professor castillo ocaranza carlos alberto alejandro?
+
+inform ( professor_name = bel pereira albert ; location = 55.228 ; group = wireless networking ) & sure, professor bel pereira albert works in the wireless networking group, you can find the professor in building 55, office 228.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = bel pereira albert ) & ok, please let me confirm, you want to know the information about professor bel pereira albert?
+
+inform ( professor_name = adame vazquez antonio ; location = 55.228 ; group = wireless networking ) & sure, professor adame vazquez antonio works in the wireless networking group, you can find the professor in building 55, office 228.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = adame vazquez antonio ) & ok, please let me confirm, you want to know the information about professor adame vazquez antonio?
+
+inform ( professor_name = lozano solsona angel ; location = 55.218 ; group = wireless networking ) & sure, professor lozano solsona angel works in the wireless networking group, you can find the professor in building 55, office 218.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = lozano solsona angel ) & ok, please let me confirm, you want to know the information about professor lozano solsona angel?
+
+inform ( professor_name = rafols salvador carla ; location = 55.216 ; group = wireless networking ) & sure, professor rafols salvador carla works in the wireless networking group, you can find the professor in building 55, office 216.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = rafols salvador carla ) & ok, please let me confirm, you want to know the information about professor rafols salvador carla?
+
+inform ( professor_name = daza fernandez vanesa ; location = 55.216 ; group = wireless networking ) & sure, professor daza fernandez vanesa works in the wireless networking group, you can find the professor in building 55, office 216.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = daza fernandez vanesa ) & ok, please let me confirm, you want to know the information about professor daza fernandez vanesa?
+
+inform ( professor_name = nikbakht silab rasoul ; location = 55.210 ; group = wireless networking ) & sure, professor nikbakht silab rasoul works in the wireless networking group, you can find the professor in building 55, office 210.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = nikbakht silab rasoul ) & ok, please let me confirm, you want to know the information about professor nikbakht silab rasoul?
+
+inform ( professor_name = franzoni federico ; location = 55.210 ; group = wireless networking ) & sure, professor franzoni federico works in the wireless networking group, you can find the professor in building 55, office 210.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = franzoni federico ) & ok, please let me confirm, you want to know the information about professor franzoni federico?
+
+inform ( professor_name = bellalta jimenez boris ; location = 55.202 ; group = wireless networking ) & sure, professor bellalta jimenez boris works in the wireless networking group, you can find the professor in building 55, office 202.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = bellalta jimenez boris ) & ok, please let me confirm, you want to know the information about professor bellalta jimenez boris?
+
+inform ( professor_name = wilhelmi roca francisco jose ; location = 55.208 ; group = wireless networking ) & sure, professor wilhelmi roca francisco jose works in the wireless networking group, you can find the professor in building 55, office 208.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = wilhelmi roca francisco jose ) & ok, please let me confirm, you want to know the information about professor wilhelmi roca francisco jose?
+
+inform ( professor_name = serrano raguán montserrat ; location = 55.018 ; group = research promotion & activities ) & sure, professor serrano raguán montserrat works in the research promotion & activities group, you can find the professor in building 55, office 018.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = serrano raguán montserrat ) & ok, please let me confirm, you want to know the information about professor serrano raguán montserrat?
+
+inform ( professor_name = clotet sule joana ; location = 55.020 ; group = research promotion & activities ) & sure, professor clotet sule joana works in the research promotion & activities group, you can find the professor in building 55, office 020.
+request ( professor_name = ? ) & sure, could you tell me the name of the professor you want to know?
+confirm ( professor_name = clotet sule joana ) & ok, please let me confirm, you want to know the information about professor clotet sule joana?
+
+inform ( department_name = Natural Language Processing ; information = 20 professors ) & Sure, Natural Language Processing is a department in UPF, there are 20 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Artificial Intelligence and Machine Learning ; information = 16 professors ) & Sure, Artificial Intelligence and Machine Learning is a department in UPF, there are 16 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Biomedical Electronics ; information = 15 professors ) & Sure, Biomedical Electronics is a department in UPF, there are 15 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Cognitive Media Technologies ; information = 15 professors ) & Sure, Cognitive Media Technologies is a department in UPF, there are 15 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Computational Neuroscience ; information = 1 professors ) & Sure, Computational Neuroscience is a department in UPF, there is 1 professor working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Image processing for enhanced cinematography ; information = 7 professors ) & Sure, Image processing for enhanced cinematography is a department in UPF, there are 7 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Image Processing ; information = 10 professors ) & Sure, Image Processing Group is a department in UPF, there are 10 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Information Theory and Coding ; information = 6 professors ) & Sure, Information Theory and Coding is a department in UPF, there are 20 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Interactive Technologies ; information = 10 professors ) & Sure, Interactive Technologies is a department in UPF, there are 10 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Music Technology ; information = 48 professors ) & Sure, Music Technology is a department in UPF, there are 48 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Network Technologies and Strategies Group ; information = 1 professor ) & Sure, Natural Language Processing is a department in UPF, there is 1 professor working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Nonlinear Time Series Analysis ; information = 6 professors ) & Sure,Nonlinear Time Series Analysis is a department in UPF, there are 6 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Physense: Sensing in Physiology and Biomedicine Group ; information = 10 professors ) & Sure, Physense: Sensing in Physiology and Biomedicine Group is a department in UPF, there are 10 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Research Service ; information = 20 professors ) & Sure, Research Service is a department in UPF, there are 3 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+
+inform ( department_name = Simulation Imaging and Modelling for Biomedical Systems ; information = 18 professors ) & Sure, Simulation Imaging and Modelling for Biomedical Systems is a department in UPF, there are 18 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Interactive and Distributed Technologies for Education ; information = 7 professors ) & Sure, Interactive and Distributed Technologies for Education is a department in UPF, there are 7 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Ubiquitous Computing Applications Lab ; information = 4 professors ) & Sure, Ubiquitous Computing Applications Lab is a department in UPF, there are 4 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know
+
+inform ( department_name = Pedagogue in USQUID ; information = 1 professor ) & Sure, Natural Language Processing is a department in UPF, there are 20 professor working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Head of the Management and Administration  Unit ; information = 1 professor ) & Sure, Head of the Management and Administration  Unit is a department in UPF, there is 1 professor working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Polytechnic School ; information = 4 professors ) & Sure, Polytechnic School is a department in UPF, there are 4 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Recruitment  Docorate and International ; information = 2 professors ) & Sure, Recruitment  Docorate and International is a department in UPF, there are 2 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Research Promotion and Activities ; information = 7 professors ) & Sure, Research Promotion and Activities is a department in UPF, there are 2 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Wireless Networking ; information = 14 professors ) & Sure, Wireless Networking is a department in UPF, there are 14 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+inform ( department_name = Web Science and Social Computing ; information = 8 professors ) & Sure, Web Science and Social Computing is a department in UPF, there are 8 professors working there.
+request ( department_name = ? ) & sure, could you tell me the name of the department you want to know?
+
+
+
+
+
+
+
+
