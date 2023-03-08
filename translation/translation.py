@@ -1,4 +1,4 @@
-# Dummi file (adaptor) stores user lang
+# Dummy file (adaptor) stores user lang
 # Could be added more features
 
 class Translator():
