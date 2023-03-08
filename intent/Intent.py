@@ -18,6 +18,12 @@ class Intent:
         
         """
         
+    # def remove_slot():
+    #     """
+    #     remove value from slot,
+        
+    #     """
+        
     def check_value():
         """
         check whether the <slot,value> is existed in the database
