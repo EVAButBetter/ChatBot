@@ -40,7 +40,7 @@ class AiIntent(Intent):
         self.config = self.parser.parse(self.CONFIG_DIR)
         self.slots = self.config[self.name]["slots"]
 
-    def get_slot(self, slot_name):
+    def get_slot(self, slot_name): #TODO: different slots have different values i.e. self.slots[slot_name].values() are different
         (type, initial_value, action, mappings, isFilled, value) = self.slots[slot_name].values()
         
         return type, initial_value, action, mappings, isFilled, value
