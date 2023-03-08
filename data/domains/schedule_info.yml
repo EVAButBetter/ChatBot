@@ -1,0 +1,11 @@
+schedule_info:
+  slots:
+    course_name:
+      type: text
+      initial_value: <REQUEST>
+      mappings:
+        - type: from_entity
+          entity: COURSE #TODO: Add new label to spacy
+    information:
+      type: text
+      action: find_schedule_info, course_name

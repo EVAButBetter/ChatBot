@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
 from fastapi import Request
+
 class Message(BaseModel):
     isReceived: bool
     type: str

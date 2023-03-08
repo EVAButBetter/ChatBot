@@ -1,0 +1,11 @@
+department_info:
+  slots:
+    department_name:
+      type: text
+      initial_value: <REQUEST>
+      mappings:
+        - type: from_entity
+          entity: ORG
+    information:
+      type: text
+      action: find_department_info, department_name

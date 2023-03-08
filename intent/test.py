@@ -1,29 +1,19 @@
-import yaml
+import argparse
+from ai_intent.Professor import Professor
 
-def get_intent_slots(intent_name):
-    with open("/Users/macbook_pro/Documents/GitHub/ChatBot/rasa_pipeline/domain.yml", "r") as f:
-        domain = yaml.safe_load(f)
-        slots = domain.get("slots", {})
-        intent_slots = {}
-        print(domain.get("intents", {}))
-        # for intent, intent_data in domain.get("intents", {}).items():
-        #     if intent == intent_name:
-        #         intent_slots = intent_data.get("slots", {})
-        #         break
-        result = {}
-        for slot_name, slot_data in slots.items():
-            for mapping in slot_data.get('mappings', []):
-                if intent_name == mapping.get('intent'):
-                    slot_value = {
-                        "type": slot_data.get('type'),
-                        'value': slot_data.get('initial_value'),
-                        "mappings": mapping,
-                    }
-                    result[slot_name] = slot_value
-        return result
+#
+# for testing, useless
+#
 
 
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--method", required=False, type=str, default="get_slot")
+    parser.add_argument("--intent", required=False, type=str, default="Professor")
+    opt = parser.parse_args()
 
-intent_name = "professor_info"
-intent_slots = get_intent_slots(intent_name)
-print(intent_slots)
+    cls = globals()[opt.intent]()
+    func = getattr(cls, opt.method)
+    res = func()
+    print(type(res))
+    print(res)

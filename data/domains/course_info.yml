@@ -1,0 +1,12 @@
+course_info:
+  slots:
+    course_name:
+      type: text
+      initial_value: <REQUEST>
+      action: find_names, location
+      mappings:
+        - type: from_entity
+          entity: COURSE #Add new label to spacy
+    information:
+      type: text
+      action: find_course_info, course_name

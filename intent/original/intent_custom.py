@@ -1,3 +1,5 @@
+import sys
+sys.path.append("..")
 from lib.parsing.parser import Parser
 from lib.parsing.parser_yml import ParserYML
 from intent.intent_object import IntentObject
