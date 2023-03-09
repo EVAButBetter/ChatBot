@@ -11,18 +11,11 @@ class Intent:
         
         """
         
-    
     def fill_slot():
         """
         set value to a specific slot,provide the slot_name, slot_value
         
         """
-        
-    # def remove_slot():
-    #     """
-    #     remove value from slot,
-        
-    #     """
         
     def check_value():
         """
@@ -54,8 +47,14 @@ class Intent:
         
         """
         
-    def release():
-        """
-        release the resource, prepare for the next question
+    # def release():
+    #     """
+    #     release the resource, prepare for the next question
         
-        """
+    #     """
+    
+    # def remove_slot():
+    #     """
+    #     remove value from slot,
+        
+    #     """
