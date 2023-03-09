@@ -34,25 +34,23 @@ class AiIntent(Intent):
         self.FILE_DIR = "../data/"
         
         self.DATABASE = self.FILE_DIR + "database/" + database + ".csv"
-        self.data = pd.read_csv(self.DATABASE)
-        
+        self.data = pd.read_csv(self.DATABASE, sep=";")
         self.CONFIG_DIR = self.FILE_DIR + "domains/domain.yml"
         self.config = self.parser.parse(self.CONFIG_DIR)
-        self.slots = self.config[self.name]["slots"]
+        self.slots = self.config["intents"][self.name]["slots"]
 
-    def get_slot(self, slot_name): #TODO: different slots have different values i.e. self.slots[slot_name].values() are different
-        (type, initial_value, action, mappings, isFilled, value) = self.slots[slot_name].values()
+    def get_slot(self, slot_name):
+        (type, initial_value, action, mappings) = self.slots[slot_name].values()
         
-        return type, initial_value, action, mappings, isFilled, value
+        return type, initial_value, action, mappings
 
     def fill_slot(self, slot_name, slot_value):
         if self.confirm(slot_name, slot_value) is False:
             return
         if self.check_value(slot_name, slot_value) is False:
             return False
-        self.slots[slot_name]["isFilled"] = True
-        self.slots[slot_name]["value"] = slot_value
-        print(self.slots[slot_name])
+        self.slots[slot_name]["initial_value"] = None
+        print("current slot value: ", self.slots[slot_name])
         return True
 
     def check_value(self, slot_name, slot_value):
@@ -91,6 +89,3 @@ class AiIntent(Intent):
             # res = text_generation_function(self.name, slot_name, slot_value)
             # return res
 
-    def release(self):
-        self.config = self.parser.parse(self.CONFIG_DIR)
-        self.slots = self.config[self.name]["slots"]

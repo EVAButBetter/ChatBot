@@ -126,7 +126,7 @@ class ExtractorSpaCy(Extractor):
             print("Saved model to", output_dir)
 
 
-# ExtractorSpaCy().train_ner('/Users/macbook_pro/Documents/GitHub/EVAButBetter/models/ner',
-#                            '/Users/macbook_pro/Documents/GitHub/EVAButBetter/rasa_pipeline/data/nlu.yml')
+# ExtractorSpaCy().train_ner('/Users/macbook_pro/Documents/GitHub/ChatBot/models/ner',
+#                            '/Users/macbook_pro/Documents/GitHub/ChatBot/rasa_pipeline/data/nlu.yml')
 # print(ExtractorSpaCy().convert_rasa_to_spacy(
-#     '/Users/macbook_pro/Documents/GitHub/EVAButBetter/rasa_pipeline/data/nlu.yml'))
+#     '/Users/macbook_pro/Documents/GitHub/ChatBot/rasa_pipeline/data/nlu.yml'))

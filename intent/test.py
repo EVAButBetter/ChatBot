@@ -1,5 +1,4 @@
-import argparse
-from ai_intent.Professor import Professor
+from ai_intent.AiIntent import AiIntent
 
 #
 # for testing, useless
@@ -7,13 +6,11 @@ from ai_intent.Professor import Professor
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--method", required=False, type=str, default="get_slot")
-    parser.add_argument("--intent", required=False, type=str, default="Professor")
-    opt = parser.parse_args()
-
-    cls = globals()[opt.intent]()
-    func = getattr(cls, opt.method)
-    res = func()
-    print(type(res))
+    # professor = AiIntent("professor_info","PROFESSOR")
+    # res = professor.fill_slot("NAME","LOBO JORGE")
+    # print(res)
+    
+    course = AiIntent("course_info","COURSE")
+    res = course.get_slot("PRICE")
+    res = course.get_slot("PRICE")
     print(res)
