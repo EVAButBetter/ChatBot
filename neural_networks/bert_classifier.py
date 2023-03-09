@@ -61,7 +61,7 @@ class BERTClassifier:
             return proba.argmax()
         elif return_type == 'proba':
             max(proba)
-        return {'label': self.ids[proba.argmax()], 'prob': max(proba)}
+        return {'value': self.ids[proba.argmax()], 'prob': max(proba)}
 
 # import time
 #
