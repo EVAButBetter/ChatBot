@@ -10,7 +10,11 @@ if __name__ == "__main__":
     # res = professor.fill_slot("NAME","LOBO JORGE")
     # print(res)
     
-    course = AiIntent("course_info","COURSE")
-    res = course.get_slot("PRICE")
-    res = course.get_slot("PRICE")
-    print(res)
+    course = AiIntent("professor_info","PROFESSOR")
+    course.fill_slot("NAME","LOBO , JORGE")
+    course.fill_slot("OFFICE","55110")
+    course.inform()
+    # if res is not True:
+    #     course.request(res)
+        
+    # res = course.get_slot("PRICE")

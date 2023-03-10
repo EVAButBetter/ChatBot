@@ -5,9 +5,15 @@ class Intent:
     def __init__(self) -> None:
         pass
         
-    def get_slot(self):
+    def get_slot():
         """
         get slot value from a specific intent. provide the slot_name, return a tuple contains all the details
+        
+        """
+        
+    def get_all_slots():
+        """
+        get all non-empty slots' value from a specific intent.
         
         """
         
@@ -23,25 +29,25 @@ class Intent:
         
         """
     
-    def check_slot(self):
+    def check_slot():
         """
         check whether all the required slots have already been filled
         
         """
         
-    def request(self):
+    def request():
         """
         request information from user.
         
         """
         
-    def confirm(self):
+    def confirm():
         """
         confirm the user's input
         
         """
         
-    def inform(self):
+    def inform():
         """
         inform the user all the information about this intent
         
