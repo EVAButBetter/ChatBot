@@ -53,7 +53,7 @@ class AiIntent(Intent):
             return False
         self.slots[slot_name]["initial_value"] = None
         self.slots[slot_name]["value"] = slot_value
-        print("current slot value: ", self.slots[slot_name])
+        # print("current slot value: ", self.slots[slot_name])
         return True
 
     def check_value(self, slot_name, slot_value):
