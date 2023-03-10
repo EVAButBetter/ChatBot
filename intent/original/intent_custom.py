@@ -2,16 +2,16 @@ from lib.parsing.parser import Parser
 from lib.parsing.parser_yml import ParserYML
 from intent.original.intent_object import IntentObject
 
-DOMAIN_PATH = "../../data/domains/"
+DOMAIN_PATH = "../../data/domains/domain.yml"
 
 
 class IntentCustom(IntentObject):
     def __init__(self, sentence_data, intent, dialog_act, parser: Parser = ParserYML()):
         super().__init__(sentence_data, intent, dialog_act)
         self.update_count = 0
-        raw_data = parser.parse(DOMAIN_PATH + f"{self.intent['value']}.yml")
-
-        for slot_name, slot_data in raw_data.get(self.intent['value']).get('slots').items():
+        raw_data = parser.parse(DOMAIN_PATH)
+        intent = raw_data['intents']
+        for slot_name, slot_data in intent.get(self.intent['value']).get('slots').items():
             slot_value = {
                 "type": slot_data.get('type'),
                 'value': slot_data.get('initial_value'),
