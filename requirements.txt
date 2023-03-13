@@ -170,3 +170,5 @@ Werkzeug==2.2.2
 wrapt==1.14.1
 yarl==1.8.2
 zipp==3.11.0
+
+pandas~=1.5.3
