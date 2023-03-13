@@ -1,6 +1,7 @@
 import json
 import importlib, inspect
 
+MODULE_PATH = "data.actions."
 class IntentToAction:
     def __init__(self, actions_db_dir):
         self.actions_db_dir = actions_db_dir
@@ -19,7 +20,7 @@ class IntentToAction:
 
     def run_action(self, action_obj):
 
-        module_name = "text_generator.actions." + action_obj["action"]  # the name of the module to import
+        module_name = MODULE_PATH + action_obj["action"]  # the name of the module to import
         module = importlib.import_module(module_name)  # import the module
 
         # Get a list of all the attributes defined in the module

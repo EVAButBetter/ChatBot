@@ -18,6 +18,9 @@ train time: 2m
 The domain model accuracy is 96.4%
 '''
 
+ids = ['professor_info','course_info','opening_close_hours_info','department_info', 'faculty_info', 'schedule_info']
+def  index2id(index):
+    ids[index-1]
 
 class IntentClassificationModel(Classifier):
     def __init__(self, embedder_train_data_path, domain_dataset_path):

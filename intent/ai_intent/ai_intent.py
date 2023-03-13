@@ -72,7 +72,7 @@ class AiIntent(Intent):
                 yield (slot_name, slot["value"])
 
     def check_info(self):
-        # check correctness of info in db through actions
+        # check correctness of info in db through actions_slots
         for slot_name, value in self.slots.items():
             if value.get('value') is None or '<REQUEST>' and value.get('action') is not None:
                 function_name, parameter_names = value['action'].split(",")

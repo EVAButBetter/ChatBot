@@ -4,10 +4,10 @@ from intent_classification.intent_classification_model import IntentClassificati
 from text_generator.intent_to_action import IntentToAction
 import sys
 
-
+generic_dataset_path = "./datasets/data_full.json"
+embedder_train_dataset_path = "./datasets/glove.6B.100d.txt"
 def load_intent_classifiers():
-    generic_dataset_path = "./datasets/data_full.json"
-    embedder_train_dataset_path = "./datasets/glove.6B.100d.txt"
+
     intent_classification_generic = IntentClassificationModel(embedder_train_dataset_path, generic_dataset_path)
     intent_classification_generic.load_model(model_file="./intent_classification/models/generic_intent_classifier.h5")
     intent_classification_generic.load_tokenizer(tokenizer_file="./intent_classification/utils/generic_tokenizer.pkl")
