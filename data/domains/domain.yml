@@ -1,279 +1,358 @@
 version: "3.1"
 
-
 intents:
-  #course NAME;PRICE;FACULTY;CREDITS;DESCRIPTION;PLACES;SCHEDULE;CAMPUS
   course_info:
     slots:
-      NAME:
+      course_name:
         type: text
         initial_value: <REQUEST>
-        action: find_names, location
+        action_slot: find_names, location
         mappings:
           - type: from_entity
             entity: COURSE #Add new label to spacy
-        required: True
-        value: None
-          
-      PRICE:
+      information:
         type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
+        action_slot: find_course_info, course_name
 
-      FACULTY:
-        type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
-
-      CREDITS:
-        type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
-
-      DESCRIPTION:
-        type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
-
-      PLACES:
-        type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
-
-      SCHEDULE:
-        type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
-            
-      CAMPUS:
-        type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
-
-  #professor NAME;GROUP;OFFICE
   professor_info:
     slots:
-      NAME:
+      name:
         type: text
         initial_value: <REQUEST>
-        action: find_names, location
+        action_slot: find_names, location
         mappings:
           - type: text
             entity: PERSON
-        required: True
-        value: None
 
-      OFFICE:
+      location:
         type: text
         initial_value: <REQUEST>
-        action: find_location_info, name
+        action_slot: find_location_info, name
         mappings:
           - type: from_entity
             entity: FAC
-        required: False
-        value: None
 
-      GROUP:
-        type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
-
-  #department NAME;INFO
   department_info:
     slots:
-      NAME:
+      department_name:
         type: text
         initial_value: <REQUEST>
-        action: None
         mappings:
           - type: from_entity
             entity: ORG
-        required: True
-        value: None
-
-      INFO:
+      information:
         type: text
-        initial_value: <REQUEST>
-        action: find_department_info, department_name
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
+        action_slot: find_department_info, department_name
 
-  #campus NAME;LOCATION;CONTACT;BUILDINGS;OPENING_CLOSE_HOURS;HOW_TO_GET;LINK
-  campus_info:
+  faculty_info:
     slots:
-      NAME:
+      faculty_name:
         type: text
         initial_value: <REQUEST>
         mappings:
           - type: from_entity
             entity: FAC
-        required: True
-        value: None
-
-      LOCATION:
+      information:
         type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
+        action_slot: find_faculty_info, faculty_name
 
-      CONTACT:
-        type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
-      
-      BUILDINGS:
-        type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
-
-      OPENING_CLOSE_HOURS:
-        type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
-
-      HOW_TO_GET:
-        type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
-
-      LINK:
-        type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
-
-  #schedule NAME;THEORY;SEMINAR;PRACTICE
   schedule_info:
     slots:
-      NAME:
+      course_name:
         type: text
         initial_value: <REQUEST>
         mappings:
           - type: from_entity
-            entity: COURSE #TODO: Add new label to spacy
-        required: True
-        value: None
-
-      THEORY:
+            entity: COURSE
+      information:
         type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
+        action_slot: find_schedule_info, course_name
 
-      SEMINAR:
-        type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
-
-      PRACTICE:
-        type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
-
-  #opening NAME;OPENING_CLOSE_HOURS
   close_open_time_info:
     slots:
-      NAME:
+      course_name:
         type: text
         initial_value: <REQUEST>
-        action: find_names, location
+        action_slot: find_names, location
         mappings:
           - type: from_entity
-            entity: COURSE #TODO: Add new label to spacy
-        required: True
-        value: None
-
-      OPENING_CLOSE_HOURS:
+            entity: COURSE
+      information:
         type: text
-        initial_value: <REQUEST>
-        action: None
-        mappings:
-          - type: None
-            entity: None
-        required: False
-        value: None
+        action_slot: find_close_open_time_info, course_name
+#intents:
+#  #course NAME;PRICE;FACULTY;CREDITS;DESCRIPTION;PLACES;SCHEDULE;CAMPUS
+#  course_info:
+#    slots:
+#      NAME:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: find_names, location
+#        mappings:
+#          - type: from_entity
+#            entity: COURSE #Add new label to spacy
+#        required: True
+#        value: None
+#
+#      PRICE:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#      location:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#      CREDITS:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#      DESCRIPTION:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#      PLACES:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#      SCHEDULE:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#      CAMPUS:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#  #professor NAME;GROUP;OFFICE
+#  professor_info:
+#    slots:
+#      NAME:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: find_names, location
+#        mappings:
+#          - type: text
+#            entity: PERSON
+#        required: True
+#        value: None
+#
+#      OFFICE:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: find_location_info, name
+#        mappings:
+#          - type: from_entity
+#            entity: FAC
+#        required: False
+#        value: None
+#
+#      GROUP:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#  #department NAME;INFO
+#  department_info:
+#    slots:
+#      department_name:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: from_entity
+#            entity: ORG
+#        required: True
+#        value: None
+#
+#      department_info:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: find_department_info, department_name
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#  #campus NAME;LOCATION;CONTACT;BUILDINGS;OPENING_CLOSE_HOURS;HOW_TO_GET;LINK
+#  campus_info:
+#    slots:
+#      NAME:
+#        type: text
+#        initial_value: <REQUEST>
+#        mappings:
+#          - type: from_entity
+#            entity: FAC
+#        required: True
+#        value: None
+#
+#      LOCATION:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#      CONTACT:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#      BUILDINGS:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#      OPENING_CLOSE_HOURS:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#      HOW_TO_GET:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#      LINK:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#  #schedule NAME;THEORY;SEMINAR;PRACTICE
+#  schedule_info:
+#    slots:
+#      NAME:
+#        type: text
+#        initial_value: <REQUEST>
+#        mappings:
+#          - type: from_entity
+#            entity: COURSE #TODO: Add new label to spacy
+#        required: True
+#        value: None
+#
+#      THEORY:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#      SEMINAR:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#      PRACTICE:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None
+#
+#  #opening NAME;OPENING_CLOSE_HOURS
+#  close_open_time_info:
+#    slots:
+#      NAME:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: find_names, location
+#        mappings:
+#          - type: from_entity
+#            entity: COURSE #TODO: Add new label to spacy
+#        required: True
+#        value: None
+#
+#      OPENING_CLOSE_HOURS:
+#        type: text
+#        initial_value: <REQUEST>
+#        action_slot: None
+#        mappings:
+#          - type: None
+#            entity: None
+#        required: False
+#        value: None

@@ -93,7 +93,7 @@ class AiIntent(Intent):
         # return res
         
         # e.g.
-        confirm_text = "confirm({}={})".format(slot_name, slot_value)
+        confirm_text = "confirm ( {} = {} )".format(slot_name, slot_value)
         print("{}:{}".format(self.name,confirm_text))
         return True
     

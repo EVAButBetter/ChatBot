@@ -8,7 +8,7 @@ DOMAIN_PATH = "../../data/domains/domain.yml"
 class IntentCustom(IntentObject):
     def __init__(self, sentence_data, intent, dialog_act, parser: Parser = ParserYML()):
         super().__init__(sentence_data, intent, dialog_act)
-        self.update_count = 0
+
         raw_data = parser.parse(DOMAIN_PATH)
         intent = raw_data['intents']
         for slot_name, slot_data in intent.get(self.intent['value']).get('slots').items():
@@ -59,6 +59,6 @@ class IntentCustom(IntentObject):
 # test_obj = IntentCustom({}, {'value': 'course_info'}, {'label': 'qw', 'prob': 0.965216875076294})
 # print(test_obj.slots)
 # print(test_obj.dialog_act)
-# test_obj.update_slots({'data': [{'entity': 'PERSON', 'start': 40, 'end': 63,
-#                                'value': 'Bonada Sanjaume Jordi ?', 'extractor': 'SpaCy'}]})
+test_obj.update_slots({'data': [{'entity': 'PERSON', 'start': 40, 'end': 63,
+                               'value': 'Bonada Sanjaume Jordi ?', 'extractor': 'SpaCy'}]})
 # print(test_obj.slots)
