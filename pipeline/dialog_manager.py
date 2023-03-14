@@ -3,4 +3,6 @@ class DialogManager:
         pass
 
     def update(self, sentence_data):
+        pass
+
 

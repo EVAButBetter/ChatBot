@@ -30,14 +30,14 @@ class TemplateGeneratorSCGPT(TemplateGenerator):
         output_text = self.model.tokenizer.batch_decode(inputs, skip_special_tokens=True)
         return output_text
 
-print(TemplateGeneratorSCGPT().generate_from_template('inform ( name = Kojn Ljj ; location = 55.101 ; group  = AI&ML )',
-                   max_length=150,
-                   num_return_sequences=5,
-                   # no_repeat_ngram_size=2,
-                   repetition_penalty=1.0,
-                   top_p=0.92,
-                   temperature=1,
-                   do_sample=True,
-                   top_k=5,
-                   early_stopping=True
-                   ))
+# print(TemplateGeneratorSCGPT().generate_from_template('inform ( name = Kojn Ljj ; location = 55.101 ; group  = AI&ML )',
+#                    max_length=150,
+#                    num_return_sequences=5,
+#                    # no_repeat_ngram_size=2,
+#                    repetition_penalty=1.0,
+#                    top_p=0.92,
+#                    temperature=1,
+#                    do_sample=True,
+#                    top_k=5,
+#                    early_stopping=True
+#                    ))
