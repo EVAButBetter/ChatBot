@@ -74,7 +74,7 @@ msgpack==1.0.4
 multidict==5.2.0
 networkx==2.6.3
 nltk==3.8.1
-numpy==1.23.5
+numpy~=1.24.1
 oauthlib==3.2.2
 opt-einsum==3.3.0
 packaging==20.9
@@ -172,3 +172,5 @@ yarl==1.8.2
 zipp==3.11.0
 
 pandas~=1.5.3
+fastapi~=0.94.1
+uvicorn~=0.21.0

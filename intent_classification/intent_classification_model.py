@@ -8,6 +8,7 @@ import pickle
 import pandas as pd
 from lib.file_adapter.adapter_nlu import AdapterIntentNLU
 from .intent_classifier import Classifier
+
 '''
 - 107s 312ms/step - loss: 0.1703 - acc: 0.9529 - val_loss: 0.4475 - val_acc: 0.9085
 train time: 35m
@@ -18,23 +19,37 @@ train time: 2m
 The domain model accuracy is 96.4%
 '''
 
-ids = ['professor_info','course_info','opening_close_hours_info','department_info', 'faculty_info', 'schedule_info']
-def  index2id(index):
-    ids[index-1]
+ids = ['professor_info', 'course_info', 'opening_close_hours_info', 'department_info', 'faculty_info', 'schedule_info']
+
+
+def index2id(index):
+    return ids[int(index) - 1]
+
 
 class IntentClassificationModel(Classifier):
-    def __init__(self, embedder_train_data_path, domain_dataset_path):
+    def __init__(self, embedder_train_data_path, domain_dataset_path, model_path=None, tokenizer_path=None, label_encoder_path=None):
 
         super().__init__()
+
+        if embedder_train_data_path is None or domain_dataset_path is None:
+            raise AssertionError("You must specify embedder train_data_path and domain_dataset_path")
+
         self.embedder_train_data_path = embedder_train_data_path
         self.domain_dataset_path = domain_dataset_path
 
-        self.model = None
+        self.model = model_path
+        self.label_encoder = label_encoder_path
 
-        self.label_encoder = None
+        self.tokenizer = keras.preprocessing.text.Tokenizer()
+        if model_path is None or tokenizer_path is None or label_encoder_path is None:
+            raise Warning("You didn't specify model/tokenizer/label_encoder path. Automatic loading skipped")
+        else:
+            self.load_model(model_path)
+            self.load_tokenizer(tokenizer_path)
+            self.load_label_encoder(label_encoder_path)
+
         self.word_index = None
         self.all_labels = None
-        self.tokenizer = keras.preprocessing.text.Tokenizer()
         self.intents = None
         self.embedding_matrix = None
         self.adapter = AdapterIntentNLU()
@@ -42,7 +57,7 @@ class IntentClassificationModel(Classifier):
     # **** TRAIN ****#S
     def load_data_generic(self, generic_dataset_path):
 
-        text,labels = self.adapter.convert(generic_dataset_path)
+        text, labels = self.adapter.convert(generic_dataset_path)
 
         domain_texts, domain_labels = self.load_data_domain(replace_original_labels=True)
 
@@ -57,7 +72,7 @@ class IntentClassificationModel(Classifier):
 
         texts, labels = self.adapter.convert(self.domain_dataset_path)
         if replace_original_labels:
-            labels = np.full(len(labels),"upf")
+            labels = np.full(len(labels), "upf")
         return texts, labels
 
     def one_hot_encoder(self, labels, output_file):
@@ -183,7 +198,7 @@ class IntentClassificationModel(Classifier):
 
     # **** PREDICT ****#
     def load_model(self, model_file):
-        self.model = keras.models.load_model(model_file,compile=False)
+        self.model = keras.models.load_model(model_file, compile=False)
 
     def load_tokenizer(self, tokenizer_file):
         with open(tokenizer_file, 'rb') as file:
@@ -228,6 +243,7 @@ class IntentClassificationModel(Classifier):
                                                                          padding='post')
         pred = self.model.predict(test_keras_sequence)
 
-        intent_object = {"intent":str(self.label_encoder.inverse_transform(np.argmax(pred, 1))[0]), "prob":np.argmax(pred, 1)}
+        intent_object = {"intent": str(self.label_encoder.inverse_transform(np.argmax(pred, 1))[0]),
+                         "prob": np.argmax(pred, 1)}
 
         return intent_object
