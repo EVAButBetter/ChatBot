@@ -2,6 +2,8 @@ import json
 import importlib, inspect
 
 MODULE_PATH = "data.actions."
+
+
 class IntentToAction:
     def __init__(self, actions_db_dir):
         self.actions_db_dir = actions_db_dir
@@ -28,7 +30,7 @@ class IntentToAction:
 
         for name, cls in module_attributes:
             if cls.__module__ == module_name:
-                if name in ["OOV","UnavailableService"]:
+                if name in ["OOV", "UnavailableService"]:
                     instance = cls()
                 else:
                     instance = cls()
@@ -36,10 +38,8 @@ class IntentToAction:
                 return result
         print("No class found in module")
 
-
-
     def run_action_by_intent(self, intent):
-        if intent in ["1","2","3","4","5","6"]:  #TODO: REMOVE THIS
+        if intent in ["1", "2", "3", "4", "5", "6"]:  # TODO: REMOVE THIS
             return "Sorry, but UPF services are not currently available.", 1
 
         action_obj = self.get_action_by_intent(intent)
