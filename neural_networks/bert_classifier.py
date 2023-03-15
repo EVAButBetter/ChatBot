@@ -3,7 +3,8 @@ import torch
 import torch.nn.functional as F
 import os
 
-MODEL_NAME = 'huawei-noah/TinyBERT_General_4L_312D'
+MODEL_NAME = os.path.join(os.path.dirname(os.getcwd()),
+                          os.path.join("models",os.path.join('bert','huawei-noah_TinyBERT_General_4L_312D')))#'huawei-noah/TinyBERT_General_4L_312D'
 LABELS = ['fh', 's', 'b', '%', 'qy', 'fg', 'qw', 'qrr', 'h', 'qr', 'qo', 'qh']
 model_bert = AutoModel.from_pretrained(MODEL_NAME)
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
@@ -63,9 +64,9 @@ class BERTClassifier:
             max(proba)
         return {'value': self.ids[proba.argmax()], 'prob': max(proba)}
 
-# import time
-#
-# bert = BERTClassifier()
-# time_start = time.time()
-# print(bert.predict("Where are my pants?"))
-# print(time.time()-time_start)
+import time
+
+bert = BERTClassifier()
+time_start = time.time()
+print(bert.predict("Where are my pants?"))
+print(time.time()-time_start)

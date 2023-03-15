@@ -4,6 +4,7 @@ intents:
   course_info:
     slots:
       course_name:
+        main: True
         type: text
         initial_value: <REQUEST>
         action_slot: find_names, location
@@ -16,7 +17,8 @@ intents:
 
   professor_info:
     slots:
-      name:
+      professor_name:
+        main: True
         type: text
         initial_value: <REQUEST>
         action_slot: find_names, location
@@ -27,7 +29,7 @@ intents:
       location:
         type: text
         initial_value: <REQUEST>
-        action_slot: find_location_info, name
+        action_slot: find_location_info, professor_name
         mappings:
           - type: from_entity
             entity: FAC
@@ -35,6 +37,7 @@ intents:
   department_info:
     slots:
       department_name:
+        main: True
         type: text
         initial_value: <REQUEST>
         mappings:
@@ -47,6 +50,7 @@ intents:
   faculty_info:
     slots:
       faculty_name:
+        main: True
         type: text
         initial_value: <REQUEST>
         mappings:
@@ -59,6 +63,7 @@ intents:
   schedule_info:
     slots:
       course_name:
+        main: True
         type: text
         initial_value: <REQUEST>
         mappings:
@@ -71,6 +76,7 @@ intents:
   close_open_time_info:
     slots:
       course_name:
+        main: True
         type: text
         initial_value: <REQUEST>
         action_slot: find_names, location

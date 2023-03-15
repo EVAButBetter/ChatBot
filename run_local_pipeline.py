@@ -15,16 +15,16 @@ DOMAIN_LABEL_ENCODER_PATH = "./intent_classification/utils/domain_label_encoder.
 
 def load_intent_classifiers():
     intent_classification_generic = IntentClassificationModel(embedder_train_data_path=EMBEDDER_TRAIN_DATASET_PATH,
-                                                              domain_dataset_path=DOMAIN_DATASET_PATH,
+                                                              domain_dataset_path=GENERIC_DATASET_PATH,
                                                               model_path=GENERIC_MODEL_PATH,
                                                               tokenizer_path=GENERIC_TOKENIZER_PATH,
                                                               label_encoder_path=GENERIC_LABEL_ENCODER_PATH)
 
     intent_classification_domain = IntentClassificationModel(embedder_train_data_path=EMBEDDER_TRAIN_DATASET_PATH,
                                                              domain_dataset_path=DOMAIN_DATASET_PATH,
-                                                             model_path=GENERIC_MODEL_PATH,
-                                                             tokenizer_path=GENERIC_TOKENIZER_PATH,
-                                                             label_encoder_path=GENERIC_LABEL_ENCODER_PATH)
+                                                             model_path=DOMAIN_MODEL_PATH,
+                                                             tokenizer_path=DOMAIN_TOKENIZER_PATH,
+                                                             label_encoder_path=DOMAIN_LABEL_ENCODER_PATH)
 
     return intent_classification_generic, intent_classification_domain
 

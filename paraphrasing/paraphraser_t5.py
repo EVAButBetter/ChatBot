@@ -46,15 +46,15 @@ class ParaphrasetT5(Paraphraser):
 
 # import time
 # tm = time.time()
-# print('model: ',
-#       ParaphrasetT5().paraphrase('Can you recommend some upscale restaurants in Newyork?', do_sample=True,
-#                                  top_p=0.95,
-#                                  num_return_sequences=4,
-#                                  # repetition_penalty=2.0,
-#                                  # num_beams = 4,
-#                                  # num_beam_groups = 4,
-#                                  # diversity_penalty = 2.0,
-#                                  top_k=50,
-#                                  early_stopping=True,
-#                                  max_length=64))
+print('model: ',
+      ParaphrasetT5().paraphrase('Can you recommend some upscale restaurants in Newyork?', do_sample=True,
+                                 top_p=0.95,
+                                 num_return_sequences=4,
+                                 # repetition_penalty=2.0,
+                                 # num_beams = 4,
+                                 # num_beam_groups = 4,
+                                 # diversity_penalty = 2.0,
+                                 top_k=50,
+                                 early_stopping=True,
+                                 max_length=64))
 # print(time.time() - tm)

@@ -5,14 +5,15 @@ import sys
 sys.path.append("..")
 
 import pandas as pd
-from Intent import Intent
+from intent.intent import Intent
 from lib.parsing.parser_yml import ParserYML
 
 # from text_generation_module import text_generation_function
 FILE_DIR = "../data/"
 # DATABASE = FILE_DIR + "database/" + database + ".csv"
 CONFIG_DIR = FILE_DIR + "domains/domain.yml"
-SEPARATOR = '&' # for sc-gpt
+SEPARATOR = '&'  # for sc-gpt
+
 
 class AiIntent(Intent):
     def __init__(self, name) -> None:
@@ -26,6 +27,7 @@ class AiIntent(Intent):
 
         for slot_name, slot_data in config["intents"][self.name]["slots"].items():
             slot_value = {
+                'main': slot_data.get('main'),
                 "type": slot_data.get('type'),
                 'value': slot_data.get('initial_value'),
                 'mappings': slot_data.get('mappings'),
@@ -38,7 +40,7 @@ class AiIntent(Intent):
         for slot_name, value in self.slots.items():
             for map in value['mappings'] or []:
                 if map.get('type') == 'from_entity':
-                    for element in data.get('data'):
+                    for element in data:
                         if map.get('entity') == element.get('entity') and self.slots[slot_name]['value'] is not None:
                             self.fill_slot(slot_name, element['value'])
 
@@ -47,7 +49,7 @@ class AiIntent(Intent):
                 function_name, parameter_names = value['action'].split(",")
                 parameter_values = [self.slots[p]['value'] for p in parameter_names.split(";")]
 
-                self.fill_slot(slot_name,globals()[function_name](*parameter_values))
+                self.fill_slot(slot_name, globals()[function_name](*parameter_values))
 
     def get_slot(self, slot_name):
 
@@ -74,24 +76,21 @@ class AiIntent(Intent):
     def check_info(self):
         # check correctness of info in db through actions_slots
         for slot_name, value in self.slots.items():
-            if value.get('value') is None or '<REQUEST>' and value.get('action') is not None:
+            if value.get('value') is not None or not '<REQUEST>' and value.get('action') is not None:
                 function_name, parameter_names = value['action'].split(",")
                 parameter_values = [self.slots[p]['value'] for p in parameter_names.split(";")]
 
                 # if provided info isn't correct
-                if self.get_slot(slot_name) != globals()[function_name](*parameter_values):
+                if self.get_slot(slot_name)['value'] != globals()[function_name](*parameter_values):
                     return False
 
         return True
 
     def confirm(self, slot_name, slot_value):
 
-        return "confirm ( {} = {} )".format(slot_name, slot_value)+SEPARATOR
+        return self.name + " { confirm ( {} = {} ) } ".format(slot_name, slot_value) + SEPARATOR
 
     def inform(self):
-
-        if not self.check_slot():
-            return False
 
         packs = self.get_all_slots()
         inform_text = ""
@@ -99,8 +98,12 @@ class AiIntent(Intent):
         for (name, value) in packs:
             inform_text += '" {} = {} "; '.format(name, value)
 
-        return "inform(" + inform_text + ")"+SEPARATOR
+        return self.name + " { inform(" + inform_text + ") } " + SEPARATOR
 
     def request(self, slot_name):
 
-        return "request ( {} = ? ) ".format(slot_name)+SEPARATOR
+        return self.name + " { request ( {} = ? ) } ".format(slot_name) + SEPARATOR
+
+    def deny(self, slot_name):
+
+        return self.name + " { deny ( {} = ? ) } ".format(slot_name) + SEPARATOR

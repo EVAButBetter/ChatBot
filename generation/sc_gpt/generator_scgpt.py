@@ -5,9 +5,10 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-
+# MODEL_DIR = '/Users/macbook_pro/Documents/GitHub/ChatBot/generation/model'
+MODEL_DIR = 'igorktech/sc-gpt-upf'
 class GPTModel():
-    def __init__(self, model_name='/Users/macbook_pro/Documents/GitHub/ChatBot/generation/model'):
+    def __init__(self, model_name=MODEL_DIR):
         self.model = GPT2LMHeadModel.from_pretrained(model_name)
         self.tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 

@@ -27,7 +27,8 @@ def index2id(index):
 
 
 class IntentClassificationModel(Classifier):
-    def __init__(self, embedder_train_data_path, domain_dataset_path, model_path=None, tokenizer_path=None, label_encoder_path=None):
+    def __init__(self, embedder_train_data_path, domain_dataset_path, model_path=None, tokenizer_path=None,
+                 label_encoder_path=None):
 
         super().__init__()
 
@@ -243,7 +244,7 @@ class IntentClassificationModel(Classifier):
                                                                          padding='post')
         pred = self.model.predict(test_keras_sequence)
 
-        intent_object = {"intent": str(self.label_encoder.inverse_transform(np.argmax(pred, 1))[0]),
-                         "prob": np.argmax(pred, 1)}
+        intent_object = {"intent": {'value': str(self.label_encoder.inverse_transform(np.argmax(pred, 1))[0]),
+                                    "prob": np.argmax(pred, 1)}}
 
         return intent_object
