@@ -2,17 +2,16 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 from fastapi import Request
 
-class Message(BaseModel):
-    isReceived: bool
-    type: str
-    content: str
-
 pipeline_router = APIRouter(
     prefix="/pipeline",
     tags=["pipeline"],
 )
 
 
+class Message(BaseModel):
+    isReceived: bool
+    type: str
+    content: str
 
 @pipeline_router.post("/")
 async def get_msg(request: Request):
@@ -24,4 +23,4 @@ async def get_msg(request: Request):
 
 @pipeline_router.get("/test")
 async def test():
-    return {"message": "what? do you want to ask to me"}
+    return {"message": "what? do you want to ask to mes?"}
