@@ -535,44 +535,44 @@ nlu:
   - intent: 4
     examples: |
       - Can you tell me how many professors are in the [Department of Medicine and Life Sciences](DEPARTMENT) department?
-      - How many faculty members are in [NAME]?
-      - What is the size of the [NAME] department in terms of faculty?
-      - I was wondering if you could give me information about the [NAME] department's faculty.
+      - How many faculty members are in [Natural Language Processing](DEPARTMENT)?
+      - What is the size of the department in terms of faculty?
+      - I was wondering if you could give me information about the department's faculty.
       - Could you let me know the number of professors in the [Department of Medicine and Life Sciences](DEPARTMENT) department?
-      - How many professors does the [NAME] department have?
-      - Can you tell me the faculty count for the [NAME] department?
-      - Could you provide the number of faculty members in [NAME]?
+      - How many professors does the department have?
+      - Can you tell me the faculty count for the department?
+      - Could you provide the number of faculty members in [Natural Language Processing](DEPARTMENT)?
       - How many individuals teach in the [Department of Medicine and Life Sciences](DEPARTMENT) department?
       - Can you give me a headcount for the professors in the [Department of Medicine and Life Sciences](DEPARTMENT) department?
       - I would like to know the number of professors in [NAME]. if you don't mind.
-      - Can you give me information about the [NAME] department. specifically the number of faculty members?
+      - Can you give me information about the department. specifically the number of faculty members?
       - Can you tell me the size of the faculty in the [Department of Medicine and Life Sciences](DEPARTMENT) department?
       - How many people are on the faculty of [NAME]?
-      - Could you provide the faculty count for the [NAME] department?
-      - Can you give me an idea of the size of the [NAME] department. in terms of professors?
-      - How many individuals are on the faculty in [NAME]?
+      - Could you provide the faculty count for the department?
+      - Can you give me an idea of the size of the department. in terms of professors?
+      - How many individuals are on the faculty in [Natural Language Processing](DEPARTMENT)?
       - Can you tell me the number of professors in the [Department of Medicine and Life Sciences](DEPARTMENT) department. please?
       - Could you give me the faculty headcount for [NAME]?
-      - Can you let me know the size of the [NAME] department in terms of professors?
+      - Can you let me know the size of the department in terms of professors?
       - Could you give me the number of faculty members in the [Department of Medicine and Life Sciences](DEPARTMENT) department?
-      - I was curious about the size of the [NAME] department. specifically the number of professors.
-      - Can you provide information about the [NAME] department. including the number of faculty members?
-      - How many professors are there in [NAME]?
+      - I was curious about the size of the department. specifically the number of professors.
+      - Can you provide information about the department. including the number of faculty members?
+      - How many professors are there in [Natural Language Processing](DEPARTMENT)?
       - Can you tell me the headcount for the faculty in the [Department of Medicine and Life Sciences](DEPARTMENT) department?
       - Could you give me the number of individuals on the faculty of [NAME]?
-      - Can you provide information about the size of the [NAME] department. including the number of professors?
+      - Can you provide information about the size of the department. including the number of professors?
       - How many faculty members are in the [Department of Medicine and Life Sciences](DEPARTMENT) department?
-      - Could you give me the number of professors in [NAME]?
-      - Can you let me know the headcount for the [NAME] department's faculty?
+      - Could you give me the number of professors in [Department of Medicine and Life Sciences](DEPARTMENT)?
+      - Can you let me know the headcount for the department's faculty?
       - Can you give me information about the faculty in the [Department of Medicine and Life Sciences](DEPARTMENT) department. including the number of members?
       - I was wondering if you could tell me the number of professors in the [Department of Medicine and Life Sciences](DEPARTMENT) department.
       - Could you provide information about the size of the faculty in the [Department of Medicine and Life Sciences](DEPARTMENT) department?
-      - Can you give me an idea of the number of professors in [NAME]?
+      - Can you give me an idea of the number of professors in [Department of Medicine and Life Sciences](DEPARTMENT)?
       - How many individuals teach in the [Department of Medicine and Life Sciences](DEPARTMENT) department?
-      - Can you give me information about the [NAME] department. including the headcount for the faculty?
+      - Can you give me information about the department. including the headcount for the faculty?
       - Could you let me know the number of faculty members in the [Department of Medicine and Life Sciences](DEPARTMENT) department?
       - I was curious about the number of professors in [NAME].
-      - Can you give me the headcount for the [NAME] department's faculty?
+      - Can you give me the headcount for the department's faculty?
       - Could you tell me the size of the faculty in the [Department of Medicine and Life Sciences](DEPARTMENT) department?
       - Can you tell me what departments are offered at UPF?
       - What kind of departments are available at UPF?

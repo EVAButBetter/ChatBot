@@ -4,7 +4,7 @@ from intent.non_ai_intent.intent_to_action import IntentToAction
 from intent.intent import Intent
 from intent.ai_intent.ai_intent import AiIntent
 
-DOMAIN_DATASET_PATH = "../data/datasets/domain.yml"
+DOMAIN_DATASET_PATH = "../data/datasets/nlu.yml"
 EMBEDDER_TRAIN_DATASET_PATH = "../data/datasets/glove.6B.100d.txt"
 DOMAIN_MODEL_PATH = "../intent_classification/models/domain_intent_classifier.h5"
 DOMAIN_TOKENIZER_PATH = "../intent_classification/utils/domain_tokenizer.pkl"
