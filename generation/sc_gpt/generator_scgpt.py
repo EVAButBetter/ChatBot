@@ -5,9 +5,10 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-
+# MODEL_DIR = '/Users/macbook_pro/Documents/GitHub/ChatBot/generation/model'
+MODEL_DIR = 'igorktech/sc-gpt-upf'
 class GPTModel():
-    def __init__(self, model_name='/Users/macbook_pro/Documents/GitHub/ChatBot/generation/model'):
+    def __init__(self, model_name=MODEL_DIR):
         self.model = GPT2LMHeadModel.from_pretrained(model_name)
         self.tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 
@@ -30,14 +31,14 @@ class TemplateGeneratorSCGPT(TemplateGenerator):
         output_text = self.model.tokenizer.batch_decode(inputs, skip_special_tokens=True)
         return output_text
 
-print(TemplateGeneratorSCGPT().generate_from_template('inform ( name = Kojn Ljj ; location = 55.101 ; group  = AI&ML )',
-                   max_length=150,
-                   num_return_sequences=5,
-                   # no_repeat_ngram_size=2,
-                   repetition_penalty=1.0,
-                   top_p=0.92,
-                   temperature=1,
-                   do_sample=True,
-                   top_k=5,
-                   early_stopping=True
-                   ))
+# print(TemplateGeneratorSCGPT().generate_from_template('inform ( name = Kojn Ljj ; location = 55.101 ; group  = AI&ML )',
+#                    max_length=150,
+#                    num_return_sequences=5,
+#                    # no_repeat_ngram_size=2,
+#                    repetition_penalty=1.0,
+#                    top_p=0.92,
+#                    temperature=1,
+#                    do_sample=True,
+#                    top_k=5,
+#                    early_stopping=True
+#                    ))
