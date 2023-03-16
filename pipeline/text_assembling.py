@@ -42,7 +42,8 @@ class TextAssembler:
                                                                    # no_repeat_ngram_size=2,
                                                                    repetition_penalty=G_REP_PEN,
                                                                    temperature=G_TEMPERATURE)
-        print("text",text)
+            assembled_text = [response.split('&',maxsplit=1)[1].strip() for response in assembled_text]
+
         assembled_text = self.paraphraser.paraphrase(choice(assembled_text),
                                                      do_sample=P_DO_SAMPLE,
                                                      max_length=P_MAX_LENGTH,

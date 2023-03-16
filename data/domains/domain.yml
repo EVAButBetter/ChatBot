@@ -32,7 +32,7 @@ intents:
         action_slot: find_location_info, professor_name
         mappings:
           - type: from_entity
-            entity: FAC
+            entity: ORG
 
   department_info:
     slots:
@@ -42,7 +42,7 @@ intents:
         initial_value: <REQUEST>
         mappings:
           - type: from_entity
-            entity: ORG
+            entity: DEPARTMENT
       information:
         type: text
         action_slot: find_department_info, department_name
@@ -82,7 +82,7 @@ intents:
         action_slot: find_names, location
         mappings:
           - type: from_entity
-            entity: COURSE
+            entity: FAC
       information:
         type: text
         action_slot: find_close_open_time_info, course_name
