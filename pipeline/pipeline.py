@@ -29,5 +29,5 @@ class Pipeline:
 pipeline = Pipeline()
 import time
 t = time.time()
-print(pipeline.run("Where I can find Professor ?"))
+print(pipeline.run("Where I can find Professor Jorge Lobo ?"))
 print(time.time()-t)

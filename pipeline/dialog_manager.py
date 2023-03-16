@@ -46,7 +46,7 @@ class DialogManager:
                 self.current_ai_intent_obj = AiIntent(domain_intent_name)
                 print("sentence_data[data] ",sentence_data[0]['data'])
                 self.current_ai_intent_obj.update_slots(sentence_data[0]['data'])
-
+                print(self.current_ai_intent_obj.get_all_slots())
                 # if not all slots are filled
                 if not self.current_ai_intent_obj.check_slot():
                     for i, slot_name in enumerate(self.current_ai_intent_obj.slots):

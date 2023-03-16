@@ -23,7 +23,7 @@ intents:
         initial_value: <REQUEST>
         action_slot: find_names, location
         mappings:
-          - type: text
+          - type: from_entity
             entity: PERSON
 
       location:

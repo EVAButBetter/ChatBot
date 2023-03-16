@@ -3,31 +3,59 @@ nlu:
   - intent: 1
     examples: |
       - where is professor [lobo jorge, Crowela Ciero](PERSON)
-      - Has anyone seen Professor [DAZA FERNANDEZ VANESA](PERSON)
-      - Where could Professor [NIKBAKHT SILAB RASOUL](PERSON) be
-      - Do you know the whereabouts of Professor [NIKBAKHT SILAB RASOUL](PERSON)
-      - I can't seem to find Professor [NIKBAKHT SILAB RASOUL](PERSON), have you seen him
-      - Is Professor [TEN VENTURA CARLA](PERSON) around
-      - Can someone tell me where Professor [ABENIA POLO PASCUAL PABLO](PERSON) is
-      - I'm looking for Professor [TEN VENTURA CARLA](PERSON), have you seen him
-      - Professor [NIKBAKHT SILAB RASOUL](PERSON), have you seen him
-      - I heard Professor [PIELLA FENOY GEMA](PERSON) is here, do you know where
-      - Have you come across Professor [ABENIA POLO PASCUAL PABLO](PERSON)
-      - Have you seen Professor [ABURA'ED AHMED GHASSAN TAWFIQ](PERSON)
-      - Can you tell me if Professor [ABURA'ED AHMED GHASSAN TAWFIQ](PERSON) is around
-      - I need to speak with Professor [LLUCH ALVAREZ ERIC](PERSON), have you seen him
-      - Where might Professor [PINDADO TOST ZAIRA](PERSON) be
-      - Is Professor [PIELLA FENOY GEMA](PERSON) in the building
-      - Who is professor [FREIRE VEIGA ANA maria](PERSON)
-      - Can you tell me who professor [RAMIREZ CIFUENTES DIANA MICHELLE](PERSON) is
-      - I'm not familiar with professor [BAEZA YATES RICARDO ALBERTO](PERSON). can you introduce them?,1
+      - Has anyone seen Professor [Daza Fernandez Vanesa](PERSON)
+      - Where could Professor [Nikbakht Silab Rasoul](PERSON) be
+      - Do you know the whereabouts of Professor [Nikbakht Silab Rasoul](PERSON)
+      - I can't seem to find Professor [Nikbakht Silab Rasoul](PERSON), have you seen him
+      - Is Professor [Ten Ventura Carla](PERSON) around
+      - Can someone tell me where Professor [Abenia Polo Pascual Pablo](PERSON) is
+      - I'm looking for Professor [Ten Ventura Carla](PERSON), have you seen him
+      - Professor [Nikbakht Silab Rasoul](PERSON), have you seen him
+      - I heard Professor [TREVOR DALTON CANHAM](PERSON) is here, do you know where
+      - Have you come across Professor [Abenia Polo Pascual Pablo](PERSON)
+      - Have you seen Professor [Abura'ed Ahmed Ghassan Tawfiq](PERSON)
+      - Can you tell me if Professor [TIANGE ZHU](PERSON) is around
+      - I need to speak with Professor [Lluch Alvarez Eric](PERSON), have you seen him
+      - Where might Professor [Pindado Tost Zaira](PERSON) be
+      - Is Professor [Piella Fenoy Gema](PERSON) in the building
+      - Who is professor [FREIRE VEIGA ANA Maria](PERSON)
+      - Can you tell me who professor [Ramirez Cifuentes Diana Michelle](PERSON) is
+      - I'm not familiar with professor [Baeza Yates Ricardo Alberto](PERSON). can you introduce them?,1
       - Could you explain who professor [FRANZONI FEDERICO](PERSON) is
       - Who is the professor named professor [ADHIKARI MOHIT HEMCHANDRA](PERSON)
-      - Can you provide more information on professor [JIMENEZ GARCIA VANESSA](PERSON)
+      - Can you provide more information on professor [ADRIÀ ARBUES SANGÜESA](PERSON)
       - Who exactly is professor [SERRANO RAGUAN MONTSERRAT](PERSON)
-      - Can you give me a brief background on professor [GARCIA ESCOBOSA LYDIA](PERSON)
-      - Who is the individual known as professor [MARTA MONTIEL](PERSON)
-      - [SERRANO RAGUAN MONTSERRAT](PERSON)
+      - Can you give me a brief background on professor [Garcia Escobosa LydiA](PERSON)
+      - Who is the individual known as professor [Marta Montiel](PERSON)
+      - [Serrano Raguan Montserrat](PERSON)
+      
+      - where is professor [lobo jorge](PERSON)
+      - Has anyone seen Professor [Jorge Lobo](PERSON)
+      - Where could Professor [Nikbakht Silab Rasoul](PERSON) be
+      - Do you know the whereabouts of Professor [Victor Dalmau Lloret](PERSON)
+      - I can't seem to find Professor [Nikbakht](PERSON), have you seen him
+      - Is Professor [Ten Ventura Carla](PERSON) around
+      - Can someone tell me where Professor [Abenia Polo](PERSON) is
+      - I'm looking for Professor [Ten Ventura Carla](PERSON), have you seen him
+      - Professor [Nikbakht Silab Rasoul](PERSON), have you seen him
+      - I heard Professor [Piella Fenoy Gema](PERSON) is here, do you know where
+      - Have you come across Professor [Javier Aguirre Olcoz](PERSON)
+      - Have you seen Professor [Quim Castellvi](PERSON)
+      - Can you tell me if Professor [Abura'ed Ahmed Ghassan Tawfiq](PERSON) is around
+      - I need to speak with Professor [Lluch Alvarez Eric](PERSON), have you seen him
+      - Where might Professor [Pindado Tost Zaira](PERSON) be
+      - Is Professor [Piella Fenoy Gema](PERSON) in the building
+      - Who is professor [Freire Veiga Ana Maria](PERSON)
+      - Can you tell me who professor [Ramirez Cifuentes Diana Michelle](PERSON) is
+      - I'm not familiar with professor [Baeza Yates Ricardo Alberto](PERSON). can you introduce them?,1
+      - Could you explain who professor [Franzoni Federico](PERSON) is
+      - Who is the professor named professor [Adhikari Mohit Hemchandra](PERSON)
+      - Can you provide more information on professor [Jimenez Garcia Vanessa](PERSON)
+      - Who exactly is professor [Serrano Raguan Montserrat](PERSON)
+      - Can you give me a brief background on professor [Garcia Escobosa Lydia](PERSON)
+      - Who is the individual known as professor [Marta Montiel](PERSON)
+      - [Serrano Raguan Montserrat](PERSON)
+
   - intent: 2
     examples: |
       - What is the price of the course [Business Management and Administration](COURSE)?
@@ -38,9 +66,6 @@ nlu:
       - What is the schedule for the course [Business Management and Administration](COURSE)?
       - Where is the course [Business Management and Administration](COURSE) being held?
       - What is the price of the course [Business Management and Administration](COURSE)?
-      - How many credits is the course [Business Management and Administration](COURSE) worth?
-      - What is the schedule for the course [Business Management and Administration](COURSE)?
-      - What can you tell me about the course [Business Management and Administration](COURSE)?
       - How does the course [Business Management and Administration](COURSE) fit into the curriculum?
       - What are the prerequisites for the course [Business Management and Administration](COURSE)?
       - How is the course [Business Management and Administration](COURSE) graded?
@@ -54,9 +79,6 @@ nlu:
       - How many credits is the course [Human Biology](COURSE) worth?
       - Which faculty is offering the course [Human Biology](COURSE)?
       - What is the description of the course [Human Biology](COURSE)?
-      - How many available spots are there for the course [Human Biology](COURSE)?
-      - What is the schedule for the course [Human Biology](COURSE)?
-      - Where is the course [Human Biology](COURSE) being held?
       - What is the price of the course [Human Biology](COURSE)?
       - How many credits is the course [Human Biology](COURSE) worth?
       - What is the schedule for the course [Human Biology](COURSE)?
@@ -64,17 +86,11 @@ nlu:
       - How does the course [Human Biology](COURSE) fit into the curriculum?
       - What are the prerequisites for the course [Human Biology](COURSE)?
       - How is the course [Human Biology](COURSE) graded?
-      - Who is the instructor for the course [Human Biology](COURSE)?
-      - What textbooks are used in the course [Human Biology](COURSE)?
-      - Are there any special requirements for the course [Human Biology](COURSE) (e.g. group projects, presentations, etc.)?
       - What kind of career opportunities can graduates of the course [Human Biology](COURSE) expect?
       - Can you provide more information about the faculty offering the course [Human Biology](COURSE)?
       - What sets the course [Human Biology](COURSE) apart from other similar  courses offered at the university?
       - What is the price of the course [Business Sciences](COURSE)?
       - How many credits is the course [Business Sciences](COURSE) worth?
-      - Which faculty is offering the course [Business Sciences](COURSE)?
-      - What is the description of the course [Business Sciences](COURSE)?
-      - How many available spots are there for the course [Business Sciences](COURSE)?
       - What is the schedule for the course [Business Sciences](COURSE)?
       - Where is the course [Business Sciences](COURSE) being held?
       - What is the price of the course [Business Sciences](COURSE)?
@@ -83,9 +99,6 @@ nlu:
       - What can you tell me about the course [Business Sciences](COURSE)?
       - How does the course [Business Sciences](COURSE) fit into the curriculum?
       - What are the prerequisites for the course [Business Sciences](COURSE)?
-      - How is the course [Business Sciences](COURSE) graded?
-      - Who is the instructor for the course [Business Sciences](COURSE)?
-      - What textbooks are used in the course [Business Sciences](COURSE)?
       - Are there any special requirements for the course [Business Sciences](COURSE) (e.g. group projects, presentations, etc.)?
       - What kind of career opportunities can graduates of the course [Business Sciences](COURSE) expect?
       - Can you provide more information about the faculty offering the course [Business Sciences](COURSE)?
@@ -93,9 +106,6 @@ nlu:
       - What is the price of the course [Audiovisual Communication](COURSE)?
       - How many credits is the course [Audiovisual Communication](COURSE) worth?
       - Which faculty is offering the course [Audiovisual Communication](COURSE)?
-      - What is the description of the course [Audiovisual Communication](COURSE)?
-      - How many available spots are there for the course [Audiovisual Communication](COURSE)?
-      - What is the schedule for the course [Audiovisual Communication](COURSE)?
       - Where is the course [Audiovisual Communication](COURSE) being held?
       - What is the price of the course [Audiovisual Communication](COURSE)?
       - How many credits is the course [Audiovisual Communication](COURSE) worth?
@@ -119,10 +129,6 @@ nlu:
       - Where is the course [Criminology and Public Prevention Policies](COURSE) being held?
       - What is the price of the course [Criminology and Public Prevention Policies](COURSE)?
       - How many credits is the course [Criminology and Public Prevention Policies](COURSE) worth?
-      - What is the schedule for the course [Criminology and Public Prevention Policies](COURSE)?
-      - What can you tell me about the course [Criminology and Public Prevention Policies](COURSE)?
-      - How does the course [Criminology and Public Prevention Policies](COURSE) fit into the curriculum?
-      - What are the prerequisites for the course [Criminology and Public Prevention Policies](COURSE)?
       - How is the course [Criminology and Public Prevention Policies](COURSE) graded?
       - Who is the instructor for the course [Criminology and Public Prevention Policies](COURSE)?
       - What textbooks are used in the course [Criminology and Public Prevention Policies](COURSE)?
@@ -138,10 +144,6 @@ nlu:
       - What is the schedule for the course [Law](COURSE)?
       - Where is the course [Law](COURSE) being held?
       - What is the price of the course [Law](COURSE)?
-      - How many credits is the course [Law](COURSE) worth?
-      - What is the schedule for the course [Law](COURSE)?
-      - What can you tell me about the course [Law](COURSE)?
-      - How does the course [Law](COURSE) fit into the curriculum?
       - What are the prerequisites for the course [Law](COURSE)?
       - How is the course [Law](COURSE) graded?
       - Who is the instructor for the course [Law](COURSE)?
@@ -157,10 +159,6 @@ nlu:
       - How many available spots are there for the course [Economics](COURSE)?
       - What is the schedule for the course [Economics](COURSE)?
       - Where is the course [Economics](COURSE) being held?
-      - What is the price of the course [Economics](COURSE)?
-      - How many credits is the course [Economics](COURSE) worth?
-      - What is the schedule for the course [Economics](COURSE)?
-      - What can you tell me about the course [Economics](COURSE)?
       - How does the course [Economics](COURSE) fit into the curriculum?
       - What are the prerequisites for the course [Economics](COURSE)?
       - How is the course [Economics](COURSE) graded?
@@ -181,10 +179,6 @@ nlu:
       - How many credits is the course [Biomedical Engineering](COURSE) worth?
       - What is the schedule for the course [Biomedical Engineering](COURSE)?
       - What can you tell me about the course [Biomedical Engineering](COURSE)?
-      - How does the course [Biomedical Engineering](COURSE) fit into the curriculum?
-      - What are the prerequisites for the course [Biomedical Engineering](COURSE)?
-      - How is the course [Biomedical Engineering](COURSE) graded?
-      - Who is the instructor for the course [Biomedical Engineering](COURSE)?
       - What textbooks are used in the course [Biomedical Engineering](COURSE)?
       - Are there any special requirements for the course [Biomedical Engineering](COURSE) (e.g. group projects, presentations, etc.)?
       - What kind of career opportunities can graduates of the course [Biomedical Engineering](COURSE) expect?
@@ -196,9 +190,6 @@ nlu:
       - What is the description of the course [Computer Science](COURSE)?
       - How many available spots are there for the course [Computer Science](COURSE)?
       - What is the schedule for the course [Computer Science](COURSE)?
-      - Where is the course [Computer Science](COURSE) being held?
-      - What is the price of the course [Computer Science](COURSE)?
-      - How many credits is the course [Computer Science](COURSE) worth?
       - What is the schedule for the course [Computer Science](COURSE)?
       - What can you tell me about the course [Computer Science](COURSE)?
       - How does the course [Computer Science](COURSE) fit into the curriculum?
@@ -206,10 +197,6 @@ nlu:
       - How is the course [Computer Science](COURSE) graded?
       - Who is the instructor for the course [Computer Science](COURSE)?
       - What textbooks are used in the course [Computer Science](COURSE)?
-      - Are there any special requirements for the course [Computer Science](COURSE) (e.g. group projects, presentations, etc.)?
-      - What kind of career opportunities can graduates of the course [Computer Science](COURSE) expect?
-      - Can you provide more information about the faculty offering the course [Computer Science](COURSE)?
-      - What sets the course [Computer Science](COURSE) apart from other similar  courses offered at the university?
       - What is the price of the course [Audiovisual Systems Engineering](COURSE)?
       - How many credits is the course [Audiovisual Systems Engineering](COURSE) worth?
       - Which faculty is offering the course [Audiovisual Systems Engineering](COURSE)?
@@ -232,11 +219,6 @@ nlu:
       - What sets the course [Audiovisual Systems Engineering](COURSE) apart from other similar  courses offered at the university?
       - What is the price of the course [Telecommunications Network Engineering](COURSE)?
       - How many credits is the course [Telecommunications Network Engineering](COURSE) worth?
-      - Which faculty is offering the course [Telecommunications Network Engineering](COURSE)?
-      - What is the description of the course [Telecommunications Network Engineering](COURSE)?
-      - How many available spots are there for the course [Telecommunications Network Engineering](COURSE)?
-      - What is the schedule for the course [Telecommunications Network Engineering](COURSE)?
-      - Where is the course [Telecommunications Network Engineering](COURSE) being held?
       - What is the price of the course [Telecommunications Network Engineering](COURSE)?
       - How many credits is the course [Telecommunications Network Engineering](COURSE) worth?
       - What is the schedule for the course [Telecommunications Network Engineering](COURSE)?
@@ -246,19 +228,11 @@ nlu:
       - How is the course [Telecommunications Network Engineering](COURSE) graded?
       - Who is the instructor for the course [Telecommunications Network Engineering](COURSE)?
       - What textbooks are used in the course [Telecommunications Network Engineering](COURSE)?
-      - Are there any special requirements for the course [Telecommunications Network Engineering](COURSE) (e.g. group projects, presentations, etc.)?
-      - What kind of career opportunities can graduates of the course [Telecommunications Network Engineering](COURSE) expect?
-      - Can you provide more information about the faculty offering the course [Telecommunications Network Engineering](COURSE)?
       - What sets the course [Telecommunications Network Engineering](COURSE) apart from other similar  courses offered at the university?
       - What is the price of the course [Mathematical Engineering in Data Science](COURSE)?
       - How many credits is the course [Mathematical Engineering in Data Science](COURSE) worth?
       - Which faculty is offering the course [Mathematical Engineering in Data Science](COURSE)?
       - What is the description of the course [Mathematical Engineering in Data Science](COURSE)?
-      - How many available spots are there for the course [Mathematical Engineering in Data Science](COURSE)?
-      - What is the schedule for the course [Mathematical Engineering in Data Science](COURSE)?
-      - Where is the course [Mathematical Engineering in Data Science](COURSE) being held?
-      - What is the price of the course [Mathematical Engineering in Data Science](COURSE)?
-      - How many credits is the course [Mathematical Engineering in Data Science](COURSE) worth?
       - What is the schedule for the course [Mathematical Engineering in Data Science](COURSE)?
       - What can you tell me about the course [Mathematical Engineering in Data Science](COURSE)?
       - How does the course [Mathematical Engineering in Data Science](COURSE) fit into the curriculum?
@@ -270,17 +244,9 @@ nlu:
       - What kind of career opportunities can graduates of the course [Mathematical Engineering in Data Science](COURSE) expect?
       - Can you provide more information about the faculty offering the course [Mathematical Engineering in Data Science](COURSE)?
       - What sets the course [Mathematical Engineering in Data Science](COURSE) apart from other similar  courses offered at the university?
-      - What is the price of the course [Global Studies](COURSE)?
-      - How many credits is the course [Global Studies](COURSE) worth?
-      - Which faculty is offering the course [Global Studies](COURSE)?
-      - What is the description of the course [Global Studies](COURSE)?
       - How many available spots are there for the course [Global Studies](COURSE)?
       - What is the schedule for the course [Global Studies](COURSE)?
       - Where is the course [Global Studies](COURSE) being held?
-      - What is the price of the course [Global Studies](COURSE)?
-      - How many credits is the course [Global Studies](COURSE) worth?
-      - What is the schedule for the course [Global Studies](COURSE)?
-      - What can you tell me about the course [Global Studies](COURSE)?
       - How does the course [Global Studies](COURSE) fit into the curriculum?
       - What are the prerequisites for the course [Global Studies](COURSE)?
       - How is the course [Global Studies](COURSE) graded?
@@ -293,15 +259,6 @@ nlu:
       - What is the price of the course [Humanities](COURSE)?
       - How many credits is the course [Humanities](COURSE) worth?
       - Which faculty is offering the course [Humanities](COURSE)?
-      - What is the description of the course [Humanities](COURSE)?
-      - How many available spots are there for the course [Humanities](COURSE)?
-      - What is the schedule for the course [Humanities](COURSE)?
-      - Where is the course [Humanities](COURSE) being held?
-      - What is the price of the course [Humanities](COURSE)?
-      - How many credits is the course [Humanities](COURSE) worth?
-      - What is the schedule for the course [Humanities](COURSE)?
-      - What can you tell me about the course [Humanities](COURSE)?
-      - How does the course [Humanities](COURSE) fit into the curriculum?
       - What are the prerequisites for the course [Humanities](COURSE)?
       - How is the course [Humanities](COURSE) graded?
       - Who is the instructor for the course [Humanities](COURSE)?
@@ -312,10 +269,6 @@ nlu:
       - What sets the course [Humanities](COURSE) apart from other similar  courses offered at the university?
       - What is the price of the course [International Business Economics](COURSE)?
       - How many credits is the course [International Business Economics](COURSE) worth?
-      - Which faculty is offering the course [International Business Economics](COURSE)?
-      - What is the description of the course [International Business Economics](COURSE)?
-      - How many available spots are there for the course [International Business Economics](COURSE)?
-      - What is the schedule for the course [International Business Economics](COURSE)?
       - Where is the course [International Business Economics](COURSE) being held?
       - What is the price of the course [International Business Economics](COURSE)?
       - How many credits is the course [International Business Economics](COURSE) worth?
@@ -327,12 +280,6 @@ nlu:
       - Who is the instructor for the course [International Business Economics](COURSE)?
       - What textbooks are used in the course [International Business Economics](COURSE)?
       - Are there any special requirements for the course [International Business Economics](COURSE) (e.g. group projects, presentations, etc.)?
-      - What kind of career opportunities can graduates of the course [International Business Economics](COURSE) expect?
-      - Can you provide more information about the faculty offering the course [International Business Economics](COURSE)?
-      - What sets the course [International Business Economics](COURSE) apart from other similar  courses offered at the university?
-      - What is the price of the course [Applied Languages](COURSE)?
-      - How many credits is the course [Applied Languages](COURSE) worth?
-      - Which faculty is offering the course [Applied Languages](COURSE)?
       - What is the description of the course [Applied Languages](COURSE)?
       - How many available spots are there for the course [Applied Languages](COURSE)?
       - What is the schedule for the course [Applied Languages](COURSE)?
@@ -352,16 +299,6 @@ nlu:
       - What sets the course [Applied Languages](COURSE) apart from other similar  courses offered at the university?
       - What is the price of the course [Medicine](COURSE)?
       - How many credits is the course [Medicine](COURSE) worth?
-      - Which faculty is offering the course [Medicine](COURSE)?
-      - What is the description of the course [Medicine](COURSE)?
-      - How many available spots are there for the course [Medicine](COURSE)?
-      - What is the schedule for the course [Medicine](COURSE)?
-      - Where is the course [Medicine](COURSE) being held?
-      - What is the price of the course [Medicine](COURSE)?
-      - How many credits is the course [Medicine](COURSE) worth?
-      - What is the schedule for the course [Medicine](COURSE)?
-      - What can you tell me about the course [Medicine](COURSE)?
-      - How does the course [Medicine](COURSE) fit into the curriculum?
       - What are the prerequisites for the course [Medicine](COURSE)?
       - How is the course [Medicine](COURSE) graded?
       - Who is the instructor for the course [Medicine](COURSE)?
@@ -377,10 +314,6 @@ nlu:
       - How many available spots are there for the course [Journalism](COURSE)?
       - What is the schedule for the course [Journalism](COURSE)?
       - Where is the course [Journalism](COURSE) being held?
-      - What is the price of the course [Journalism](COURSE)?
-      - How many credits is the course [Journalism](COURSE) worth?
-      - What is the schedule for the course [Journalism](COURSE)?
-      - What can you tell me about the course [Journalism](COURSE)?
       - How does the course [Journalism](COURSE) fit into the curriculum?
       - What are the prerequisites for the course [Journalism](COURSE)?
       - How is the course [Journalism](COURSE) graded?
@@ -397,10 +330,6 @@ nlu:
       - How many available spots are there for the course [Advertising and Public Relations](COURSE)?
       - What is the schedule for the course [Advertising and Public Relations](COURSE)?
       - Where is the course [Advertising and Public Relations](COURSE) being held?
-      - What is the price of the course [Advertising and Public Relations](COURSE)?
-      - How many credits is the course [Advertising and Public Relations](COURSE) worth?
-      - What is the schedule for the course [Advertising and Public Relations](COURSE)?
-      - What can you tell me about the course [Advertising and Public Relations](COURSE)?
       - How does the course [Advertising and Public Relations](COURSE) fit into the curriculum?
       - What are the prerequisites for the course [Advertising and Public Relations](COURSE)?
       - How is the course [Advertising and Public Relations](COURSE) graded?
@@ -410,10 +339,6 @@ nlu:
       - What kind of career opportunities can graduates of the course [Advertising and Public Relations](COURSE) expect?
       - Can you provide more information about the faculty offering the course [Advertising and Public Relations](COURSE)?
       - What sets the course [Advertising and Public Relations](COURSE) apart from other similar  courses offered at the university?
-      - What is the price of the course [Labour Relations](COURSE)?
-      - How many credits is the course [Labour Relations](COURSE) worth?
-      - Which faculty is offering the course [Labour Relations](COURSE)?
-      - What is the description of the course [Labour Relations](COURSE)?
       - How many available spots are there for the course [Labour Relations](COURSE)?
       - What is the schedule for the course [Labour Relations](COURSE)?
       - Where is the course [Labour Relations](COURSE) being held?
@@ -423,11 +348,6 @@ nlu:
       - What can you tell me about the course [Labour Relations](COURSE)?
       - How does the course [Labour Relations](COURSE) fit into the curriculum?
       - What are the prerequisites for the course [Labour Relations](COURSE)?
-      - How is the course [Labour Relations](COURSE) graded?
-      - Who is the instructor for the course [Labour Relations](COURSE)?
-      - What textbooks are used in the course [Labour Relations](COURSE)?
-      - Are there any special requirements for the course [Labour Relations](COURSE) (e.g. group projects, presentations, etc.)?
-      - What kind of career opportunities can graduates of the course [Labour Relations](COURSE) expect?
       - Can you provide more information about the faculty offering the course [Labour Relations](COURSE)?
       - What sets the course [Labour Relations](COURSE) apart from other similar  courses offered at the university?
       - What is the price of the course [Translation and Interpretation](COURSE)?
@@ -440,29 +360,14 @@ nlu:
       - What is the price of the course [Translation and Interpretation](COURSE)?
       - How many credits is the course [Translation and Interpretation](COURSE) worth?
       - What is the schedule for the course [Translation and Interpretation](COURSE)?
-      - What can you tell me about the course [Translation and Interpretation](COURSE)?
-      - How does the course [Translation and Interpretation](COURSE) fit into the curriculum?
-      - What are the prerequisites for the course [Translation and Interpretation](COURSE)?
-      - How is the course [Translation and Interpretation](COURSE) graded?
-      - Who is the instructor for the course [Translation and Interpretation](COURSE)?
-      - What textbooks are used in the course [Translation and Interpretation](COURSE)?
       - Are there any special requirements for the course [Translation and Interpretation](COURSE) (e.g. group projects, presentations, etc.)?
       - What kind of career opportunities can graduates of the course [Translation and Interpretation](COURSE) expect?
       - Can you provide more information about the faculty offering the course [Translation and Interpretation](COURSE)?
-      - What sets the course [Translation and Interpretation](COURSE) apart from other similar  courses offered at the university?
-      - What is the price of the course [Political and Administration Sciences](COURSE)?
-      - How many credits is the course [Political and Administration Sciences](COURSE) worth?
-      - Which faculty is offering the course [Political and Administration Sciences](COURSE)?
       - What is the description of the course [Political and Administration Sciences](COURSE)?
       - How many available spots are there for the course [Political and Administration Sciences](COURSE)?
       - What is the schedule for the course [Political and Administration Sciences](COURSE)?
       - Where is the course [Political and Administration Sciences](COURSE) being held?
       - What is the price of the course [Political and Administration Sciences](COURSE)?
-      - How many credits is the course [Political and Administration Sciences](COURSE) worth?
-      - What is the schedule for the course [Political and Administration Sciences](COURSE)?
-      - What can you tell me about the course [Political and Administration Sciences](COURSE)?
-      - How does the course [Political and Administration Sciences](COURSE) fit into the curriculum?
-      - What are the prerequisites for the course [Political and Administration Sciences](COURSE)?
       - How is the course [Political and Administration Sciences](COURSE) graded?
       - Who is the instructor for the course [Political and Administration Sciences](COURSE)?
       - What textbooks are used in the course [Political and Administration Sciences](COURSE)?

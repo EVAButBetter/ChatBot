@@ -4,9 +4,11 @@ import sys
 
 sys.path.append("..")
 
-import pandas as pd
+
+# from data.actions_slots.actions_slots import *
 from intent.intent import Intent
 from lib.parsing.parser_yml import ParserYML
+from data.actions_slots.actions_slots import ActionsSlots
 
 # from text_generation_module import text_generation_function
 FILE_DIR = "../data/"
@@ -14,7 +16,7 @@ FILE_DIR = "../data/"
 CONFIG_DIR = FILE_DIR + "domains/domain.yml"
 SEPARATOR = '&'  # for sc-gpt
 
-
+ACTION_SLOTS = ActionsSlots()
 class AiIntent(Intent):
     def __init__(self, name) -> None:
         super(AiIntent).__init__()
@@ -22,7 +24,7 @@ class AiIntent(Intent):
         self.name = name
         self.slots = dict()
         parser = ParserYML()
-
+        self.action_slots = ACTION_SLOTS
         config = parser.parse(CONFIG_DIR)
 
         for slot_name, slot_data in config["intents"][self.name]["slots"].items():
@@ -45,11 +47,13 @@ class AiIntent(Intent):
                             self.fill_slot(slot_name, element['value'])
 
         for slot_name, value in self.slots.items():
-            if value.get('value') is None or '<REQUEST>' and value.get('action') is not None:
-                function_name, parameter_names = value['action'].split(",")
-                parameter_values = [self.slots[p]['value'] for p in parameter_names.split(";")]
-
-                self.fill_slot(slot_name, globals()[function_name](*parameter_values))
+            print("here")
+            if value.get('value') is None or value.get('value') == '<REQUEST>' and value.get('action_slot') is not None:
+                print('action!!')
+                function_name, parameter_names = value['action_slot'].split(",")
+                parameter_values = [self.slots[p.strip()]['value'] for p in parameter_names.split(";")]
+                print('call function')
+                self.fill_slot(slot_name, getattr(self.action_slots, function_name)(*parameter_values))
 
     def get_slot(self, slot_name):
 
@@ -76,12 +80,12 @@ class AiIntent(Intent):
     def check_info(self):
         # check correctness of info in db through actions_slots
         for slot_name, value in self.slots.items():
-            if value.get('value') is not None or not '<REQUEST>' and value.get('action') is not None:
-                function_name, parameter_names = value['action'].split(",")
+            if value.get('value') is not None or not '<REQUEST>' and value.get('action_slot') is not None:
+                function_name, parameter_names = value['action_slot'].split(",")
                 parameter_values = [self.slots[p]['value'] for p in parameter_names.split(";")]
 
                 # if provided info isn't correct
-                if self.get_slot(slot_name)['value'] != globals()[function_name](*parameter_values):
+                if self.get_slot(slot_name)['value'] != getattr(self.action_slots, function_name)(*parameter_values):
                     return False
 
         return True
