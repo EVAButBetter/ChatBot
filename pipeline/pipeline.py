@@ -5,6 +5,10 @@ from builder.builder import Builder
 from dialog_manager import DialogManager
 from text_assembling import TextAssembler
 
+from utils.ignore_warnings import ignore_warnings
+
+ignore_warnings()
+
 TOOLS = Tools()
 
 
