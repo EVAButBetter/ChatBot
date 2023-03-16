@@ -80,9 +80,10 @@ class AiIntent(Intent):
     def check_info(self):
         # check correctness of info in db through actions_slots
         for slot_name, value in self.slots.items():
-            if value.get('value') is not None or not '<REQUEST>' and value.get('action_slot') is not None:
+            print("value action ",value.get('action_slot'))
+            if (value.get('value') is not None) and (value.get('value') is not '<REQUEST>') and (value.get('action_slot') is not None):
                 function_name, parameter_names = value['action_slot'].split(",")
-                parameter_values = [self.slots[p]['value'] for p in parameter_names.split(";")]
+                parameter_values = [self.slots[p.strip()]['value'] for p in parameter_names.split(";")]
 
                 # if provided info isn't correct
                 if self.get_slot(slot_name)['value'] != getattr(self.action_slots, function_name)(*parameter_values):

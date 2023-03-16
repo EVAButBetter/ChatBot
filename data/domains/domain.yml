@@ -21,7 +21,7 @@ intents:
         main: True
         type: text
         initial_value: <REQUEST>
-        action_slot: find_names, location
+#        action_slot: find_professor_names, location
         mappings:
           - type: from_entity
             entity: PERSON

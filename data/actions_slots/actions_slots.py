@@ -2,11 +2,11 @@ import requests
 import pandas as pd
 from fuzzywuzzy import fuzz
 
-COURSE_PATH = "./data/database/COURSE.csv"
-DEPARTMENT_PATH = "./data/database/DEPARTMENT.csv"
-FACULTY_PATH = "./data/database/CAMPUS.csv"
-SCHEDULE_PATH = "./data/database/SCHEDULE.csv"
-OPENING_CLOSE_HOURS = "./data/database/OPENING_CLOSE_HOURS.csv"
+COURSE_PATH = "../data/database/COURSE.csv"
+DEPARTMENT_PATH = "../data/database/DEPARTMENT.csv"
+FACULTY_PATH = "../data/database/CAMPUS.csv"
+SCHEDULE_PATH = "../data/database/SCHEDULE.csv"
+OPENING_CLOSE_HOURS = "../data/database/OPENING_CLOSE_HOURS.csv"
 
 
 def get_most_similar_value_df(df, column, value, threshold):

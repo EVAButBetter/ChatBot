@@ -12,8 +12,8 @@ else:
     MODEL_PATH = os.path.join(os.path.dirname(os.getcwd()),
                               os.path.join("models", 'bert'))
 print(MODEL_PATH)
-model = SentenceTransformer(MODEL_NAME,cache_folder=MODEL_PATH)
-# model = SentenceTransformer(MODEL_PATH)
+# model = SentenceTransformer(MODEL_NAME,cache_folder=MODEL_PATH)
+model = SentenceTransformer(MODEL_NAME)
 
 class EmbedderBERT(Embedder):
     def __init__(self, model_emb=model):
