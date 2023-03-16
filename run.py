@@ -77,7 +77,7 @@ if __name__ == "__main__":
 
     argv = sys.argv
 
-    print("#### STARTING EVA... BUT BETTER! ####\n")
+    print("#### STARTING EVA...! ####\n")
 
     recorder = Recorder()
 

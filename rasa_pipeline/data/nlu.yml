@@ -84,13 +84,511 @@ nlu:
     - Who is the individual known as professor [MARTA MONTIEL](PERSON)
     - [SERRANO RAGUAN MONTSERRAT](PERSON)
 #2
-# - intent: course_info
-#   examples: |
-#     - where is professor [PINDADO TOST, ZAIRA](PERSON)
+- intent: course_info
+  examples: |
+    - What is the price of the course [Business Management and Administration](COURSE)?
+    - How many credits is the course [Business Management and Administration](COURSE) worth?
+    - Which faculty is offering the course [Business Management and Administration](COURSE)?
+    - What is the description of the course [Business Management and Administration](COURSE)?
+    - How many available spots are there for the course [Business Management and Administration](COURSE)?
+    - What is the schedule for the course [Business Management and Administration](COURSE)?
+    - Where is the course [Business Management and Administration](COURSE) being held?
+    - What is the price of the course [Business Management and Administration](COURSE)?
+    - How many credits is the course [Business Management and Administration](COURSE) worth?
+    - What is the schedule for the course [Business Management and Administration](COURSE)?
+    - What can you tell me about the course [Business Management and Administration](COURSE)?
+    - How does the course [Business Management and Administration](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Business Management and Administration](COURSE)?
+    - How is the course [Business Management and Administration](COURSE) graded?
+    - Who is the instructor for the course [Business Management and Administration](COURSE)?
+    - What textbooks are used in the course [Business Management and Administration](COURSE)?
+    - Are there any special requirements for the course [Business Management and Administration](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Business Management and Administration](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Business Management and Administration](COURSE)?
+    - What sets the course [Business Management and Administration](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Human Biology](COURSE)?
+    - How many credits is the course [Human Biology](COURSE) worth?
+    - Which faculty is offering the course [Human Biology](COURSE)?
+    - What is the description of the course [Human Biology](COURSE)?
+    - How many available spots are there for the course [Human Biology](COURSE)?
+    - What is the schedule for the course [Human Biology](COURSE)?
+    - Where is the course [Human Biology](COURSE) being held?
+    - What is the price of the course [Human Biology](COURSE)?
+    - How many credits is the course [Human Biology](COURSE) worth?
+    - What is the schedule for the course [Human Biology](COURSE)?
+    - What can you tell me about the course [Human Biology](COURSE)?
+    - How does the course [Human Biology](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Human Biology](COURSE)?
+    - How is the course [Human Biology](COURSE) graded?
+    - Who is the instructor for the course [Human Biology](COURSE)?
+    - What textbooks are used in the course [Human Biology](COURSE)?
+    - Are there any special requirements for the course [Human Biology](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Human Biology](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Human Biology](COURSE)?
+    - What sets the course [Human Biology](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Business Sciences](COURSE)?
+    - How many credits is the course [Business Sciences](COURSE) worth?
+    - Which faculty is offering the course [Business Sciences](COURSE)?
+    - What is the description of the course [Business Sciences](COURSE)?
+    - How many available spots are there for the course [Business Sciences](COURSE)?
+    - What is the schedule for the course [Business Sciences](COURSE)?
+    - Where is the course [Business Sciences](COURSE) being held?
+    - What is the price of the course [Business Sciences](COURSE)?
+    - How many credits is the course [Business Sciences](COURSE) worth?
+    - What is the schedule for the course [Business Sciences](COURSE)?
+    - What can you tell me about the course [Business Sciences](COURSE)?
+    - How does the course [Business Sciences](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Business Sciences](COURSE)?
+    - How is the course [Business Sciences](COURSE) graded?
+    - Who is the instructor for the course [Business Sciences](COURSE)?
+    - What textbooks are used in the course [Business Sciences](COURSE)?
+    - Are there any special requirements for the course [Business Sciences](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Business Sciences](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Business Sciences](COURSE)?
+    - What sets the course [Business Sciences](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Audiovisual Communication](COURSE)?
+    - How many credits is the course [Audiovisual Communication](COURSE) worth?
+    - Which faculty is offering the course [Audiovisual Communication](COURSE)?
+    - What is the description of the course [Audiovisual Communication](COURSE)?
+    - How many available spots are there for the course [Audiovisual Communication](COURSE)?
+    - What is the schedule for the course [Audiovisual Communication](COURSE)?
+    - Where is the course [Audiovisual Communication](COURSE) being held?
+    - What is the price of the course [Audiovisual Communication](COURSE)?
+    - How many credits is the course [Audiovisual Communication](COURSE) worth?
+    - What is the schedule for the course [Audiovisual Communication](COURSE)?
+    - What can you tell me about the course [Audiovisual Communication](COURSE)?
+    - How does the course [Audiovisual Communication](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Audiovisual Communication](COURSE)?
+    - How is the course [Audiovisual Communication](COURSE) graded?
+    - Who is the instructor for the course [Audiovisual Communication](COURSE)?
+    - What textbooks are used in the course [Audiovisual Communication](COURSE)?
+    - Are there any special requirements for the course [Audiovisual Communication](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Audiovisual Communication](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Audiovisual Communication](COURSE)?
+    - What sets the course [Audiovisual Communication](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Criminology and Public Prevention Policies](COURSE)?
+    - How many credits is the course [Criminology and Public Prevention Policies](COURSE) worth?
+    - Which faculty is offering the course [Criminology and Public Prevention Policies](COURSE)?
+    - What is the description of the course [Criminology and Public Prevention Policies](COURSE)?
+    - How many available spots are there for the course [Criminology and Public Prevention Policies](COURSE)?
+    - What is the schedule for the course [Criminology and Public Prevention Policies](COURSE)?
+    - Where is the course [Criminology and Public Prevention Policies](COURSE) being held?
+    - What is the price of the course [Criminology and Public Prevention Policies](COURSE)?
+    - How many credits is the course [Criminology and Public Prevention Policies](COURSE) worth?
+    - What is the schedule for the course [Criminology and Public Prevention Policies](COURSE)?
+    - What can you tell me about the course [Criminology and Public Prevention Policies](COURSE)?
+    - How does the course [Criminology and Public Prevention Policies](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Criminology and Public Prevention Policies](COURSE)?
+    - How is the course [Criminology and Public Prevention Policies](COURSE) graded?
+    - Who is the instructor for the course [Criminology and Public Prevention Policies](COURSE)?
+    - What textbooks are used in the course [Criminology and Public Prevention Policies](COURSE)?
+    - Are there any special requirements for the course [Criminology and Public Prevention Policies](COURSE) (e.g. group projects, presentations,     - etc.)?
+    - What kind of career opportunities can graduates of the course [Criminology and Public Prevention Policies](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Criminology and Public Prevention Policies](COURSE)?
+    - What sets the course [Criminology and Public Prevention Policies](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Law](COURSE)?
+    - How many credits is the course [Law](COURSE) worth?
+    - Which faculty is offering the course [Law](COURSE)?
+    - What is the description of the course [Law](COURSE)?
+    - How many available spots are there for the course [Law](COURSE)?
+    - What is the schedule for the course [Law](COURSE)?
+    - Where is the course [Law](COURSE) being held?
+    - What is the price of the course [Law](COURSE)?
+    - How many credits is the course [Law](COURSE) worth?
+    - What is the schedule for the course [Law](COURSE)?
+    - What can you tell me about the course [Law](COURSE)?
+    - How does the course [Law](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Law](COURSE)?
+    - How is the course [Law](COURSE) graded?
+    - Who is the instructor for the course [Law](COURSE)?
+    - What textbooks are used in the course [Law](COURSE)?
+    - Are there any special requirements for the course [Law](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Law](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Law](COURSE)?
+    - What sets the course [Law](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Economics](COURSE)?
+    - How many credits is the course [Economics](COURSE) worth?
+    - Which faculty is offering the course [Economics](COURSE)?
+    - What is the description of the course [Economics](COURSE)?
+    - How many available spots are there for the course [Economics](COURSE)?
+    - What is the schedule for the course [Economics](COURSE)?
+    - Where is the course [Economics](COURSE) being held?
+    - What is the price of the course [Economics](COURSE)?
+    - How many credits is the course [Economics](COURSE) worth?
+    - What is the schedule for the course [Economics](COURSE)?
+    - What can you tell me about the course [Economics](COURSE)?
+    - How does the course [Economics](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Economics](COURSE)?
+    - How is the course [Economics](COURSE) graded?
+    - Who is the instructor for the course [Economics](COURSE)?
+    - What textbooks are used in the course [Economics](COURSE)?
+    - Are there any special requirements for the course [Economics](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Economics](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Economics](COURSE)?
+    - What sets the course [Economics](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Biomedical Engineering](COURSE)?
+    - How many credits is the course [Biomedical Engineering](COURSE) worth?
+    - Which faculty is offering the course [Biomedical Engineering](COURSE)?
+    - What is the description of the course [Biomedical Engineering](COURSE)?
+    - How many available spots are there for the course [Biomedical Engineering](COURSE)?
+    - What is the schedule for the course [Biomedical Engineering](COURSE)?
+    - Where is the course [Biomedical Engineering](COURSE) being held?
+    - What is the price of the course [Biomedical Engineering](COURSE)?
+    - How many credits is the course [Biomedical Engineering](COURSE) worth?
+    - What is the schedule for the course [Biomedical Engineering](COURSE)?
+    - What can you tell me about the course [Biomedical Engineering](COURSE)?
+    - How does the course [Biomedical Engineering](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Biomedical Engineering](COURSE)?
+    - How is the course [Biomedical Engineering](COURSE) graded?
+    - Who is the instructor for the course [Biomedical Engineering](COURSE)?
+    - What textbooks are used in the course [Biomedical Engineering](COURSE)?
+    - Are there any special requirements for the course [Biomedical Engineering](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Biomedical Engineering](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Biomedical Engineering](COURSE)?
+    - What sets the course [Biomedical Engineering](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Computer Science](COURSE)?
+    - How many credits is the course [Computer Science](COURSE) worth?
+    - Which faculty is offering the course [Computer Science](COURSE)?
+    - What is the description of the course [Computer Science](COURSE)?
+    - How many available spots are there for the course [Computer Science](COURSE)?
+    - What is the schedule for the course [Computer Science](COURSE)?
+    - Where is the course [Computer Science](COURSE) being held?
+    - What is the price of the course [Computer Science](COURSE)?
+    - How many credits is the course [Computer Science](COURSE) worth?
+    - What is the schedule for the course [Computer Science](COURSE)?
+    - What can you tell me about the course [Computer Science](COURSE)?
+    - How does the course [Computer Science](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Computer Science](COURSE)?
+    - How is the course [Computer Science](COURSE) graded?
+    - Who is the instructor for the course [Computer Science](COURSE)?
+    - What textbooks are used in the course [Computer Science](COURSE)?
+    - Are there any special requirements for the course [Computer Science](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Computer Science](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Computer Science](COURSE)?
+    - What sets the course [Computer Science](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Audiovisual Systems Engineering](COURSE)?
+    - How many credits is the course [Audiovisual Systems Engineering](COURSE) worth?
+    - Which faculty is offering the course [Audiovisual Systems Engineering](COURSE)?
+    - What is the description of the course [Audiovisual Systems Engineering](COURSE)?
+    - How many available spots are there for the course [Audiovisual Systems Engineering](COURSE)?
+    - What is the schedule for the course [Audiovisual Systems Engineering](COURSE)?
+    - Where is the course [Audiovisual Systems Engineering](COURSE) being held?
+    - What is the price of the course [Audiovisual Systems Engineering](COURSE)?
+    - How many credits is the course [Audiovisual Systems Engineering](COURSE) worth?
+    - What is the schedule for the course [Audiovisual Systems Engineering](COURSE)?
+    - What can you tell me about the course [Audiovisual Systems Engineering](COURSE)?
+    - How does the course [Audiovisual Systems Engineering](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Audiovisual Systems Engineering](COURSE)?
+    - How is the course [Audiovisual Systems Engineering](COURSE) graded?
+    - Who is the instructor for the course [Audiovisual Systems Engineering](COURSE)?
+    - What textbooks are used in the course [Audiovisual Systems Engineering](COURSE)?
+    - Are there any special requirements for the course [Audiovisual Systems Engineering](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Audiovisual Systems Engineering](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Audiovisual Systems Engineering](COURSE)?
+    - What sets the course [Audiovisual Systems Engineering](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Telecommunications Network Engineering](COURSE)?
+    - How many credits is the course [Telecommunications Network Engineering](COURSE) worth?
+    - Which faculty is offering the course [Telecommunications Network Engineering](COURSE)?
+    - What is the description of the course [Telecommunications Network Engineering](COURSE)?
+    - How many available spots are there for the course [Telecommunications Network Engineering](COURSE)?
+    - What is the schedule for the course [Telecommunications Network Engineering](COURSE)?
+    - Where is the course [Telecommunications Network Engineering](COURSE) being held?
+    - What is the price of the course [Telecommunications Network Engineering](COURSE)?
+    - How many credits is the course [Telecommunications Network Engineering](COURSE) worth?
+    - What is the schedule for the course [Telecommunications Network Engineering](COURSE)?
+    - What can you tell me about the course [Telecommunications Network Engineering](COURSE)?
+    - How does the course [Telecommunications Network Engineering](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Telecommunications Network Engineering](COURSE)?
+    - How is the course [Telecommunications Network Engineering](COURSE) graded?
+    - Who is the instructor for the course [Telecommunications Network Engineering](COURSE)?
+    - What textbooks are used in the course [Telecommunications Network Engineering](COURSE)?
+    - Are there any special requirements for the course [Telecommunications Network Engineering](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Telecommunications Network Engineering](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Telecommunications Network Engineering](COURSE)?
+    - What sets the course [Telecommunications Network Engineering](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Mathematical Engineering in Data Science](COURSE)?
+    - How many credits is the course [Mathematical Engineering in Data Science](COURSE) worth?
+    - Which faculty is offering the course [Mathematical Engineering in Data Science](COURSE)?
+    - What is the description of the course [Mathematical Engineering in Data Science](COURSE)?
+    - How many available spots are there for the course [Mathematical Engineering in Data Science](COURSE)?
+    - What is the schedule for the course [Mathematical Engineering in Data Science](COURSE)?
+    - Where is the course [Mathematical Engineering in Data Science](COURSE) being held?
+    - What is the price of the course [Mathematical Engineering in Data Science](COURSE)?
+    - How many credits is the course [Mathematical Engineering in Data Science](COURSE) worth?
+    - What is the schedule for the course [Mathematical Engineering in Data Science](COURSE)?
+    - What can you tell me about the course [Mathematical Engineering in Data Science](COURSE)?
+    - How does the course [Mathematical Engineering in Data Science](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Mathematical Engineering in Data Science](COURSE)?
+    - How is the course [Mathematical Engineering in Data Science](COURSE) graded?
+    - Who is the instructor for the course [Mathematical Engineering in Data Science](COURSE)?
+    - What textbooks are used in the course [Mathematical Engineering in Data Science](COURSE)?
+    - Are there any special requirements for the course [Mathematical Engineering in Data Science](COURSE) (e.g. group projects, presentations,     - etc.)?
+    - What kind of career opportunities can graduates of the course [Mathematical Engineering in Data Science](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Mathematical Engineering in Data Science](COURSE)?
+    - What sets the course [Mathematical Engineering in Data Science](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Global Studies](COURSE)?
+    - How many credits is the course [Global Studies](COURSE) worth?
+    - Which faculty is offering the course [Global Studies](COURSE)?
+    - What is the description of the course [Global Studies](COURSE)?
+    - How many available spots are there for the course [Global Studies](COURSE)?
+    - What is the schedule for the course [Global Studies](COURSE)?
+    - Where is the course [Global Studies](COURSE) being held?
+    - What is the price of the course [Global Studies](COURSE)?
+    - How many credits is the course [Global Studies](COURSE) worth?
+    - What is the schedule for the course [Global Studies](COURSE)?
+    - What can you tell me about the course [Global Studies](COURSE)?
+    - How does the course [Global Studies](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Global Studies](COURSE)?
+    - How is the course [Global Studies](COURSE) graded?
+    - Who is the instructor for the course [Global Studies](COURSE)?
+    - What textbooks are used in the course [Global Studies](COURSE)?
+    - Are there any special requirements for the course [Global Studies](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Global Studies](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Global Studies](COURSE)?
+    - What sets the course [Global Studies](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Humanities](COURSE)?
+    - How many credits is the course [Humanities](COURSE) worth?
+    - Which faculty is offering the course [Humanities](COURSE)?
+    - What is the description of the course [Humanities](COURSE)?
+    - How many available spots are there for the course [Humanities](COURSE)?
+    - What is the schedule for the course [Humanities](COURSE)?
+    - Where is the course [Humanities](COURSE) being held?
+    - What is the price of the course [Humanities](COURSE)?
+    - How many credits is the course [Humanities](COURSE) worth?
+    - What is the schedule for the course [Humanities](COURSE)?
+    - What can you tell me about the course [Humanities](COURSE)?
+    - How does the course [Humanities](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Humanities](COURSE)?
+    - How is the course [Humanities](COURSE) graded?
+    - Who is the instructor for the course [Humanities](COURSE)?
+    - What textbooks are used in the course [Humanities](COURSE)?
+    - Are there any special requirements for the course [Humanities](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Humanities](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Humanities](COURSE)?
+    - What sets the course [Humanities](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [International Business Economics](COURSE)?
+    - How many credits is the course [International Business Economics](COURSE) worth?
+    - Which faculty is offering the course [International Business Economics](COURSE)?
+    - What is the description of the course [International Business Economics](COURSE)?
+    - How many available spots are there for the course [International Business Economics](COURSE)?
+    - What is the schedule for the course [International Business Economics](COURSE)?
+    - Where is the course [International Business Economics](COURSE) being held?
+    - What is the price of the course [International Business Economics](COURSE)?
+    - How many credits is the course [International Business Economics](COURSE) worth?
+    - What is the schedule for the course [International Business Economics](COURSE)?
+    - What can you tell me about the course [International Business Economics](COURSE)?
+    - How does the course [International Business Economics](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [International Business Economics](COURSE)?
+    - How is the course [International Business Economics](COURSE) graded?
+    - Who is the instructor for the course [International Business Economics](COURSE)?
+    - What textbooks are used in the course [International Business Economics](COURSE)?
+    - Are there any special requirements for the course [International Business Economics](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [International Business Economics](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [International Business Economics](COURSE)?
+    - What sets the course [International Business Economics](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Applied Languages](COURSE)?
+    - How many credits is the course [Applied Languages](COURSE) worth?
+    - Which faculty is offering the course [Applied Languages](COURSE)?
+    - What is the description of the course [Applied Languages](COURSE)?
+    - How many available spots are there for the course [Applied Languages](COURSE)?
+    - What is the schedule for the course [Applied Languages](COURSE)?
+    - Where is the course [Applied Languages](COURSE) being held?
+    - What is the price of the course [Applied Languages](COURSE)?
+    - How many credits is the course [Applied Languages](COURSE) worth?
+    - What is the schedule for the course [Applied Languages](COURSE)?
+    - What can you tell me about the course [Applied Languages](COURSE)?
+    - How does the course [Applied Languages](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Applied Languages](COURSE)?
+    - How is the course [Applied Languages](COURSE) graded?
+    - Who is the instructor for the course [Applied Languages](COURSE)?
+    - What textbooks are used in the course [Applied Languages](COURSE)?
+    - Are there any special requirements for the course [Applied Languages](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Applied Languages](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Applied Languages](COURSE)?
+    - What sets the course [Applied Languages](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Medicine](COURSE)?
+    - How many credits is the course [Medicine](COURSE) worth?
+    - Which faculty is offering the course [Medicine](COURSE)?
+    - What is the description of the course [Medicine](COURSE)?
+    - How many available spots are there for the course [Medicine](COURSE)?
+    - What is the schedule for the course [Medicine](COURSE)?
+    - Where is the course [Medicine](COURSE) being held?
+    - What is the price of the course [Medicine](COURSE)?
+    - How many credits is the course [Medicine](COURSE) worth?
+    - What is the schedule for the course [Medicine](COURSE)?
+    - What can you tell me about the course [Medicine](COURSE)?
+    - How does the course [Medicine](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Medicine](COURSE)?
+    - How is the course [Medicine](COURSE) graded?
+    - Who is the instructor for the course [Medicine](COURSE)?
+    - What textbooks are used in the course [Medicine](COURSE)?
+    - Are there any special requirements for the course [Medicine](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Medicine](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Medicine](COURSE)?
+    - What sets the course [Medicine](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Journalism](COURSE)?
+    - How many credits is the course [Journalism](COURSE) worth?
+    - Which faculty is offering the course [Journalism](COURSE)?
+    - What is the description of the course [Journalism](COURSE)?
+    - How many available spots are there for the course [Journalism](COURSE)?
+    - What is the schedule for the course [Journalism](COURSE)?
+    - Where is the course [Journalism](COURSE) being held?
+    - What is the price of the course [Journalism](COURSE)?
+    - How many credits is the course [Journalism](COURSE) worth?
+    - What is the schedule for the course [Journalism](COURSE)?
+    - What can you tell me about the course [Journalism](COURSE)?
+    - How does the course [Journalism](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Journalism](COURSE)?
+    - How is the course [Journalism](COURSE) graded?
+    - Who is the instructor for the course [Journalism](COURSE)?
+    - What textbooks are used in the course [Journalism](COURSE)?
+    - Are there any special requirements for the course [Journalism](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Journalism](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Journalism](COURSE)?
+    - What sets the course [Journalism](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Advertising and Public Relations](COURSE)?
+    - How many credits is the course [Advertising and Public Relations](COURSE) worth?
+    - Which faculty is offering the course [Advertising and Public Relations](COURSE)?
+    - What is the description of the course [Advertising and Public Relations](COURSE)?
+    - How many available spots are there for the course [Advertising and Public Relations](COURSE)?
+    - What is the schedule for the course [Advertising and Public Relations](COURSE)?
+    - Where is the course [Advertising and Public Relations](COURSE) being held?
+    - What is the price of the course [Advertising and Public Relations](COURSE)?
+    - How many credits is the course [Advertising and Public Relations](COURSE) worth?
+    - What is the schedule for the course [Advertising and Public Relations](COURSE)?
+    - What can you tell me about the course [Advertising and Public Relations](COURSE)?
+    - How does the course [Advertising and Public Relations](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Advertising and Public Relations](COURSE)?
+    - How is the course [Advertising and Public Relations](COURSE) graded?
+    - Who is the instructor for the course [Advertising and Public Relations](COURSE)?
+    - What textbooks are used in the course [Advertising and Public Relations](COURSE)?
+    - Are there any special requirements for the course [Advertising and Public Relations](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Advertising and Public Relations](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Advertising and Public Relations](COURSE)?
+    - What sets the course [Advertising and Public Relations](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Labour Relations](COURSE)?
+    - How many credits is the course [Labour Relations](COURSE) worth?
+    - Which faculty is offering the course [Labour Relations](COURSE)?
+    - What is the description of the course [Labour Relations](COURSE)?
+    - How many available spots are there for the course [Labour Relations](COURSE)?
+    - What is the schedule for the course [Labour Relations](COURSE)?
+    - Where is the course [Labour Relations](COURSE) being held?
+    - What is the price of the course [Labour Relations](COURSE)?
+    - How many credits is the course [Labour Relations](COURSE) worth?
+    - What is the schedule for the course [Labour Relations](COURSE)?
+    - What can you tell me about the course [Labour Relations](COURSE)?
+    - How does the course [Labour Relations](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Labour Relations](COURSE)?
+    - How is the course [Labour Relations](COURSE) graded?
+    - Who is the instructor for the course [Labour Relations](COURSE)?
+    - What textbooks are used in the course [Labour Relations](COURSE)?
+    - Are there any special requirements for the course [Labour Relations](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Labour Relations](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Labour Relations](COURSE)?
+    - What sets the course [Labour Relations](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Translation and Interpretation](COURSE)?
+    - How many credits is the course [Translation and Interpretation](COURSE) worth?
+    - Which faculty is offering the course [Translation and Interpretation](COURSE)?
+    - What is the description of the course [Translation and Interpretation](COURSE)?
+    - How many available spots are there for the course [Translation and Interpretation](COURSE)?
+    - What is the schedule for the course [Translation and Interpretation](COURSE)?
+    - Where is the course [Translation and Interpretation](COURSE) being held?
+    - What is the price of the course [Translation and Interpretation](COURSE)?
+    - How many credits is the course [Translation and Interpretation](COURSE) worth?
+    - What is the schedule for the course [Translation and Interpretation](COURSE)?
+    - What can you tell me about the course [Translation and Interpretation](COURSE)?
+    - How does the course [Translation and Interpretation](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Translation and Interpretation](COURSE)?
+    - How is the course [Translation and Interpretation](COURSE) graded?
+    - Who is the instructor for the course [Translation and Interpretation](COURSE)?
+    - What textbooks are used in the course [Translation and Interpretation](COURSE)?
+    - Are there any special requirements for the course [Translation and Interpretation](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Translation and Interpretation](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Translation and Interpretation](COURSE)?
+    - What sets the course [Translation and Interpretation](COURSE) apart from other similar  courses offered at the university?
+    - What is the price of the course [Political and Administration Sciences](COURSE)?
+    - How many credits is the course [Political and Administration Sciences](COURSE) worth?
+    - Which faculty is offering the course [Political and Administration Sciences](COURSE)?
+    - What is the description of the course [Political and Administration Sciences](COURSE)?
+    - How many available spots are there for the course [Political and Administration Sciences](COURSE)?
+    - What is the schedule for the course [Political and Administration Sciences](COURSE)?
+    - Where is the course [Political and Administration Sciences](COURSE) being held?
+    - What is the price of the course [Political and Administration Sciences](COURSE)?
+    - How many credits is the course [Political and Administration Sciences](COURSE) worth?
+    - What is the schedule for the course [Political and Administration Sciences](COURSE)?
+    - What can you tell me about the course [Political and Administration Sciences](COURSE)?
+    - How does the course [Political and Administration Sciences](COURSE) fit into the curriculum?
+    - What are the prerequisites for the course [Political and Administration Sciences](COURSE)?
+    - How is the course [Political and Administration Sciences](COURSE) graded?
+    - Who is the instructor for the course [Political and Administration Sciences](COURSE)?
+    - What textbooks are used in the course [Political and Administration Sciences](COURSE)?
+    - Are there any special requirements for the course [Political and Administration Sciences](COURSE) (e.g. group projects, presentations, etc.)?
+    - What kind of career opportunities can graduates of the course [Political and Administration Sciences](COURSE) expect?
+    - Can you provide more information about the faculty offering the course [Political and Administration Sciences](COURSE)?
+    - What sets the course [Political and Administration Sciences](COURSE) apart from other similar  courses offered at the university?
 #3
-# - intent: close_open_time_info
-#   examples: |
-#     - where is professor [PINDADO TOST, ZAIRA](PERSON)
+- intent: close_open_time_info
+  examples: |
+    - What time does the [Campus](FAC) open and close each day?
+    - Can you tell me the opening and closing hours for the [Campus](FAC)?
+    - When does the [Campus](FAC) start and end its daily operations?
+    - What are the operating hours for the [Campus](FAC) on weekdays and weekends?
+    - Could you provide me with the schedule for the [Campus](FAC) opening and closing times?
+    - What time does the [Campus](FAC) usually open its doors and what time does it close for the day?
+    - I was wondering what the daily hours of operation are for the [Campus](FAC)?
+    - At what time does the [Campus](FAC) open for business and at what time does it close?
+    - What time does the [Campus](FAC) usually start its operations in the morning and when does it shut down at night?
+    - Could you give me the hours of operation for the [Campus](FAC) during the week and on weekends?
+    - What time does the [Campus](FAC) open each day?
+    - Could you tell me when the [Campus](FAC) doors typically open?
+    - At what time does the [Campus](FAC) begin its operations for the day?
+    - I was wondering when the [Campus](FAC) usually opens to the public?
+    - What are the usual opening hours for the [Campus](FAC) during weekdays and weekends?
+    - What time does the [Campus](FAC) close each day?
+    - Could you tell me when the [Campus](FAC) typically shuts down for the day?
+    - At what time does the [Campus](FAC) end its daily operations?
+    - I was wondering when the [Campus](FAC) usually closes its doors to the public?
+    - What are the usual closing hours for the [Campus](FAC) during weekdays and weekends?
+    - What time does the [Library](FAC) open and close each day?
+    - Can you tell me the opening and closing hours for the [Library](FAC)?
+    - When does the [Library](FAC) start and end its daily operations?
+    - What are the operating hours for the [Library](FAC) on weekdays and weekends?
+    - Could you provide me with the schedule for the [Library](FAC) opening and closing times?
+    - What time does the [Library](FAC) usually open its doors and what time does it close for the day?
+    - I was wondering what the daily hours of operation are for the [Library](FAC)?
+    - At what time does the [Library](FAC) open for business and at what time does it close?
+    - What time does the [Library](FAC) usually start its operations in the morning and when does it shut down at night?
+    - Could you give me the hours of operation for the [Library](FAC) during the week and on weekends?
+    - What time does the [Library](FAC) open each day?
+    - Could you tell me when the [Library](FAC) doors typically open?
+    - At what time does the [Library](FAC) begin its operations for the day?
+    - I was wondering when the [Library](FAC) usually opens to the public?
+    - What are the usual opening hours for the [Library](FAC) during weekdays and weekends?
+    - What time does the [Library](FAC) close each day?
+    - Could you tell me when the [Library](FAC) typically shuts down for the day?
+    - At what time does the [Library](FAC) end its daily operations?
+    - I was wondering when the [Library](FAC) usually closes its doors to the public?
+    - What are the usual closing hours for the [Library](FAC) during weekdays and weekends?
+    - What time does the [Secretary](FAC) open and close each day?
+    - Can you tell me the opening and closing hours for the [Secretary](FAC)?
+    - When does the [Secretary](FAC) start and end its daily operations?
+    - What are the operating hours for the [Secretary](FAC) on weekdays and weekends?
+    - Could you provide me with the schedule for the [Secretary](FAC) opening and closing times?
+    - What time does the [Secretary](FAC) usually open its doors and what time does it close for the day?
+    - I was wondering what the daily hours of operation are for the [Secretary](FAC)?
+    - At what time does the [Secretary](FAC) open for business and at what time does it close?
+    - What time does the [Secretary](FAC) usually start its operations in the morning and when does it shut down at night?
+    - Could you give me the hours of operation for the [Secretary](FAC) during the week and on weekends?
+    - What time does the [Secretary](FAC) open each day?
+    - Could you tell me when the [Secretary](FAC) doors typically open?
+    - At what time does the [Secretary](FAC) begin its operations for the day?
+    - I was wondering when the [Secretary](FAC) usually opens to the public?
+    - What are the usual opening hours for the [Secretary](FAC) during weekdays and weekends?
+    - What time does the [Secretary](FAC) close each day?
+    - Could you tell me when the [Secretary](FAC) typically shuts down for the day?
+    - At what time does the [Secretary](FAC) end its daily operations?
+    - I was wondering when the [Secretary](FAC) usually closes its doors to the public?
+    - What are the usual closing hours for the [Secretary](FAC) during weekdays and weekends?
 #4
 - intent: department_info
   examples: |

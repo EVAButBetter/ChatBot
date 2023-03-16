@@ -1,10 +1,11 @@
 import io
 import os
 import time
-import librosa
+import json
 import base64
-import requests
+import librosa
 from gtts import gTTS
+
 
 class TextToSpeechSystem:
     """
@@ -15,7 +16,7 @@ class TextToSpeechSystem:
     def __init__(self, OUTPUT_DIR):
         super(TextToSpeechSystem).__init__()
         self.OUTPUT_DIR = OUTPUT_DIR
-            
+
     async def text_to_speech(self, text, lang="en"):
         """_summary_
 
@@ -26,15 +27,20 @@ class TextToSpeechSystem:
         Returns:
             blob: blob file
         """
-        
+
         os.makedirs(self.OUTPUT_DIR, exist_ok=True)
         tts = gTTS(text, lang=lang)
-        FILE_DIR = str(time.time()) + ".wav"
+        blob = tts.stream()
+        # for i in blob:
+        #     print("i",i)
+        FILE_DIR = str(int(time.time())) + ".mp3"
         tts.save(self.OUTPUT_DIR + FILE_DIR)
+
         blob = self.blob_encoder(self.OUTPUT_DIR + FILE_DIR)
+        blob = str(blob)
         duration = self.get_duration_mp3_and_wav(self.OUTPUT_DIR + FILE_DIR)
         return blob, duration
-        
+
     def blob_encoder(self, filedir):
         """_summary_
 
@@ -44,15 +50,23 @@ class TextToSpeechSystem:
         Returns:
             blob: blob file
         """
+        # Open the .wav file in read mode
         with open(filedir, 'rb') as f:
             wav_data = f.read()
-        # wav_b64 = base64.b64encode(wav_data).decode('utf-8')
 
         bytes_io = io.BytesIO(wav_data)
         blob = bytes_io.getvalue()
-        return blob
-    
-    def get_duration_mp3_and_wav(self, file_path):
-     duration = librosa.get_duration(path=file_path)
-     return duration
+        wav_b64 = base64.b64encode(blob).decode('utf-8')
+        return wav_b64
 
+    def get_duration_mp3_and_wav(self, file_path):
+        duration = librosa.get_duration(path=file_path)
+        return duration
+
+
+# test
+# tts = TextToSpeechSystem("../../data/audio/")
+# blob, duration = tts.text_to_speech(
+#     text="Could you give me the name and surname of the person?"
+# )
+# print(blob)

@@ -1,16 +1,12 @@
 import os
-
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, APIRouter
 from endpoints.eva_pipeline import eva_pipeline_router
-
 import uvicorn
-
+# url = "10.55.0.7:8765/ws"
 app = FastAPI()
 
-origins = [
-    "*"
-]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
@@ -20,22 +16,26 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-API_PREFIX = "/api"
-
-api_router_v1 = APIRouter(
-    prefix="/v1",
-    tags=["v1"],
-)
+api_router_v1 = APIRouter()
 
 api_router_v1.include_router(eva_pipeline_router)
 
-app.include_router(api_router_v1, prefix=API_PREFIX, tags=["api"])
+app.include_router(api_router_v1)
 
 if __name__ == "__main__":
     print("server starting...")
-    port = 8000
-    host = "127.0.0.1"
-    print("#### STARTING EVA... BUT BETTER! ####\n")
-    print("listening on {}:{}".format(host,port))
-    print("#"*60)
-    uvicorn.run(app, host=host, port=port)
+    port = 8765
+    # host = "10.55.0.7"
+    host = "0.0.0.0"
+    ssl_keyfile = "key.pem"
+    ssl_certfile = "cert.pem"
+    print("#### STARTING EVA...! ####\n")
+    print("listening on {}:{}".format(host, port))
+    print("#" * 60)
+    uvicorn.run(
+        app,
+        host=host,
+        port=port,
+        ssl_keyfile=ssl_keyfile,
+        ssl_certfile=ssl_certfile,
+    )
