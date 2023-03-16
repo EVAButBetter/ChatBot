@@ -88,7 +88,7 @@ class AiIntent(Intent):
 
     def confirm(self, slot_name, slot_value):
 
-        return self.name + " { confirm ( {} = {} ) } ".format(slot_name, slot_value) + SEPARATOR
+        return self.name + " { "+"confirm ( {} = {} )".format(slot_name, slot_value)+" } " + SEPARATOR
 
     def inform(self):
 
@@ -98,12 +98,12 @@ class AiIntent(Intent):
         for (name, value) in packs:
             inform_text += '" {} = {} "; '.format(name, value)
 
-        return self.name + " { inform(" + inform_text + ") } " + SEPARATOR
+        return self.name + " { "+"inform(" + inform_text + ") } " + SEPARATOR
 
     def request(self, slot_name):
 
-        return self.name + " { request ( {} = ? ) } ".format(slot_name) + SEPARATOR
+        return self.name + " { "+"request ( {} = ? )".format(slot_name)+" } " + SEPARATOR
 
     def deny(self, slot_name):
 
-        return self.name + " { deny ( {} = ? ) } ".format(slot_name) + SEPARATOR
+        return self.name + " { "+"deny ( {} = ? )".format(slot_name)+" } " + SEPARATOR

@@ -22,5 +22,8 @@ class Pipeline:
 
         return response
 
-
-Pipeline().run("what is the weather today?")
+pipeline = Pipeline()
+import time
+t = time.time()
+print(pipeline.run("Where I can find Professor ?"))
+print(time.time()-t)

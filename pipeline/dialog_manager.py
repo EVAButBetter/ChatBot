@@ -1,5 +1,5 @@
 from intent_classification.intent_classifier import Classifier
-from intent_classification.intent_classification_model import IntentClassificationModel
+from intent_classification.intent_classification_model import IntentClassificationModel,index2id
 from intent.non_ai_intent.intent_to_action import IntentToAction
 from intent.intent import Intent
 from intent.ai_intent.ai_intent import AiIntent
@@ -36,15 +36,16 @@ class DialogManager:
         if step_num == 0:
             return "Thank you for your questions! It was pleasure for me to help you!", 0, False
         elif step_num == 1:
-
-            intent_name = self.domain_intent_classifier.predict(sentence_data['intent']['value'])
-
-            if sentence_data['intent']['value'] == "upf":
-                intent_obj = self.domain_intent_classifier.predict(sentence_data['sentence'])
-                domain_intent_name = intent_obj["intent"]['value']
+            print(sentence_data[0])
+            intent_name = sentence_data[0]['intent']['value']#self.domain_intent_classifier.predict(sentence_data[0]['intent']['value'])['intent']['value']
+            print(intent_name)
+            if sentence_data[0]['intent']['value'] == "upf":
+                intent_obj = self.domain_intent_classifier.predict(sentence_data[0]['sentence'])
+                domain_intent_name = index2id(intent_obj["intent"]['value'])
 
                 self.current_ai_intent_obj = AiIntent(domain_intent_name)
-                self.current_ai_intent_obj.update_slots(sentence_data['data'])
+                print("sentence_data[data] ",sentence_data[0]['data'])
+                self.current_ai_intent_obj.update_slots(sentence_data[0]['data'])
 
                 # if not all slots are filled
                 if not self.current_ai_intent_obj.check_slot():
@@ -70,7 +71,8 @@ class DialogManager:
 
             # if intent not about upf
             else:
-                return intent_to_action.run_action_by_intent(intent_name), 1, False
+                non_ai_response, next_action = intent_to_action.run_action_by_intent(intent_name)
+                return non_ai_response, next_action, False
 
             return 'Exuse me, something went wrong', 1, False
 
