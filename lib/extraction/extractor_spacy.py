@@ -87,7 +87,7 @@ class ExtractorSpaCy(Extractor):
                     sentences.append(training_data)
         return sentences
 
-    def train_ner(self, output_dir, config_path, n_iter=100):
+    def train_ner(self, output_dir, config_path, n_iter=70):
         self.model = spacy.blank('en')
         print("Created blank 'en' model")
         if 'ner' not in self.model.pipe_names:

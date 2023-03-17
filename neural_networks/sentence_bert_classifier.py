@@ -4,7 +4,7 @@ import os
 
 MODEL_PATH = os.path.join(os.path.dirname(os.getcwd()),
                           os.path.join("models", 'mrda_fnn_312_1000ep.pth'))
-print(MODEL_PATH)
+# print(MODEL_PATH)
 
 
 class MLP(torch.nn.Module):

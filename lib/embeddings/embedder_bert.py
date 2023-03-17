@@ -1,4 +1,7 @@
 from sentence_transformers import SentenceTransformer
+from transformers import logging
+logging.set_verbosity_error()
+logging.set_verbosity_warning()
 import numpy as np
 from lib.embeddings.embedder import Embedder
 import os
@@ -11,7 +14,7 @@ if local_file:
 else:
     MODEL_PATH = os.path.join(os.path.dirname(os.getcwd()),
                               os.path.join("models", 'bert'))
-print(MODEL_PATH)
+
 # model = SentenceTransformer(MODEL_NAME,cache_folder=MODEL_PATH)
 model = SentenceTransformer(MODEL_NAME)
 

@@ -16,7 +16,6 @@ class IntentToAction:
         return db
 
     def get_action_by_intent(self, intent):
-        print("intent: ", intent)
         action_obj = self.db[intent]
         return action_obj
 

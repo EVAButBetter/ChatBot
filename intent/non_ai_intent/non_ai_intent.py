@@ -50,7 +50,7 @@ class NonAiIntent(Intent):
         if self.check_value(slot_name, slot_value) is False:
             return False
         self.slots[slot_name]["initial_value"] = None
-        print("current slot value: ", self.slots[slot_name])
+
         return True
 
     def check_value(self, slot_name, slot_value):
