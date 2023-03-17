@@ -6,7 +6,7 @@ import torch
 warnings.filterwarnings("ignore")
 
 # "ceshine/t5-paraphrase-paws-msrp-opinosis" #"prithivida/parrot_paraphraser_on_T5"
-MODEL_NAME = "igorktech/ent5-base-paraphraser-detox"
+MODEL_NAME = "ceshine/t5-paraphrase-paws-msrp-opinosis"
 TASK_PREFIX = 'paraphrase | '
 
 

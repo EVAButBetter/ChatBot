@@ -29,5 +29,11 @@ class Pipeline:
 pipeline = Pipeline()
 import time
 t = time.time()
+print("Start!!!")
 print(pipeline.run("Where I can find Professor Jorge Lobo ?"))
+print(pipeline.run("How does the course Mathematical Engineering in Data Science fit into the curriculum?"))
+print(pipeline.run("What time does the Mar open and close each day?"))
+print(pipeline.run("How many faculty members are in Natural Language Processing?"))
+print(pipeline.run("Can you tell me about the faculties at Universitat Pompeu Fabra?"))
+print(pipeline.run("Can you tell me the schedule for the Introduction to Psychology course?"))
 print(time.time()-t)
