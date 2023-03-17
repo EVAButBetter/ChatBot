@@ -34,48 +34,45 @@ for i, professor in enumerate(response):
     data.append(deny_text)
 
 
-
-response = requests.get("https://dtic-recepcionist.upf.edu/api/groups/names").json()
-for i, group in enumerate(response):
-    request_text = "group_info{ request ( group_name = ? )} & sure, could you tell me the name of the group you want to know?\n"
+epoch = 8
+response = pd.read_csv("../../data/database/DEPARTMENT.csv",sep=";")
+for i, department in enumerate(response):
+    request_text = "department_info{ request ( department_name = ? )} & sure, could you tell me the name of the department you want to know?\n"
     inform_text = (
-        "group_info{ inform ( group_name = "
-        + group["name"]
-        + " ; location = "
-        + group["office"]
-        + " ; leader = "
-        + group["leader"]
-        + " ; )} & sure, the group  "
-        + group["name"]
-        + " is in office "
-        + group["office"]
-        + ", the leader is "
-        + group["leader"]
+        "department_info{ inform ( department_name = "
+        + department["NAME"]
+        + " ; information = "
+        + department["INFO"]
+        + " ; )} & sure, the department  "
+        + department["NAME"]
+        + "'s information is "
+        + department["INFO"]
         + "\n"
     )
     confirm_text = (
-        "group_info{ confirm ( group_name = "
-        + group["name"]
-        + " )} & ok, please let me confirm, you want to know the information about group"
-        + group["name"]
+        "department_info{ confirm ( department_name = "
+        + department["NAME"]
+        + " )} & ok, please let me confirm, you want to know the information about department"
+        + department["NAME"]
         + "?\n"
     )
     deny_text = (
-        "group_info { deny ( group_name = ? )} & sorry, I cannot get any information about the provided group name.\n"
+        "department_info { deny ( department_name = ? )} & sorry, I cannot get any information about the provided department name.\n"
     )
-    data.append(inform_text)
-    data.append(request_text)
-    data.append(confirm_text)
-    data.append(deny_text)
+    for i in range(epoch):
+        data.append(inform_text)
+        data.append(request_text)
+        data.append(confirm_text)
+        data.append(deny_text)
 
-
-response = pd.read_csv("../data/database/OPENING_CLOSE_HOURS.csv",sep=";")
+epoch = 20
+response = pd.read_csv("../../data/database/OPENING_CLOSE_HOURS.csv",sep=";")
 for index, item in response.iterrows():
     request_text = "opening_close_hour_info{ request ( facility_name = ? )} & sure, could you tell me the name of the facility you want to know?\n"
     inform_text = (
         "opening_close_hour_info{ inform ( facility_name = "
         + item["NAME"]
-        + " ; timetable = "
+        + " ; information = "
         + item["OPENING_CLOSE_HOURS"]
         + " ; )} & sure, the timetable of the  "
         + item["NAME"]
@@ -86,26 +83,27 @@ for index, item in response.iterrows():
     confirm_text = (
         "opening_close_hour_info{ confirm ( facility_name = "
         + item["NAME"]
-        + " )} & ok, please let me confirm, you want to know the information about "
+        + " )} & ok, please let me confirm, you want to know the timetable about "
         + item["NAME"]
         + "?\n"
     )
     deny_text = (
         "opening_close_hour_info { deny ( facility_name = ? )} & sorry, I cannot get any information about the provided facility name, please choose from Secretary, Library and Campus.\n"
     )
-    data.append(inform_text)
-    data.append(request_text)
-    data.append(confirm_text)
-    data.append(deny_text)
+    for i in range(epoch):
+        data.append(inform_text)
+        data.append(request_text)
+        data.append(confirm_text)
+        data.append(deny_text)
     
-    
-response = pd.read_csv("../data/database/SCHEDULE.csv",sep=";")
+epoch = 8   
+response = pd.read_csv("../../data/database/SCHEDULE.csv",sep=";")
 for index, item in response.iterrows():
     request_text = "schedule_info{ request ( course_name = ? )} & sure, could you tell me the name of the course you want to know?\n"
     inform_text = (
         "schedule_info{ inform ( course_name = "
         + item["NAME"]
-        + " ; theory = "
+        + " ; information = "
         + item["THEORY"]
         + " ; )} & sure, the "
         + item["NAME"]
@@ -123,10 +121,42 @@ for index, item in response.iterrows():
     deny_text = (
         "schedule_info { deny ( facility_name = ? )} & sorry, I cannot get any information about the provided course name.\n"
     )
-    data.append(inform_text)
-    data.append(request_text)
-    data.append(confirm_text)
-    data.append(deny_text)
+    for i in range(epoch):
+        data.append(inform_text)
+        data.append(request_text)
+        data.append(confirm_text)
+        data.append(deny_text)
+
+epoch = 8   
+response = pd.read_csv("../../data/database/COURSE.csv",sep=";")
+for index, item in response.iterrows():
+    request_text = "course_info{ request ( course_name = ? )} & sure, could you tell me the name of the course you want to know?\n"
+    inform_text = (
+        "course_info{ inform ( course_name = "
+        + item["NAME"]
+        + " ; information = "
+        + item["DESCRIPTION"]
+        + " ; )} & sure, the "
+        + item["NAME"]
+        + " is "
+        + item["DESCRIPTION"]
+        + "\n"
+    )
+    confirm_text = (
+        "course_info{ confirm ( course_name = "
+        + item["NAME"]
+        + " )} & ok, please let me confirm, you want to know the information about "
+        + item["NAME"]
+        + "?\n"
+    )
+    deny_text = (
+        "course_info { deny ( facility_name = ? )} & sorry, I cannot get any information about the provided course name.\n"
+    )
+    for i in range(epoch):
+        data.append(inform_text)
+        data.append(request_text)
+        data.append(confirm_text)
+        data.append(deny_text)
 
 f.writelines(data)
 
