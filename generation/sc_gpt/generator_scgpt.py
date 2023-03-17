@@ -27,7 +27,7 @@ class TemplateGeneratorSCGPT(TemplateGenerator):
         input_ids = self.model.tokenizer.encode(input, return_tensors='pt')
         with torch.no_grad():
 
-            inputs = self.model.model.generate(input_ids, **kwargs)
+            inputs = self.model.model.generate(input_ids, pad_token_id=self.model.tokenizer.eos_token_id, **kwargs)
         output_text = self.model.tokenizer.batch_decode(inputs, skip_special_tokens=True)
         return output_text
 
