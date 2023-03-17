@@ -47,12 +47,12 @@ class AiIntent(Intent):
                             self.fill_slot(slot_name, element['value'])
 
         for slot_name, value in self.slots.items():
-            print("here")
+
             if value.get('value') is None or value.get('value') == '<REQUEST>' and value.get('action_slot') is not None:
-                print('action!!')
+
                 function_name, parameter_names = value['action_slot'].split(",")
                 parameter_values = [self.slots[p.strip()]['value'] for p in parameter_names.split(";")]
-                print('call function')
+
                 self.fill_slot(slot_name, getattr(self.action_slots, function_name)(*parameter_values))
 
     def get_slot(self, slot_name):
@@ -80,7 +80,7 @@ class AiIntent(Intent):
     def check_info(self):
         # check correctness of info in db through actions_slots
         for slot_name, value in self.slots.items():
-            print("value action ",value.get('action_slot'))
+
             if (value.get('value') is not None) and (value.get('value') is not '<REQUEST>') and (value.get('action_slot') is not None):
                 function_name, parameter_names = value['action_slot'].split(",")
                 parameter_values = [self.slots[p.strip()]['value'] for p in parameter_names.split(";")]
