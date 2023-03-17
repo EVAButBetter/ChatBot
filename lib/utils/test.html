@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Audio Player</title>
+  </head>
+  <body>
+    <script>
+      const socket = new WebSocket("ws://localhost:8000/audio");
+
+      socket.binaryType = "arraybuffer";
+
+      socket.addEventListener("message", async (event) => {
+        const arrayBuffer = JSON.parse(event.data).audio;
+        console.log(arrayBuffer)
+        const audioContext = new AudioContext();
+        const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+
+        const source = audioContext.createBufferSource();
+        source.buffer = audioBuffer;
+        source.connect(audioContext.destination);
+
+        source.start();
+      });
+    </script>
+  </body>
+</html>

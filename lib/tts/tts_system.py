@@ -37,7 +37,7 @@ class TextToSpeechSystem:
         tts.save(self.OUTPUT_DIR + FILE_DIR)
 
         blob = self.blob_encoder(self.OUTPUT_DIR + FILE_DIR)
-        blob = str(blob)
+        blob = ''.join([chr(byte) for byte in blob])
         duration = self.get_duration_mp3_and_wav(self.OUTPUT_DIR + FILE_DIR)
         return blob, duration
 
@@ -56,17 +56,23 @@ class TextToSpeechSystem:
 
         bytes_io = io.BytesIO(wav_data)
         blob = bytes_io.getvalue()
-        wav_b64 = base64.b64encode(blob).decode('utf-8')
-        return wav_b64
+        return blob
 
     def get_duration_mp3_and_wav(self, file_path):
-        duration = librosa.get_duration(path=file_path)
-        return duration
+        # duration = librosa.get_duration(path=file_path)
+        # return duration
+        return 10
 
 
-# test
+# # test
 # tts = TextToSpeechSystem("../../data/audio/")
 # blob, duration = tts.text_to_speech(
 #     text="Could you give me the name and surname of the person?"
 # )
-# print(blob)
+# # a = {"test":1}
+# # json_data = json.dumps(a)
+# # print(json_data)
+# # json_data["data"] = 123
+# # print(json_data)
+# print(type(blob))
+# print(json.dumps(blob))
