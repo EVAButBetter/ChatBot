@@ -6,7 +6,7 @@ from paraphrasing.paraphraser_t5 import ParaphrasetT5
 
 from random import choice
 
-G_NUM_SEQ = 4
+G_NUM_SEQ = 3
 G_REP_PEN = 1.0
 G_TOP_P = 0.92
 G_DO_SAMPLE = True
@@ -15,7 +15,7 @@ G_EARLY_STOPPING = True
 G_MAX_LENGTH = 100
 G_TEMPERATURE = 1
 
-P_NUM_SEQ = 4
+P_NUM_SEQ = 3
 P_REP_PEN = 1.5
 P_TOP_P = 0.95
 P_DO_SAMPLE = True
