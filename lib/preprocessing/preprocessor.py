@@ -1,5 +1,7 @@
 import nltk
-# nltk.download("stopwords")
+if not nltk.data.find('corpora/stopwords'):
+    # Download the 'stopwords' dataset
+    nltk.download('stopwords')
 from nltk.corpus import stopwords
 
 stops = set(stopwords.words('english'))

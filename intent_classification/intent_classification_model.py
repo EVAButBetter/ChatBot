@@ -3,6 +3,7 @@ import json
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 from matplotlib import pyplot as plt
+
 from tensorflow import keras
 import pickle
 import pandas as pd
@@ -19,7 +20,7 @@ train time: 2m
 The domain model accuracy is 96.4%
 '''
 
-ids = ['professor_info', 'course_info', 'opening_close_hours_info', 'department_info', 'faculty_info', 'schedule_info']
+ids = ['professor_info', 'course_info', 'opening_close_hours_info', 'department_info', 'campus_info', 'schedule_info']
 
 
 def index2id(index):

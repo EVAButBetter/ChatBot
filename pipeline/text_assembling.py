@@ -6,22 +6,22 @@ from paraphrasing.paraphraser_t5 import ParaphrasetT5
 
 from random import choice
 
-G_NUM_SEQ = 3
+G_NUM_SEQ = 2
 G_REP_PEN = 1.0
 G_TOP_P = 0.92
 G_DO_SAMPLE = True
 G_TOP_K = 5
 G_EARLY_STOPPING = True
-G_MAX_LENGTH = 100
+G_MAX_LENGTH = 160
 G_TEMPERATURE = 1
 
 P_NUM_SEQ = 3
-P_REP_PEN = 1.5
+P_REP_PEN = 1.0
 P_TOP_P = 0.95
 P_DO_SAMPLE = True
-P_TOP_K = 50
+P_TOP_K = 5
 P_EARLY_STOPPING = True
-P_MAX_LENGTH = 100
+P_MAX_LENGTH = 160
 
 
 class TextAssembler:
@@ -44,7 +44,10 @@ class TextAssembler:
                                                                    temperature=G_TEMPERATURE)
             assembled_text = [response.split('&',maxsplit=1)[1].strip() for response in assembled_text]
 
-        assembled_text = self.paraphraser.paraphrase(choice(assembled_text),
+        if isinstance(assembled_text, list):
+            assembled_text = choice(assembled_text)
+
+        assembled_text = self.paraphraser.paraphrase(assembled_text,
                                                      do_sample=P_DO_SAMPLE,
                                                      max_length=P_MAX_LENGTH,
                                                      top_p=P_TOP_P,
