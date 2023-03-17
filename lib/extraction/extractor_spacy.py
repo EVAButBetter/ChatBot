@@ -103,19 +103,19 @@ class ExtractorSpaCy(Extractor):
         other_pipes = [pipe for pipe in self.model.pipe_names if pipe != 'ner']
         with self.model.disable_pipes(*other_pipes):  # only train NER
             self.model.begin_training()
-            for itn in range(n_iter):
+            for itn in tqdm(range(n_iter)):
                 random.shuffle(data)
                 losses = {}
                 # batch up the examples using spaCy's minibatch
                 batches = minibatch(data, size=compounding(4.0, 32.0, 1.001))
-                for batch in tqdm(batches):
+                for batch in batches:
                     for text, annotations in batch:
                         # create Example
                         doc = self.model.make_doc(text)
                         example = Example.from_dict(doc, annotations)
                         # Update the model
                         self.model.update([example], losses=losses, drop=0.3)
-                print("Losses", losses)
+                print("Losses in iteration = {}".format(n_iter), losses)
 
         # Save model
         if output_dir is not None:
@@ -126,7 +126,6 @@ class ExtractorSpaCy(Extractor):
             print("Saved model to", output_dir)
 
 
-# ExtractorSpaCy().train_ner('/Users/macbook_pro/Documents/GitHub/ChatBot/models/ner',
-#                            '/Users/macbook_pro/Documents/GitHub/ChatBot/rasa_pipeline/data/nlu.yml')
-# print(ExtractorSpaCy().convert_rasa_to_spacy(
-#     '/Users/macbook_pro/Documents/GitHub/ChatBot/rasa_pipeline/data/nlu.yml'))
+# ExtractorSpaCy().train_ner('../../models/ner',
+#                            '../../data/datasets/nlu.yml')
+

@@ -1,24 +1,31 @@
-from speech_recognition.recorder import Recorder
-from speech_recognition.speech_recognition_whisper import SpeechRecognitionWhisper
 from intent_classification.intent_classification_model import IntentClassificationModel
-from text_generator.intent_to_action import IntentToAction
+from intent.non_ai_intent.intent_to_action import IntentToAction
 import sys
 
-generic_dataset_path = "./datasets/data_full.json"
-embedder_train_dataset_path = "./datasets/glove.6B.100d.txt"
+GENERIC_DATASET_PATH = "./datasets/generic.yml"
+DOMAIN_DATASET_PATH = "./datasets/domain.yml"
+EMBEDDER_TRAIN_DATASET_PATH = "./datasets/glove.6B.100d.txt"
+GENERIC_MODEL_PATH = "./intent_classification/models/generic_intent_classifier.h5"
+GENERIC_TOKENIZER_PATH = "./intent_classification/utils/generic_tokenizer.pkl"
+GENERIC_LABEL_ENCODER_PATH = "./intent_classification/utils/generic_label_encoder.pkl"
+DOMAIN_MODEL_PATH = "./intent_classification/models/domain_intent_classifier.h5"
+DOMAIN_TOKENIZER_PATH = "./intent_classification/utils/domain_tokenizer.pkl"
+DOMAIN_LABEL_ENCODER_PATH = "./intent_classification/utils/domain_label_encoder.pkl"
+
+
 def load_intent_classifiers():
+    intent_classification_generic = IntentClassificationModel(embedder_train_data_path=EMBEDDER_TRAIN_DATASET_PATH,
+                                                              domain_dataset_path=GENERIC_DATASET_PATH,
+                                                              model_path=GENERIC_MODEL_PATH,
+                                                              tokenizer_path=GENERIC_TOKENIZER_PATH,
+                                                              label_encoder_path=GENERIC_LABEL_ENCODER_PATH)
 
-    intent_classification_generic = IntentClassificationModel(embedder_train_dataset_path, generic_dataset_path)
-    intent_classification_generic.load_model(model_file="./intent_classification/models/generic_intent_classifier.h5")
-    intent_classification_generic.load_tokenizer(tokenizer_file="./intent_classification/utils/generic_tokenizer.pkl")
-    intent_classification_generic.load_label_encoder(
-        label_encoder_file="./intent_classification/utils/generic_label_encoder.pkl")
+    intent_classification_domain = IntentClassificationModel(embedder_train_data_path=EMBEDDER_TRAIN_DATASET_PATH,
+                                                             domain_dataset_path=DOMAIN_DATASET_PATH,
+                                                             model_path=DOMAIN_MODEL_PATH,
+                                                             tokenizer_path=DOMAIN_TOKENIZER_PATH,
+                                                             label_encoder_path=DOMAIN_LABEL_ENCODER_PATH)
 
-    intent_classification_domain = IntentClassificationModel(embedder_train_dataset_path, generic_dataset_path)
-    intent_classification_domain.load_model(model_file="./intent_classification/models/domain_intent_classifier.h5")
-    intent_classification_domain.load_tokenizer(tokenizer_file="./intent_classification/utils/domain_tokenizer.pkl")
-    intent_classification_domain.load_label_encoder(
-        label_encoder_file="./intent_classification/utils/domain_label_encoder.pkl")
     return intent_classification_generic, intent_classification_domain
 
 
@@ -37,9 +44,10 @@ def get_transcription(input_type):
     if input_type == "text":
         eng_transcription = input('Type here:\n')
     else:
-        recording_path = recorder.listen()
+        #recording_path = recorder.listen()
 
-        lang, eng_transcription = speech_recognition_system.run(recording_path)
+        #lang, eng_transcription = speech_recognition_system.run(recording_path)
+        raise AssertionError("Not expected this to be voice input...")
     return eng_transcription
 
 
@@ -78,12 +86,6 @@ if __name__ == "__main__":
     argv = sys.argv
 
     print("#### STARTING EVA...! ####\n")
-
-    recorder = Recorder()
-
-    speech_recognition_system = SpeechRecognitionWhisper()
-
-    speech_recognition_system.print_description()
 
     intent_classification_generic, intent_classification_domain = load_intent_classifiers()
 

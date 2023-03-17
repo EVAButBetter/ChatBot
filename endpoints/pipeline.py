@@ -3,6 +3,7 @@ import base64
 from fastapi import APIRouter
 from fastapi.responses import FileResponse
 
+
 pipeline_router = APIRouter(
     prefix="/pipeline",
     tags=["pipeline"],
