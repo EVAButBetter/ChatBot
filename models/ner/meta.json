@@ -18,9 +18,9 @@
   },
   "labels":{
     "ner":[
+      "CAMPUS",
       "COURSE",
       "DEPARTMENT",
-      "FAC",
       "PERSON"
     ]
   },
