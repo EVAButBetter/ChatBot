@@ -16,7 +16,7 @@ G_MAX_LENGTH = 100
 G_TEMPERATURE = 1
 
 P_NUM_SEQ = 4
-# P_REP_PEN = 1.0
+P_REP_PEN = 1.5
 P_TOP_P = 0.95
 P_DO_SAMPLE = True
 P_TOP_K = 50
@@ -50,6 +50,7 @@ class TextAssembler:
                                                      top_p=P_TOP_P,
                                                      top_k=P_TOP_K,
                                                      num_return_sequences=P_NUM_SEQ,
+                                                     repetition_penalty=P_REP_PEN,
                                                      early_stopping=P_EARLY_STOPPING)
 
         return choice(assembled_text)
