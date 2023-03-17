@@ -117,7 +117,7 @@ async def websocket_endpoint(
                     # should handle the question here
                     # res = handle_function(question)
                     # res = question  # only for testing, so return the question
-                    message = question
+                    message = pipeline.run(question)
 
                     # get audio response in conversation
                     # getAudioPhrase
