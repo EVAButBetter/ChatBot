@@ -777,66 +777,66 @@ nlu:
       - What sets the course [Political and Administration Sciences](COURSE) apart from other similar  courses offered at the university?
   - intent: 3
     examples: |
-      - What time does the [Mar](FAC) open and close each day?
-      - Can you tell me the opening and closing hours for the [Mar](FAC)?
-      - When does the [Mar](FAC) start and end its daily operations?
-      - What are the operating hours for the [Mar](FAC) on weekdays and weekends?
-      - Could you provide me with the schedule for the [Mar](FAC) opening and closing times?
-      - What time does the [Mar](FAC) usually open its doors and what time does it close for the day?
-      - I was wondering what the daily hours of operation are for the [Mar](FAC)?
-      - At what time does the [Mar](FAC) open for business and at what time does it close?
-      - What time does the [Mar](FAC) usually start its operations in the morning and when does it shut down at night?
-      - Could you give me the hours of operation for the [Mar](FAC) during the week and on weekends?
-      - What time does the [Mar](FAC) open each day?
-      - Could you tell me when the [Mar](FAC) doors typically open?
-      - At what time does the [Mar](FAC) begin its operations for the day?
-      - I was wondering when the [Mar](FAC) usually opens to the public?
-      - What are the usual opening hours for the [Mar](FAC) during weekdays and weekends?
-      - What time does the [Mar](FAC) close each day?
-      - Could you tell me when the [Mar](FAC) typically shuts down for the day?
-      - At what time does the [Mar](FAC) end its daily operations?
-      - I was wondering when the [Mar](FAC) usually closes its doors to the public?
-      - What are the usual closing hours for the [Mar](FAC) during weekdays and weekends?
-      - What time does the [Poblenou](FAC) open and close each day?
-      - Can you tell me the opening and closing hours for the [Poblenou](FAC)?
-      - When does the [Poblenou](FAC) start and end its daily operations?
-      - What are the operating hours for the [Poblenou](FAC) on weekdays and weekends?
-      - Could you provide me with the schedule for the [Poblenou](FAC) opening and closing times?
-      - What time does the [Poblenou](FAC) usually open its doors and what time does it close for the day?
-      - I was wondering what the daily hours of operation are for the [Poblenou](FAC)?
-      - At what time does the [Poblenou](FAC) open for business and at what time does it close?
-      - What time does the [Poblenou](FAC) usually start its operations in the morning and when does it shut down at night?
-      - Could you give me the hours of operation for the [Poblenou](FAC) during the week and on weekends?
-      - What time does the [Poblenou](FAC) open each day?
-      - Could you tell me when the [Poblenou](FAC) doors typically open?
-      - At what time does the [Poblenou](FAC) begin its operations for the day?
-      - I was wondering when the [Poblenou](FAC) usually opens to the public?
-      - What are the usual opening hours for the [Poblenou](FAC) during weekdays and weekends?
-      - What time does the [Poblenou](FAC) close each day?
-      - Could you tell me when the [Poblenou](FAC) typically shuts down for the day?
-      - At what time does the [Poblenou](FAC) end its daily operations?
-      - I was wondering when the [Poblenou](FAC) usually closes its doors to the public?
-      - What are the usual closing hours for the [Poblenou](FAC) during weekdays and weekends?
-      - What time does the [Ciutadella](FAC) open and close each day?
-      - Can you tell me the opening and closing hours for the [Ciutadella](FAC)?
-      - When does the [Ciutadella](FAC) start and end its daily operations?
-      - What are the operating hours for the [Ciutadella](FAC) on weekdays and weekends?
-      - Could you provide me with the schedule for the [Ciutadella](FAC) opening and closing times?
-      - What time does the [Ciutadella](FAC) usually open its doors and what time does it close for the day?
-      - I was wondering what the daily hours of operation are for the [Ciutadella](FAC)?
-      - At what time does the [Ciutadella](FAC) open for business and at what time does it close?
-      - What time does the [Ciutadella](FAC) usually start its operations in the morning and when does it shut down at night?
-      - Could you give me the hours of operation for the [Ciutadella](FAC) during the week and on weekends?
-      - What time does the [Ciutadella](FAC) open each day?
-      - Could you tell me when the [Ciutadella](FAC) doors typically open?
-      - At what time does the [Ciutadella](FAC) begin its operations for the day?
-      - I was wondering when the [Ciutadella](FAC) usually opens to the public?
-      - What are the usual opening hours for the [Ciutadella](FAC) during weekdays and weekends?
-      - What time does the [Ciutadella](FAC) close each day?
-      - Could you tell me when the [Ciutadella](FAC) typically shuts down for the day?
-      - At what time does the [Ciutadella](FAC) end its daily operations?
-      - I was wondering when the [Ciutadella](FAC) usually closes its doors to the public?
-      - What are the usual closing hours for the [Ciutadella](FAC) during weekdays and weekends?
+      - What time does the [Mar](CAMPUS) open and close each day?
+      - Can you tell me the opening and closing hours for the [Mar](CAMPUS)?
+      - When does the [Mar](CAMPUS) start and end its daily operations?
+      - What are the operating hours for the [Mar](CAMPUS) on weekdays and weekends?
+      - Could you provide me with the schedule for the [Mar](CAMPUS) opening and closing times?
+      - What time does the [Mar](CAMPUS) usually open its doors and what time does it close for the day?
+      - I was wondering what the daily hours of operation are for the [Mar](CAMPUS)?
+      - At what time does the [Mar](CAMPUS) open for business and at what time does it close?
+      - What time does the [Mar](CAMPUS) usually start its operations in the morning and when does it shut down at night?
+      - Could you give me the hours of operation for the [Mar](CAMPUS) during the week and on weekends?
+      - What time does the [Mar](CAMPUS) open each day?
+      - Could you tell me when the [Mar](CAMPUS) doors typically open?
+      - At what time does the [Mar](CAMPUS) begin its operations for the day?
+      - I was wondering when the [Mar](CAMPUS) usually opens to the public?
+      - What are the usual opening hours for the [Mar](CAMPUS) during weekdays and weekends?
+      - What time does the [Mar](CAMPUS) close each day?
+      - Could you tell me when the [Mar](CAMPUS) typically shuts down for the day?
+      - At what time does the [Mar](CAMPUS) end its daily operations?
+      - I was wondering when the [Mar](CAMPUS) usually closes its doors to the public?
+      - What are the usual closing hours for the [Mar](CAMPUS) during weekdays and weekends?
+      - What time does the [Poblenou](CAMPUS) open and close each day?
+      - Can you tell me the opening and closing hours for the [Poblenou](CAMPUS)?
+      - When does the [Poblenou](CAMPUS) start and end its daily operations?
+      - What are the operating hours for the [Poblenou](CAMPUS) on weekdays and weekends?
+      - Could you provide me with the schedule for the [Poblenou](CAMPUS) opening and closing times?
+      - What time does the [Poblenou](CAMPUS) usually open its doors and what time does it close for the day?
+      - I was wondering what the daily hours of operation are for the [Poblenou](CAMPUS)?
+      - At what time does the [Poblenou](CAMPUS) open for business and at what time does it close?
+      - What time does the [Poblenou](CAMPUS) usually start its operations in the morning and when does it shut down at night?
+      - Could you give me the hours of operation for the [Poblenou](CAMPUS) during the week and on weekends?
+      - What time does the [Poblenou](CAMPUS) open each day?
+      - Could you tell me when the [Poblenou](CAMPUS) doors typically open?
+      - At what time does the [Poblenou](CAMPUS) begin its operations for the day?
+      - I was wondering when the [Poblenou](CAMPUS) usually opens to the public?
+      - What are the usual opening hours for the [Poblenou](CAMPUS) during weekdays and weekends?
+      - What time does the [Poblenou](CAMPUS) close each day?
+      - Could you tell me when the [Poblenou](CAMPUS) typically shuts down for the day?
+      - At what time does the [Poblenou](CAMPUS) end its daily operations?
+      - I was wondering when the [Poblenou](CAMPUS) usually closes its doors to the public?
+      - What are the usual closing hours for the [Poblenou](CAMPUS) during weekdays and weekends?
+      - What time does the [Ciutadella](CAMPUS) open and close each day?
+      - Can you tell me the opening and closing hours for the [Ciutadella](CAMPUS)?
+      - When does the [Ciutadella](CAMPUS) start and end its daily operations?
+      - What are the operating hours for the [Ciutadella](CAMPUS) on weekdays and weekends?
+      - Could you provide me with the schedule for the [Ciutadella](CAMPUS) opening and closing times?
+      - What time does the [Ciutadella](CAMPUS) usually open its doors and what time does it close for the day?
+      - I was wondering what the daily hours of operation are for the [Ciutadella](CAMPUS)?
+      - At what time does the [Ciutadella](CAMPUS) open for business and at what time does it close?
+      - What time does the [Ciutadella](CAMPUS) usually start its operations in the morning and when does it shut down at night?
+      - Could you give me the hours of operation for the [Ciutadella](CAMPUS) during the week and on weekends?
+      - What time does the [Ciutadella](CAMPUS) open each day?
+      - Could you tell me when the [Ciutadella](CAMPUS) doors typically open?
+      - At what time does the [Ciutadella](CAMPUS) begin its operations for the day?
+      - I was wondering when the [Ciutadella](CAMPUS) usually opens to the public?
+      - What are the usual opening hours for the [Ciutadella](CAMPUS) during weekdays and weekends?
+      - What time does the [Ciutadella](CAMPUS) close each day?
+      - Could you tell me when the [Ciutadella](CAMPUS) typically shuts down for the day?
+      - At what time does the [Ciutadella](CAMPUS) end its daily operations?
+      - I was wondering when the [Ciutadella](CAMPUS) usually closes its doors to the public?
+      - What are the usual closing hours for the [Ciutadella](CAMPUS) during weekdays and weekends?
   - intent: 4
     examples: |
       - Can you tell me how many professors are in the [Department of Medicine and Life Sciences](DEPARTMENT) department?
@@ -948,25 +948,25 @@ nlu:
       - Can you tell me more about the professors in the [Natural Language Processing](DEPARTMENT) department?
   - intent: 5
     examples: |
-      - Can you tell me about the faculties at [Universitat Pompeu Fabra](FAC)?
-      - Which faculties are located on Campus del [Mar](FAC)?
-      - What departments are housed in the Campus de la [Ciutadella](FAC) faculty?
-      - I'm interested in learning more about the faculty on the Campus de [Poblenou](FAC). Can you give me some information?
-      - What programs are offered by the Campus del [Mar](FAC) faculty?
-      - Which faculty is the largest at [Universitat Pompeu Fabra](FAC)?
-      - Can you give me a brief overview of the departments in the Campus de la [Ciutadella](FAC) faculty?
-      - What resources are available for students in the Campus de [Poblenou](FAC) faculty?
-      - What kind of research is conducted by the professors in the Campus del [Mar](FAC) faculty?
-      - I'm trying to decide between the three faculties at [Universitat Pompeu Fabra](FAC). Can you give me some guidance on which one might be the best fit for me?
-      - How many students are enrolled in the Campus de la [Ciutadella](FAC) faculty?
+      - Can you tell me about the faculties at [Universitat Pompeu Fabra](CAMPUS)?
+      - Which faculties are located on Campus del [Mar](CAMPUS)?
+      - What departments are housed in the Campus de la [Ciutadella](CAMPUS) faculty?
+      - I'm interested in learning more about the faculty on the Campus de [Poblenou](CAMPUS). Can you give me some information?
+      - What programs are offered by the Campus del [Mar](CAMPUS) faculty?
+      - Which faculty is the largest at [Universitat Pompeu Fabra](CAMPUS)?
+      - Can you give me a brief overview of the departments in the Campus de la [Ciutadella](CAMPUS) faculty?
+      - What resources are available for students in the Campus de [Poblenou](CAMPUS) faculty?
+      - What kind of research is conducted by the professors in the Campus del [Mar](CAMPUS) faculty?
+      - I'm trying to decide between the three faculties at [Universitat Pompeu Fabra](CAMPUS). Can you give me some guidance on which one might be the best fit for me?
+      - How many students are enrolled in the Campus de la [Ciutadella](CAMPUS) faculty?
       - Which faculty has the most diverse student body?
       - I'm interested in pursuing a degree in Business. Which faculty should I look into?
-      - What kind of extracurricular activities are available at the Campus de [Poblenou](FAC) faculty?
-      - Can you tell me about the academic reputation of the Campus del [Mar](FAC) faculty?
-      - What kind of support is available for international students at [Universitat Pompeu Fabra](FAC)'s faculties?
+      - What kind of extracurricular activities are available at the Campus de [Poblenou](CAMPUS) faculty?
+      - Can you tell me about the academic reputation of the Campus del [Mar](CAMPUS) faculty?
+      - What kind of support is available for international students at [Universitat Pompeu Fabra](CAMPUS)'s faculties?
       - Which faculty has the most resources for students interested in conducting research?
-      - Can you give me some information on the faculty on the Campus de la [Ciutadella](FAC) in terms of student life?
-      - What are the admissions requirements for the Campus de [Poblenou](FAC) faculty?
+      - Can you give me some information on the faculty on the Campus de la [Ciutadella](CAMPUS) in terms of student life?
+      - What are the admissions requirements for the Campus de [Poblenou](CAMPUS) faculty?
       - Which faculty has the most opportunities for students interested in internships?
   - intent: 6
     examples: |
