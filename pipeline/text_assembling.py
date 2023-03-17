@@ -6,6 +6,7 @@ from paraphrasing.paraphraser_t5 import ParaphrasetT5
 
 from random import choice
 
+
 G_NUM_SEQ = 2
 G_REP_PEN = 1.0
 G_TOP_P = 0.92
