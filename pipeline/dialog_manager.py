@@ -42,7 +42,7 @@ class DialogManager:
             if sentence_data[0]['intent']['value'] == "upf":
                 intent_obj = self.domain_intent_classifier.predict(sentence_data[0]['sentence'])
                 domain_intent_name = index2id(intent_obj["intent"]['value'])
-
+                print('domain intent ', domain_intent_name)
                 self.current_ai_intent_obj = AiIntent(domain_intent_name)
                 print("sentence_data[data] ",sentence_data[0]['data'])
                 self.current_ai_intent_obj.update_slots(sentence_data[0]['data'])
