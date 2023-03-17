@@ -4,12 +4,12 @@ import json
 from endpoints.ConnectionManager import ConnectionManager
 from lib.tts.tts_system import TextToSpeechSystem
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, APIRouter
-
+from pipeline.pipeline import  Pipeline
 OUTPUT_DIR = "data/audio/"
 eva_pipeline_router = APIRouter()
 tts = TextToSpeechSystem(OUTPUT_DIR)
 manager = ConnectionManager()
-
+pipeline = Pipeline()
 import json
 
 
