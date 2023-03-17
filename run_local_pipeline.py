@@ -85,7 +85,7 @@ if __name__ == "__main__":
 
     argv = sys.argv
 
-    print("#### STARTING EVA... BUT BETTER! ####\n")
+    print("#### STARTING EVA...! ####\n")
 
     intent_classification_generic, intent_classification_domain = load_intent_classifiers()
 
