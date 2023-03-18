@@ -6,10 +6,10 @@ ignore_warnings()
 
 from builder.tools import Tools
 from builder.builder import Builder
-# from pipeline.dialog_manager import DialogManager
-# from pipeline.text_assembling import TextAssembler
-from dialog_manager import DialogManager
-from text_assembling import TextAssembler
+from pipeline.dialog_manager import DialogManager
+from pipeline.text_assembling import TextAssembler
+# from dialog_manager import DialogManager
+# from text_assembling import TextAssembler
 
 
 
@@ -25,7 +25,7 @@ class Pipeline:
 
     def run(self, text):
         sent_data = self.builder.build(text)[0]
-        # print(sent_data['data'])
+        print(sent_data['data'])
         raw_response, self.next_step, ai_pipeline = self.dm.update(sent_data, self.next_step)
         response = self.text_assenbling.assemble(raw_response, ai_pipeline)
 

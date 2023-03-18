@@ -4,11 +4,11 @@ from intent.non_ai_intent.intent_to_action import IntentToAction
 from intent.intent import Intent
 from intent.ai_intent.ai_intent import AiIntent
 
-DOMAIN_DATASET_PATH = "../data/datasets/nlu.yml"
-EMBEDDER_TRAIN_DATASET_PATH = "../data/datasets/glove.6B.100d.txt"
-DOMAIN_MODEL_PATH = "../intent_classification/models/domain_intent_classifier.h5"
-DOMAIN_TOKENIZER_PATH = "../intent_classification/utils/domain_tokenizer.pkl"
-DOMAIN_LABEL_ENCODER_PATH = "../intent_classification/utils/domain_label_encoder.pkl"
+DOMAIN_DATASET_PATH = "data/datasets/nlu.yml"
+EMBEDDER_TRAIN_DATASET_PATH = "data/datasets/glove.6B.100d.txt"
+DOMAIN_MODEL_PATH = "intent_classification/models/domain_intent_classifier.h5"
+DOMAIN_TOKENIZER_PATH = "intent_classification/utils/domain_tokenizer.pkl"
+DOMAIN_LABEL_ENCODER_PATH = "intent_classification/utils/domain_label_encoder.pkl"
 
 intent_classification_domain = IntentClassificationModel(embedder_train_data_path=EMBEDDER_TRAIN_DATASET_PATH,
                                                          domain_dataset_path=DOMAIN_DATASET_PATH,
@@ -18,7 +18,7 @@ intent_classification_domain = IntentClassificationModel(embedder_train_data_pat
 
 
 def load_intent_to_action():
-    actions_db_dir = "../intent/non_ai_intent/intent_to_action.json"
+    actions_db_dir = "intent/non_ai_intent/intent_to_action.json"
     intent_to_action = IntentToAction(actions_db_dir)
     return intent_to_action
 

@@ -11,7 +11,7 @@ from lib.parsing.parser_yml import ParserYML
 from data.actions_slots.actions_slots import ActionsSlots
 
 # from text_generation_module import text_generation_function
-FILE_DIR = "../data/"
+FILE_DIR = "data/"
 # DATABASE = FILE_DIR + "database/" + database + ".csv"
 CONFIG_DIR = FILE_DIR + "domains/domain.yml"
 SEPARATOR = '&'  # for sc-gpt
