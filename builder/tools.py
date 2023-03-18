@@ -8,11 +8,11 @@ from intent_classification.intent_classifier import Classifier
 from intent_classification.intent_dialog_act_clss_torch import ClassifierDA
 from intent_classification.intent_classification_model import IntentClassificationModel
 
-GENERIC_DATASET_PATH = "../data/datasets/generic.yml"
-EMBEDDER_TRAIN_DATASET_PATH = "../data/datasets/glove.6B.100d.txt"
-GENERIC_MODEL_PATH = "../intent_classification/models/generic_intent_classifier.h5"
-GENERIC_TOKENIZER_PATH = "../intent_classification/utils/generic_tokenizer.pkl"
-GENERIC_LABEL_ENCODER_PATH = "../intent_classification/utils/generic_label_encoder.pkl"
+GENERIC_DATASET_PATH = "data/datasets/generic.yml"
+EMBEDDER_TRAIN_DATASET_PATH = "data/datasets/glove.6B.100d.txt"
+GENERIC_MODEL_PATH = "intent_classification/models/generic_intent_classifier.h5"
+GENERIC_TOKENIZER_PATH = "intent_classification/utils/generic_tokenizer.pkl"
+GENERIC_LABEL_ENCODER_PATH = "intent_classification/utils/generic_label_encoder.pkl"
 
 
 
