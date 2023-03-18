@@ -126,6 +126,6 @@ class ExtractorSpaCy(Extractor):
             print("Saved model to", output_dir)
 
 
-ExtractorSpaCy().train_ner('../../models/ner',
-                           '../../data/datasets/nlu.yml')
+# ExtractorSpaCy().train_ner('../../models/ner',
+#                            '../../data/datasets/nlu.yml')
 
