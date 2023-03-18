@@ -2,7 +2,7 @@ import torch
 import numpy as np
 import os
 
-MODEL_PATH = os.path.join(os.path.dirname(os.getcwd()),
+MODEL_PATH = os.path.join(os.getcwd(),
                           os.path.join("models", 'mrda_fnn_312_1000ep.pth'))
 # print(MODEL_PATH)
 
