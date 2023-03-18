@@ -16,7 +16,10 @@ class IntentToAction:
         return db
 
     def get_action_by_intent(self, intent):
-        action_obj = self.db[intent]
+        try:
+            action_obj = self.db[intent]
+        except:
+            action_obj = self.db["oov"]
         return action_obj
 
     def run_action(self, action_obj):
