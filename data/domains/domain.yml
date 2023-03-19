@@ -5,6 +5,7 @@ intents:
     slots:
       course_name:
         main: True
+        n_request: 1
         type: text
         initial_value: <REQUEST>
         mappings:
@@ -18,6 +19,7 @@ intents:
     slots:
       professor_name:
         main: True
+        n_request: 1
         type: text
         initial_value: <REQUEST>
 #        action_slot: find_professor_names, location
@@ -37,6 +39,7 @@ intents:
     slots:
       department_name:
         main: True
+        n_request: 1
         type: text
         initial_value: <REQUEST>
         mappings:
@@ -50,6 +53,7 @@ intents:
     slots:
       campus_name:
         main: True
+        n_request: 1
         type: text
         initial_value: <REQUEST>
         mappings:
@@ -63,6 +67,7 @@ intents:
     slots:
       course_name:
         main: True
+        n_request: 1
         type: text
         initial_value: <REQUEST>
         mappings:
@@ -76,6 +81,7 @@ intents:
     slots:
       campus_name:
         main: True
+        n_request: 1
         type: text
         initial_value: <REQUEST>
         action_slot: find_names, location

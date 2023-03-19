@@ -34,7 +34,7 @@ class DialogManager:
     def update(self, sentence_data, step_num=1):  # -> text, next step_num, ai generation?
         # for sentence_data in sentence_data:
         if step_num == 0:
-            return "Thank you for your questions! It was pleasure for me to help you!", 0, False
+            return "Thank you for your questions! It was pleasure for me to help you!", 1, False
         elif step_num == 1:
 
             intent_name = sentence_data['intent'][
@@ -55,7 +55,13 @@ class DialogManager:
 
                         # check if we should get this slot from user
                         if slot["value"] == "<REQUEST>" and slot.get('main') is True:
-                            return self.current_ai_intent_obj.request(slot_name), 2, True
+                            # prevent looping for request info
+                            if slot['n_request'] >= 1:
+                                slot['n_request'] -= 1
+                                return self.current_ai_intent_obj.request(slot_name), 2, True
+                            else:
+                                return self.current_ai_intent_obj.deny(slot_name), 1, True
+
 
                 # if slots are filled
                 else:
@@ -89,7 +95,12 @@ class DialogManager:
 
                     # check if we should get this slot from user
                     if slot["value"] == "<REQUEST>" and slot.get('main') is True:
-                        return self.current_ai_intent_obj.request(slot_name), 2, True
+                        # prevent looping for request info
+                        if slot['n_request'] >= 1:
+                            slot['n_request'] -= 1
+                            return self.current_ai_intent_obj.request(slot_name), 2, True
+                        else:
+                            return self.current_ai_intent_obj.deny(slot_name), 1, True
 
             # if slots are filled
             else:
