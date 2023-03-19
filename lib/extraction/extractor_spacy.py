@@ -15,8 +15,8 @@ import re
 # python -m spacy download en_core_web_sm
 
 
-MODEL_PATH = os.path.join(os.path.dirname(os.getcwd()),
-                          os.path.join("models", 'ner'))
+MODEL_PATH = 'models/ner_lower'#os.path.join(os.path.dirname(os.getcwd()),
+                          #os.path.join("models", 'ner'))
 # print(MODEL_PATH)
 ENTITY_RE = re.compile(r'\[(.+?)\]\((.+?)\)')
 
@@ -28,6 +28,7 @@ class ExtractorSpaCy(Extractor):
         try:
             self.model = spacy.load(model_name)
         except:
+            print('load ','en_core_web_sm')
             self.model = spacy.load('en_core_web_sm')
 
     def extract_sent(self, sent):
@@ -64,13 +65,16 @@ class ExtractorSpaCy(Extractor):
 
         return output_list
 
-    def convert_rasa_to_spacy(self, nlu_file, parser: Parser = ParserYML()):
+    def convert_rasa_to_spacy(self, nlu_file, parser: Parser = ParserYML(), to_lower = True):
         data = parser.parse(nlu_file)
         sentences = []
         for intent in data['nlu']:
             for example in intent['examples'].split('\n'):
                 example_str = example.lstrip('- ')
-                text = ENTITY_RE.sub(r'\1', example_str)  # Remove entity labels and brackets
+                if to_lower:
+                    text = ENTITY_RE.sub(r'\1', example_str).lower()  # Remove entity labels and brackets
+                else:
+                    text = ENTITY_RE.sub(r'\1', example_str)
                 entities = []
                 for match in ENTITY_RE.finditer(example_str):
                     entity_text = match.group(1)
