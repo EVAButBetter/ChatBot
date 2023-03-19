@@ -34,6 +34,10 @@ class AiIntent(Intent):
                 'value': slot_data.get('initial_value'),
                 'mappings': slot_data.get('mappings'),
             }
+            if slot_data.get('n_request') is None:
+                slot_value['n_request'] = 1
+            else:
+                slot_value['n_request'] = slot_data.get('n_request')
             if slot_data.get('action_slot'):
                 slot_value['action_slot'] = slot_data.get('action_slot')
             self.slots[slot_name] = slot_value
