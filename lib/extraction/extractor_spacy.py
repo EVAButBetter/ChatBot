@@ -15,7 +15,7 @@ import re
 # python -m spacy download en_core_web_sm
 
 
-MODEL_PATH = 'models/ner'#os.path.join(os.path.dirname(os.getcwd()),
+MODEL_PATH = 'models/ner_lower'#os.path.join(os.path.dirname(os.getcwd()),
                           #os.path.join("models", 'ner'))
 # print(MODEL_PATH)
 ENTITY_RE = re.compile(r'\[(.+?)\]\((.+?)\)')
