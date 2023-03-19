@@ -16,7 +16,7 @@ import re
 # python -m spacy download en_core_web_sm
 
 spacy.util.fix_random_seed(42)
-MODEL_PATH = 'models/ner_blank_en_lower'  # os.path.join(os.path.dirname(os.getcwd()),
+MODEL_PATH = 'models/ner_en_core_web_sm_mixed'  # os.path.join(os.path.dirname(os.getcwd()),
 # os.path.join("models", 'ner'))
 # print(MODEL_PATH)
 ENTITY_RE = re.compile(r'\[(.+?)\]\((.+?)\)')

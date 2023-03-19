@@ -19,15 +19,15 @@ class Builder:
         preprocessed_text_dict = [{'sentence': sent} for sent in one_paragraph]
         extracted_sentence_data = self.tools.extractor.extract_sent(one_paragraph)
 
-        sentence_embeddings = self.tools.embedder.encode(one_paragraph)
+        # sentence_embeddings = self.tools.embedder.encode(one_paragraph)
 
-        dialog_acts = [self.tools.dialog_act_classifier.predict(emb.get('embedding')) for emb in sentence_embeddings]
+        # dialog_acts = [self.tools.dialog_act_classifier.predict(emb.get('embedding')) for emb in sentence_embeddings]
         intents_generic = [self.tools.general_intent_classifier.predict(text) for text in one_paragraph]
 
         result = []
         for i in range(len(preprocessed_text_dict)):
             result.append(
-                {**preprocessed_text_dict[i], **extracted_sentence_data[i], **sentence_embeddings[i], **dialog_acts[i],
+                {**preprocessed_text_dict[i], **extracted_sentence_data[i],# **sentence_embeddings[i], **dialog_acts[i],
                  **intents_generic[i]})
         return (result)
 
