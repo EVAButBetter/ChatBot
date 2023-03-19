@@ -9,14 +9,15 @@ import warnings
 import random
 from pathlib import Path
 from tqdm import tqdm
+import cupy
 import os
 import re
 
 # pip install -U spacy
 # python -m spacy download en_core_web_sm
 
-
-MODEL_PATH = 'models/ner_lower'  # os.path.join(os.path.dirname(os.getcwd()),
+spacy.util.fix_random_seed(42)
+MODEL_PATH = 'models/ner_blank_en_lower'  # os.path.join(os.path.dirname(os.getcwd()),
 # os.path.join("models", 'ner'))
 # print(MODEL_PATH)
 ENTITY_RE = re.compile(r'\[(.+?)\]\((.+?)\)')
@@ -29,7 +30,7 @@ class ExtractorSpaCy(Extractor):
         try:
             self.model = spacy.load(model_name)
         except:
-            warnings.warn(f"Can't find model {model_name}, loading en_core_web_sm")
+            warnings.warn("Can't find model {}  loading en_core_web_sm".format(model_name))
             self.model = spacy.load('en_core_web_sm')
 
     def extract_sent(self, sent):
@@ -105,9 +106,17 @@ class ExtractorSpaCy(Extractor):
                     sentences.append(training_data)
         return sentences
 
-    def train_ner(self, output_dir, config_path, n_iter=80, case=0):
-        self.model = spacy.blank('en')
-        print("Created blank 'en' model")
+    def train_ner(self, output_dir, config_path,model_name, use_gpu = False, n_iter=80, case=0):
+        print("Create model")
+        if use_gpu:
+            # spacy.util.use_gpu(0)
+            spacy.prefer_gpu(0)
+        if model_name is not None:
+            self.model = spacy.load(model_name)
+        else:
+            warnings.warn("Can't find model {}  loading en_core_web_sm".format(model_name))
+            self.model = spacy.blank('en')
+
         if 'ner' not in self.model.pipe_names:
             ner = self.model.create_pipe('ner')
             self.model.add_pipe('ner', last=True)
@@ -120,19 +129,24 @@ class ExtractorSpaCy(Extractor):
 
         other_pipes = [pipe for pipe in self.model.pipe_names if pipe != 'ner']
         with self.model.disable_pipes(*other_pipes):  # only train NER
-            self.model.begin_training()
+
+            if model_name is not None:
+                optimizer = self.model.create_optimizer()
+            else:
+                optimizer = self.model.begin_training()
+
             for itn in tqdm(range(n_iter)):
                 random.shuffle(data)
                 losses = {}
                 # batch up the examples using spaCy's minibatch
-                batches = minibatch(data, size=compounding(4.0, 32.0, 1.001))
+                batches = minibatch(data, size=compounding(4.0, 64.0, 1.5))
                 for batch in batches:
                     for text, annotations in batch:
                         # create Example
                         doc = self.model.make_doc(text)
                         example = Example.from_dict(doc, annotations)
                         # Update the model
-                        self.model.update([example], losses=losses, drop=0.3)
+                        self.model.update([example],sgd = optimizer, losses=losses, drop=0.3)
                 print("Losses in iteration = {}".format(n_iter), losses)
 
         # Save model
@@ -144,5 +158,7 @@ class ExtractorSpaCy(Extractor):
             print("Saved model to", output_dir)
 
 
-ExtractorSpaCy().train_ner('../../models/ner_mixed',
-                           '../../data/datasets/nlu.yml',n_iter=100, case=2)
+ExtractorSpaCy().train_ner('../../models/ner_en_core_web_sm_mixed',
+                           '../../data/datasets/nlu.yml',
+                           model_name = 'en',
+                           use_gpu=True, n_iter=70, case=2)
