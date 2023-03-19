@@ -30,7 +30,8 @@ class ExtractorSpaCy(Extractor):
         try:
             self.model = spacy.load(model_name)
         except:
-            warnings.warn("Can't find model {}  loading en_core_web_sm".format(model_name))
+            warning = "Can't find model {}  loading en_core_web_sm".format(model_name)
+            warnings.warn(warning)
             self.model = spacy.load('en_core_web_sm')
 
     def extract_sent(self, sent):
@@ -114,7 +115,8 @@ class ExtractorSpaCy(Extractor):
         if model_name is not None:
             self.model = spacy.load(model_name)
         else:
-            warnings.warn("Can't find model {}  loading en_core_web_sm".format(model_name))
+            warning = "Can't find model {}  loading blank en".format(model_name)
+            warnings.warn(warning)
             self.model = spacy.blank('en')
 
         if 'ner' not in self.model.pipe_names:
@@ -158,7 +160,7 @@ class ExtractorSpaCy(Extractor):
             print("Saved model to", output_dir)
 
 
-ExtractorSpaCy().train_ner('../../models/ner_en_core_web_sm_mixed',
-                           '../../data/datasets/nlu.yml',
-                           model_name = 'en',
-                           use_gpu=True, n_iter=70, case=2)
+# ExtractorSpaCy().train_ner('../../models/ner_blank_en_mixed',
+#                            '../../data/datasets/nlu.yml',
+#                            model_name = None,
+#                            use_gpu=True, n_iter=70, case=2)
