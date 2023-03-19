@@ -9,7 +9,6 @@ import warnings
 import random
 from pathlib import Path
 from tqdm import tqdm
-import cupy
 import os
 import re
 

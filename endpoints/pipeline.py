@@ -15,5 +15,5 @@ pipeline_router = APIRouter(
 async def test(request: str):
     request_dict = json.loads(request)
     message = request_dict.get("message")
-    response = pipeline.run(message)
+    response = pipeline.run(message.title())
     return {"message": f"{response}"}
