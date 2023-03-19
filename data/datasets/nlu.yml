@@ -7,17 +7,17 @@ nlu:
       - I heard Professor [Nuria Barrio](PERSON) is here, do you know where
       - [Nazif Tamer](PERSON)
       - where is professor [Guillermo Jimenez](PERSON)
-      - Where might Professor [Abdussalam Alajami](PERSON) be
+      - Where might [Abdussalam Alajami](PERSON) be
       - Can you provide more information on professor [Albert Bel](PERSON)
-      - I can't seem to find Professor [Dolors Sala](PERSON), have you seen him
+      - I can't seem to find [Dolors Sala](PERSON), have you seen him
       - Is Professor [Carlos Ruiz](PERSON) around
-      - Who exactly is professor [Alfonso Martinez](PERSON)
+      - Who exactly is [Alfonso Martinez](PERSON)
       - Do you know the whereabouts of Professor [Marina Estevez](PERSON)
       - Where might Professor [Dmitry Bogdanov](PERSON) be
-      - I can't seem to find Professor [Germano Gabbianelli](PERSON), have you seen him
+      - I can't seem to find [Germano Gabbianelli](PERSON), have you seen him
       - Could you explain who professor [Sergio Barrachina](PERSON) is
       - Do you know the whereabouts of Professor [Jasna Nuhic](PERSON)
-      - I need to speak with Professor [Mireia Masias](PERSON), have you seen him
+      - I need to speak with [Mireia Masias](PERSON), have you seen him
       - Is Professor [Simona Ramos](PERSON) in the building
       - Can you provide more information on professor [Veronica Moreno](PERSON)
       - I'm looking for Professor [Philip Tovstogan](PERSON), have you seen him
@@ -32,7 +32,7 @@ nlu:
       - Is Professor [Alexandros Zacharakis](PERSON) in the building
       - Have you seen Professor [Alfonso Martinez](PERSON)
       - Where could Professor [Lorenzo Porcaro](PERSON) be
-      - Can you tell me if Professor [Hector Geffner](PERSON) is around
+      - Can you tell me if [Hector Geffner](PERSON) is around
       - Is Professor [Mehd Dabirnia](PERSON) in the building
       - Is Professor [Emilia Gomez](PERSON) around
       - Have you seen Professor [Jordi Mill](PERSON)
@@ -44,7 +44,7 @@ nlu:
       - where is professor [Sofia Tseranidou](PERSON)
       - Have you seen Professor [Masoud Attarifar](PERSON)
       - I heard Professor [Jens Grivolla](PERSON) is here, do you know where
-      - Could you explain who professor [Mehd Dabirnia](PERSON) is
+      - Could you explain who [Mehd Dabirnia](PERSON) is
       - Can you tell me who professor [Marc Tudela](PERSON) is
       - Is Professor [Lourdes Ventanyol](PERSON) in the building
       - Where could Professor [Sergio Lopez](PERSON) be
@@ -62,7 +62,7 @@ nlu:
       - Do you know the whereabouts of Professor [Gergely Neu](PERSON)
       - where is professor [Bernat Gaston](PERSON)
       - Can someone tell me where Professor [Emily Theophilou](PERSON) is
-      - Can you tell me if Professor [Reza Mosayebi](PERSON) is around
+      - Can you tell me if [Reza Mosayebi](PERSON) is around
       - Have you come across Professor [Giovanni Geraci](PERSON)
       - I'm not familiar with professor [Germano Gabbianelli](PERSON). can you introduce them?
       - Who is professor [Pritish Chandna](PERSON)
@@ -76,10 +76,10 @@ nlu:
       - Can you tell me who professor [Sofia Tseranidou](PERSON) is
       - Can someone tell me where Professor [Montse Serrano](PERSON) is
       - Can you tell me who professor [Narcis Pares](PERSON) is
-      - where is professor [Ahmed Abura'ed](PERSON)
+      - where is [Ahmed Abura'ed](PERSON)
       - I need to speak with Professor [Albert Bel](PERSON), have you seen him
       - Who is the professor named professor [Bernat Gaston](PERSON)
-      - I can't seem to find Professor [Batuhan Sayis](PERSON), have you seen him
+      - I can't seem to find [Batuhan Sayis](PERSON), have you seen him
       - Who is the individual known as professor [Irum Baseer](PERSON)
       - I'm looking for Professor [Itziar Zabaleta](PERSON), have you seen him
       - I heard Professor [Josep Blat](PERSON) is here, do you know where
@@ -99,7 +99,7 @@ nlu:
       - where is professor [Angel Lozano](PERSON)
       - Who is professor [Jordi Mill](PERSON)
       - Can you provide more information on professor [Andres Ferraro](PERSON)
-      - I can't seem to find Professor [Alexandros Zacharakis](PERSON), have you seen him
+      - I can't seem to find [Alexandros Zacharakis](PERSON), have you seen him
       - Have you come across Professor [Sergio Barrachina](PERSON)
       - Can you provide more information on professor [Eva Valls](PERSON)
       - Who is the individual known as professor [Josep Font](PERSON)
@@ -112,21 +112,21 @@ nlu:
       - I need to speak with Professor [Xavier Serra](PERSON), have you seen him
       - Where could Professor [Angela Ochugboju](PERSON) be
       - Could you explain who professor [Lorenzo Porcaro](PERSON) is
-      - I can't seem to find Professor [Simone Tassani](PERSON), have you seen him
+      - I can't seem to find [Simone Tassani](PERSON), have you seen him
       - Who is the individual known as professor [Ernest Montbrio](PERSON)
       - Who is the professor named professor [Carla Rafols](PERSON)
       - [Milica Vujovic](PERSON)
-      - I can't seem to find Professor [Alejandro Cartas](PERSON), have you seen him
+      - I can't seem to find [Alejandro Cartas](PERSON), have you seen him
       - I heard Professor [Jyoti Narang](PERSON) is here, do you know where
       - Where could Professor [Fabio Muneratti](PERSON) be
       - Can you give me a brief background on professor [Nazif Tamer](PERSON)
       - Professor [Bruno Mazorra](PERSON), have you seen him
       - Who exactly is professor [Santiago Egea](PERSON)
       - I'm looking for Professor [Juan Soler](PERSON), have you seen him
-      - Who is the individual known as professor [Ana Gil](PERSON)
+      - Who is the individual known as [Ana Gil](PERSON)
       - Have you seen Professor [Cristina Gonzalez](PERSON)
       - I need to speak with Professor [Jakub Marek](PERSON), have you seen him
-      - I'm not familiar with professor [Mario Gomez](PERSON). can you introduce them?
+      - I'm not familiar with [Mario Gomez](PERSON). can you introduce them?
       - Could you explain who professor [Alexander Packard](PERSON) is
       - Has anyone seen Professor [Jesus Minguillon](PERSON)
       - Professor [Giovanni Geraci](PERSON), have you seen him
@@ -139,10 +139,10 @@ nlu:
       - Have you come across Professor [Anders Jonsson](PERSON)
       - Have you seen Professor [Anais Espinoso](PERSON)
       - Professor [Diana Ramirez](PERSON), have you seen him
-      - Could you explain who professor [Ralph Andrzejak](PERSON) is
-      - Can you tell me if Professor [Aurelio Ruiz](PERSON) is around
-      - Have you seen Professor [Daniel Romero](PERSON)
-      - Have you seen Professor [Emily Theophilou](PERSON)
+      - Could you explain who [Ralph Andrzejak](PERSON) is
+      - Can you tell me if [Aurelio Ruiz](PERSON) is around
+      - Have you seen [Daniel Romero](PERSON)
+      - Have you seen [Emily Theophilou](PERSON)
       - Who is the individual known as professor [Patricia Santos](PERSON)
       - [Marti Sanchez](PERSON)
       - Can you tell me who professor [Miquel Junyent](PERSON) is
@@ -175,14 +175,14 @@ nlu:
       - Who is the professor named professor [Ahmed Elaldy](PERSON)
       - [Montse Jaureguizar](PERSON)
       - Who is professor [Tomas Garcia](PERSON)
-      - Who is professor [Marina Estevez](PERSON)
-      - Could you explain who professor [Sergio Giraldo](PERSON) is
-      - Who exactly is professor [Xabier Morales](PERSON)
+      - Who is [Marina Estevez](PERSON)
+      - Could you explain who [Sergio Giraldo](PERSON) is
+      - Who exactly is [Xabier Morales](PERSON)
       - Is Professor [Araceli Morales](PERSON) in the building
       - Who is professor [Irum Baseer](PERSON)
-      - Where could Professor [Mireia Aleny?](PERSON) be
-      - Can you provide more information on professor [Olga Gali](PERSON)
-      - Can you tell me if Professor [Davinia Hernandez Leo](PERSON) is around
+      - Where could [Mireia Aleny?](PERSON) be
+      - Can you provide more information on [Olga Gali](PERSON)
+      - Can you tell me if [Davinia Hernandez Leo](PERSON) is around
       - I need to speak with Professor [Masoud Attarifar](PERSON), have you seen him
       - Can you provide more information on professor [Itziar Zabaleta](PERSON)
       - Could you explain who professor [Alexander Gomez](PERSON) is
@@ -192,7 +192,7 @@ nlu:
       - I'm not familiar with professor [Rosa Maria Figueres](PERSON). can you introduce them?
       - Who is the professor named professor [Boris Bellalta](PERSON)
       - Who is the professor named professor [Aurelio Ruiz](PERSON)
-      - Can you tell me if Professor [Emilia Gomez](PERSON) is around
+      - Can you tell me if [Emilia Gomez](PERSON) is around
       - Professor [Antoni Ivorra](PERSON), have you seen him
       - Could you explain who professor [Montse Brillas](PERSON) is
       - Can you tell me who professor [Manel Ronda](PERSON) is
@@ -200,10 +200,10 @@ nlu:
       - Could you explain who professor [Alia Moustafa](PERSON) is
       - where is professor [Eva Valls](PERSON)
       - where is professor [lobo jorge, Crowela Ciero](PERSON)
-      - Has anyone seen Professor [Daza Fernandez Vanesa](PERSON)
+      - Has anyone seen [Daza Fernandez Vanesa](PERSON)
       - Where could Professor [Nikbakht Silab Rasoul](PERSON) be
       - Do you know the whereabouts of Professor [Nikbakht Silab Rasoul](PERSON)
-      - I can't seem to find Professor [Nikbakht Silab Rasoul](PERSON), have you seen him
+      - I can't seem to find [Nikbakht Silab Rasoul](PERSON), have you seen him
       - Is Professor [Ten Ventura Carla](PERSON) around
       - Can someone tell me where Professor [Abenia Polo Pascual Pablo](PERSON) is
       - I'm looking for Professor [Ten Ventura Carla](PERSON), have you seen him
@@ -211,7 +211,7 @@ nlu:
       - I heard Professor [TREVOR DALTON CANHAM](PERSON) is here, do you know where
       - Have you come across Professor [Abenia Polo Pascual Pablo](PERSON)
       - Have you seen Professor [Abura'ed Ahmed Ghassan Tawfiq](PERSON)
-      - Can you tell me if Professor [TIANGE ZHU](PERSON) is around
+      - Can you tell me if [TIANGE ZHU](PERSON) is around
       - I need to speak with Professor [Lluch Alvarez Eric](PERSON), have you seen him
       - Where might Professor [Pindado Tost Zaira](PERSON) be
       - Is Professor [Piella Fenoy Gema](PERSON) in the building
@@ -219,26 +219,25 @@ nlu:
       - Can you tell me who professor [Ramirez Cifuentes Diana Michelle](PERSON) is
       - I'm not familiar with professor [Baeza Yates Ricardo Alberto](PERSON). can you introduce them?,1
       - Could you explain who professor [FRANZONI FEDERICO](PERSON) is
-      - Who is the professor named professor [ADHIKARI MOHIT HEMCHANDRA](PERSON)
+      - Who is the professor named  [ADHIKARI MOHIT HEMCHANDRA](PERSON)
       - Can you provide more information on professor [ADRIÀ ARBUES SANGÜESA](PERSON)
       - Who exactly is professor [SERRANO RAGUAN MONTSERRAT](PERSON)
       - Can you give me a brief background on professor [Garcia Escobosa LydiA](PERSON)
       - Who is the individual known as professor [Marta Montiel](PERSON)
       - [Serrano Raguan Montserrat](PERSON)
-      
       - where is professor [lobo jorge](PERSON)
       - Has anyone seen Professor [Jorge Lobo](PERSON)
       - Where could Professor [Nikbakht Silab Rasoul](PERSON) be
       - Do you know the whereabouts of Professor [Victor Dalmau Lloret](PERSON)
-      - I can't seem to find Professor [Nikbakht](PERSON), have you seen him
+      - I can't seem to find [Nikbakht](PERSON), have you seen him
       - Is Professor [Ten Ventura Carla](PERSON) around
       - Can someone tell me where Professor [Abenia Polo](PERSON) is
       - I'm looking for Professor [Ten Ventura Carla](PERSON), have you seen him
       - Professor [Nikbakht Silab Rasoul](PERSON), have you seen him
       - I heard Professor [Piella Fenoy Gema](PERSON) is here, do you know where
-      - Have you come across Professor [Javier Aguirre Olcoz](PERSON)
+      - Have you come across [Javier Aguirre Olcoz](PERSON)
       - Have you seen Professor [Quim Castellvi](PERSON)
-      - Can you tell me if Professor [Abura'ed Ahmed Ghassan Tawfiq](PERSON) is around
+      - Can you tell me if [Abura'ed Ahmed Ghassan Tawfiq](PERSON) is around
       - I need to speak with Professor [Lluch Alvarez Eric](PERSON), have you seen him
       - Where might Professor [Pindado Tost Zaira](PERSON) be
       - Is Professor [Piella Fenoy Gema](PERSON) in the building
@@ -252,10 +251,10 @@ nlu:
       - Can you give me a brief background on professor [Garcia Escobosa Lydia](PERSON)
       - Who is the individual known as professor [Marta Montiel](PERSON)
       - [Serrano Raguan Montserrat](PERSON)
-      - I'm looking for Professor [Patricia Santos](PERSON), have you seen him
+      - I'm looking for [Patricia Santos](PERSON), have you seen him
       - [Ahmed Elaldy](PERSON)
       - Where might Professor [Cristina Gonzalez](PERSON) be
-      - I'm looking for Professor [Jana Safrankova](PERSON), have you seen him
+      - I'm looking for [Jana Safrankova](PERSON), have you seen him
       - Who is professor [Jesus Minguillon](PERSON)
       - where is professor [Laia Albo](PERSON)
       - Do you know the whereabouts of Professor [Manuel Portela](PERSON)
@@ -268,10 +267,10 @@ nlu:
       - Where could Professor [Anders Occhipinti](PERSON) be
       - Can you give me a brief background on professor [Paloma Benavent](PERSON)
       - where is professor [Agustin Infante](PERSON)
-      - Can you tell me if Professor [Javier Silva](PERSON) is around
-      - Can you tell me if Professor [Frederic Font](PERSON) is around
-      - I can't seem to find Professor [Ezio Biglieri](PERSON), have you seen him
-      - Has anyone seen Professor [Dmitry Bogdanov](PERSON)
+      - Can you tell me if [Javier Silva](PERSON) is around
+      - Can you tell me if [Frederic Font](PERSON) is around
+      - I can't seem to find [Ezio Biglieri](PERSON), have you seen him
+      - Has anyone seen [Dmitry Bogdanov](PERSON)
       - where is professor [Javier Silva](PERSON)
       - I'm not familiar with professor [Rafael Ramirez](PERSON). can you introduce them?
       - Can you tell me who professor [Diana Ramirez](PERSON) is
@@ -288,13 +287,13 @@ nlu:
       - Is Professor [Joaquim Comas](PERSON) in the building
       - Have you seen Professor [Maria Segarra](PERSON)
       - Who exactly is professor [Mohammad Mojahedian](PERSON)
-      - Can you provide more information on professor [Nava Rubin](PERSON)
+      - Can you provide more information on [Nava Rubin](PERSON)
       - I'm not familiar with professor [Irem Cetin](PERSON). can you introduce them?
       - Who is the professor named professor [Blai Bonet](PERSON)
       - Who is the individual known as professor [Ricardo Baeza](PERSON)
-      - Can you tell me if Professor [Nicolas Gutierrez](PERSON) is around
+      - Can you tell me if [Nicolas Gutierrez](PERSON) is around
       - Can you provide more information on professor [Mastane Achab](PERSON)
-      - I need to speak with Professor [Mohammad Mojahedian](PERSON), have you seen him
+      - I need to speak with [Mohammad Mojahedian](PERSON), have you seen him
       - Who is the professor named professor [Sonia Iturrate](PERSON)
       - Have you seen Professor [Andres Lewin](PERSON)
       - I heard Professor [Blai Bonet](PERSON) is here, do you know where
@@ -303,7 +302,7 @@ nlu:
       - where is professor [Eduardo Fonseca](PERSON)
       - Who is the individual known as professor [Guillermo Cambara](PERSON)
       - where is professor [Batuhan Sayis](PERSON)
-      - Can you tell me if Professor [Juan Soler](PERSON) is around
+      - Can you tell me if [Juan Soler](PERSON) is around
       - Where could Professor [Reza Mosayebi](PERSON) be
       - Has anyone seen Professor [Miquel Junyent](PERSON)
       - Has anyone seen Professor [Diana Ramirez](PERSON)
@@ -324,20 +323,20 @@ nlu:
       - Have you come across Professor [Dolors Sala](PERSON)
       - Who is the professor named professor [Paloma Benavent](PERSON)
       - Who is the professor named professor [Vanesa Daza](PERSON)
-      - Can someone tell me where Professor [Pegah Bayat](PERSON) is
+      - Can someone tell me where [Pegah Bayat](PERSON) is
       - Could you explain who professor [Ahmed Elaldy](PERSON) is
-      - Have you seen Professor [Eleonora De Filippi](PERSON)
+      - Have you seen [Eleonora De Filippi](PERSON)
       - Can someone tell me where Professor [Helena Cuesta](PERSON) is
       - Could you explain who professor [Konstantinos, Dovelos](PERSON) is
-      - where is professor [Pritish Chandna](PERSON)
-      - Where could Professor [Enric Peig](PERSON) be
+      - where is [Pritish Chandna](PERSON)
+      - Where could [Enric Peig](PERSON) be
       - Do you know the whereabouts of Professor [Enric Gine](PERSON)
-      - Have you seen Professor [Anders Jonsson](PERSON)
+      - Have you seen [Anders Jonsson](PERSON)
       - Where could Professor [Itziar Zabaleta](PERSON) be
       - Can you tell me who professor [Horacio Saggion](PERSON) is
       - Have you come across Professor [Narcis Pares](PERSON)
       - Could you explain who professor [Jorge Lobo](PERSON) is
-      - I'm looking for Professor [Anders Occhipinti](PERSON), have you seen him
+      - I'm looking for  [Anders Occhipinti](PERSON), have you seen him
       - where is professor [Rene Lobo](PERSON)
       - Can you provide more information on professor [Giovanni Geraci](PERSON)
       - Who is the professor named professor [Pablo Zinemanas](PERSON)
@@ -346,7 +345,7 @@ nlu:
       - Who is the professor named professor [Giulia Ruzzene](PERSON)
       - Who is the individual known as professor [Joan Soler](PERSON)
       - Is Professor [Patricia Vitoria](PERSON) around
-      - I can't seem to find Professor [Anders Occhipinti](PERSON), have you seen him
+      - I can't seem to find [Anders Occhipinti](PERSON), have you seen him
       - Who is professor [Jorge Lobo](PERSON)
       - Can you provide more information on professor [Lorenzo Porcaro](PERSON)
       - I'm not familiar with professor [Joan Soler](PERSON). can you introduce them?
@@ -356,34 +355,34 @@ nlu:
       - Can you provide more information on professor [Alba Taboas](PERSON)
       - Do you know the whereabouts of Professor [Leo Wanner](PERSON)
       - Who is the professor named professor [Josep Font](PERSON)
-      - I can't seem to find Professor [Gerald Hann](PERSON), have you seen him
+      - I can't seem to find [Gerald Hann](PERSON), have you seen him
       - Where might Professor [Sergio Giraldo](PERSON) be
       - I heard Professor [Albert Guillen](PERSON) is here, do you know where
       - Can you provide more information on professor [Irum Baseer](PERSON)
       - Is Professor [Enric Perera](PERSON) in the building
-      - Professor [Sergio Barrachina](PERSON), have you seen him
+      -  [Sergio Barrachina](PERSON), have you seen him
       - Can you tell me who professor [Gergely Neu](PERSON) is
-      - I'm looking for Professor [Jakub Marek](PERSON), have you seen him
+      - I'm looking for [Jakub Marek](PERSON), have you seen him
       - Who is the individual known as professor [Alexandros Zacharakis](PERSON)
       - Can you tell me who professor [Xavier Serra](PERSON) is
       - Do you know the whereabouts of Professor [Sergio Giraldo](PERSON)
       - [Javier Silva](PERSON)
       - Have you seen Professor [Hector Geffner](PERSON)
       - Can someone tell me where Professor [Mohammad Mojahedian](PERSON) is
-      - Can you tell me if Professor [Xabier Morales](PERSON) is around
-      - I can't seem to find Professor [Veronica Moreno](PERSON), have you seen him
-      - Have you seen Professor [Marzieh Karimihaghighi](PERSON)
-      - Can you tell me if Professor [Vanesa Daza](PERSON) is around
+      - Can you tell me if [Xabier Morales](PERSON) is around
+      - I can't seem to find [Veronica Moreno](PERSON), have you seen him
+      - Have you seen Professor [Marzieh Karimihaghighi](PERSON)?
+      - Can you tell me if [Vanesa Daza](PERSON) is around
       - Can you provide more information on professor [Adriana Fernandez](PERSON)
       - Could you explain who professor [Rafael Pous](PERSON) is
       - I heard Professor [Marc Beardsley](PERSON) is here, do you know where
       - Professor [Enric Perera](PERSON), have you seen him
-      - Can you tell me if Professor [Irum Baseer](PERSON) is around
-      - Have you seen Professor [Abdussalam Alajami](PERSON)
-      - I can't seem to find Professor [Hector Geffner](PERSON), have you seen him
+      - Can you tell me if [Irum Baseer](PERSON) is around
+      - Have you seen Professor [Abdussalam Alajami](PERSON)?
+      - I can't seem to find [Hector Geffner](PERSON), have you seen him
       - [Patricia Santos](PERSON)
       - Can you tell me who professor [Pablo Accuosto](PERSON) is
-      - Is Professor [Enric Peig](PERSON) in the building
+      - Is [Enric Peig](PERSON) in the building
       - Could you explain who professor [Enric Gine](PERSON) is
       - Do you know the whereabouts of Professor [Giulia Ruzzene](PERSON)
       - Can you give me a brief background on professor [Alia Moustafa](PERSON)
@@ -398,11 +397,11 @@ nlu:
       - Can you provide more information on professor [Ishari Amarasinghe](PERSON)
       - I'm not familiar with professor [Alayna Hugues](PERSON). can you introduce them?
       - where is professor [Patricia Pino](PERSON)
-      - Have you come across Professor [Berkay Demirel](PERSON)
-      - Who is the individual known as professor [Aracelys Garcia](PERSON)
-      - Can someone tell me where Professor [Marius Miron](PERSON) is
-      - Has anyone seen Professor [Bruno Mazorra](PERSON)
-      - Can you tell me who professor [Carlos Castillo](PERSON) is
+      - Have you come across [Berkay Demirel](PERSON)
+      - Who is the individual known as  [Aracelys Garcia](PERSON)
+      - Can someone tell me where  [Marius Miron](PERSON) is
+      - Has anyone seen [Bruno Mazorra](PERSON)
+      - Can you tell me who [Carlos Castillo](PERSON) is
       - Professor [Jana Safrankova](PERSON), have you seen him
   - intent: 2
     examples: |
