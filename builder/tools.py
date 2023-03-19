@@ -21,8 +21,8 @@ class Tools():
         self.tokenizer = Tokenizer()
         self.preprocessor = Preprocessor()
         self.extractor: Extractor = ExtractorSpaCy()
-        self.embedder: Embedder = EmbedderBERT()
-        self.dialog_act_classifier: Classifier = ClassifierDA()
+        # self.embedder: Embedder = EmbedderBERT()
+        # self.dialog_act_classifier: Classifier = ClassifierDA()
         self.general_intent_classifier: Classifier = IntentClassificationModel(
             embedder_train_data_path=EMBEDDER_TRAIN_DATASET_PATH,
             domain_dataset_path=GENERIC_DATASET_PATH,
