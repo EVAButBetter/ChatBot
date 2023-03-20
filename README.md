@@ -9,5 +9,5 @@ uvicorn server:app --reload
 ```
 * request:
 ```
-http://localhost:8000/api/v1/pipeline
+http://127.0.0.1:8000/api/v1/pipeline?request={"message": "Where I can find Professor Alfredo Lopez"}
 ```
