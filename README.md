@@ -11,3 +11,11 @@ uvicorn server:app --reload
 ```
 http://127.0.0.1:8000/api/v1/pipeline?request={"message": "Where I can find Professor Alfredo Lopez"}
 ```
+
+### Intermediate results:
+* [Final presentation](resource/EVA%20PRESENTATION.pptx)
+
+* [Demo video](resource/tests.mp4)
+  
+  (during demo you can observe delays due to the low server performance)
+  
